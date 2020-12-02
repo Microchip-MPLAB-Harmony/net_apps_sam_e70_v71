@@ -1,5 +1,5 @@
 ---
-grand_parent:  Harmony 3 TCP/IP Application for PIC32MZ EF Family
+grand_parent:  Harmony 3 TCP/IP Application for SAM E70/V71 Family
 parent: TCP/IP UDP Client Server
 title: Running Application
 nav_order: 3

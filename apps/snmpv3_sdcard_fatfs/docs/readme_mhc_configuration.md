@@ -8,7 +8,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# SNMP SDMMC FATFS MHC Configuration
+# TCP/IP SNMP SDMMC FATFS MHC Configuration
 
 The following Project Graph diagram shows the Harmony components included in the application demonstration.
 

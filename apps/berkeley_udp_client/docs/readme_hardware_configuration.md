@@ -1,5 +1,5 @@
 ---
-grand_parent:  Harmony 3 TCP/IP Application for PIC32MZ EF Family
+grand_parent:  Harmony 3 TCP/IP Application for SAME70/V71 Family
 parent: TCP/IP Berkeley UDP Client
 title: Hardware Configuration
 nav_order: 2

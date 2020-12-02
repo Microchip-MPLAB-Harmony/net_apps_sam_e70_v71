@@ -35,7 +35,9 @@ The following Project Graph diagram shows the Harmony components included in the
 
 * **TCP/IP required application**
 
-  TCP/IP demo use these application module components for this demo. **Announce** module to discover the Microchip devices within a local network.
+  TCP/IP demo use these application module components for this demo. 
+  
+  **Announce** module to discover the Microchip devices within a local network.
   
   **DHCP Client** module to discover the IPv4 address from the nearest DHCP Server.
   

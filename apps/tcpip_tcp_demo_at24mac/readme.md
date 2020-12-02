@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 TCP/IP Application for SAM E70/V71 Family
-title: TCP/IP TCP Client
+title: TCP/IP TCP Client Using ATMAC
 has_children: true
 has_toc: false
 ---

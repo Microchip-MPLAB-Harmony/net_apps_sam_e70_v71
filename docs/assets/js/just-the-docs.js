@@ -276,20 +276,20 @@ var myVariable = `
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/berkeley_udp_relay/readme.html",
     "relUrl": "/apps/berkeley_udp_relay/readme.html"
   },"46": {
-    "doc": "TCP/IP SNMP SDMMC Application",
+    "doc": "TCP/IP SNMP SDMMC FATFS Application",
     "title": "TCP/IP SNMP SDMMC Application",
     "content": "The Microchip SNMP Server is a multi-lingual implementation, which supports SNMPv1, V2c, and V3 server features simultaneously. The SNMP Server is implemented to address the requirements of embedded applications and works with both IPv4 and IPv6 addresses. ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/readme.html#tcpip-snmp-sdmmc-application",
     "relUrl": "/apps/snmpv3_sdcard_fatfs/readme.html#tcpip-snmp-sdmmc-application"
   },"47": {
-    "doc": "TCP/IP SNMP SDMMC Application",
+    "doc": "TCP/IP SNMP SDMMC FATFS Application",
     "title": "Development kits",
     "content": "The following table provides links to the documentation to the SNMP Application on SAM E70/V71 family on both bare-metal ( non-RTOS ) and FreeRTOS. | Development Kit | . | SAM E70/V71 Starter Kit MHC Configuration | . | SAM E70/V71 Starter Kit Hardware Configuration | . | SAM E70/V71 Starter Kit Run Application | . ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/readme.html#development-kits",
     "relUrl": "/apps/snmpv3_sdcard_fatfs/readme.html#development-kits"
   },"48": {
-    "doc": "TCP/IP SNMP SDMMC Application",
-    "title": "TCP/IP SNMP SDMMC Application",
+    "doc": "TCP/IP SNMP SDMMC FATFS Application",
+    "title": "TCP/IP SNMP SDMMC FATFS Application",
     "content": ". ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/readme.html",
     "relUrl": "/apps/snmpv3_sdcard_fatfs/readme.html"
@@ -420,20 +420,20 @@ var myVariable = `
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/iperf_demo/readme.html",
     "relUrl": "/apps/iperf_demo/readme.html"
   },"70": {
-    "doc": "TCP/IP TCP Client",
+    "doc": "TCP/IP TCP Client Using ATMAC",
     "title": "TCP/IP TCP Client",
     "content": "The TCP Client configuration demonstrates creating a network client using AT24MAC with the MPLAB Harmony TCP API to make a TCP/IP connection to a web server. The Atmel AT24MAC402 and AT24MAC602 provides 2048 bits of Serial Electrically-Erasable Programmable Read-Only Memory (EEPROM) organized as 256 words of eight bits each and is accessed via an I2C-compatible (2-wire) serial interface. ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_demo_at24mac/readme.html#tcpip-tcp-client",
     "relUrl": "/apps/tcpip_tcp_demo_at24mac/readme.html#tcpip-tcp-client"
   },"71": {
-    "doc": "TCP/IP TCP Client",
+    "doc": "TCP/IP TCP Client Using ATMAC",
     "title": "Development kits",
     "content": "The following table provides links to the documentation to the TCP/IP TCP Client application on SAM E70/V71 family on both bare metal and FreeRTOS. | Development Kit | . | SAM E70/V71 Starter Kit MHC Configuration | . | SAM E70/V71 Starter Kit Hardware Configuration | . | SAM E70/V71 Starter Kit Run Application | . ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_demo_at24mac/readme.html#development-kits",
     "relUrl": "/apps/tcpip_tcp_demo_at24mac/readme.html#development-kits"
   },"72": {
-    "doc": "TCP/IP TCP Client",
-    "title": "TCP/IP TCP Client",
+    "doc": "TCP/IP TCP Client Using ATMAC",
+    "title": "TCP/IP TCP Client Using ATMAC",
     "content": ". ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_demo_at24mac/readme.html",
     "relUrl": "/apps/tcpip_tcp_demo_at24mac/readme.html"
@@ -475,10 +475,10 @@ var myVariable = `
     "relUrl": "/apps/iperf_demo/docs/readme_hardware_configuration.html"
   },"79": {
     "doc": "Hardware Configuration",
-    "title": "SNMP SDMMC FATFS Hardware Configuration",
+    "title": "TCP/IP SNMP SDMMC FATFS Hardware Configuration",
     "content": "This is the section describes the hardware configuration for ATSAM E70/V71 Xplained Ultra Evaluation Kit and one can be used for the respective application demonstration. | This section describes the required default hardware configuration use SAM E70 Xplained Ultra Evaluation Kit . | Ensure ERASE jumper is Open. | Open the J805 Jumper . | Refer to the SAM E70/V71 Ethernet Starter Kit User Guide . | Insert the LAN8740 PHY daughter board on the ETHERNET PHY MODULE header. | Connect the micro USB cable from the computer to the DEBUG USB connector on the SAM E70 Xplained Ultra Evaluation Kit | Establish a connection between the router/switch with the SAM E70 Xplained Ultra Evaluation Kit through the RJ45 connector . | . | This section describes the required default hardware configuration use SAM V71 Xplained Ultra Evaluation Kit . | No hardware related configuration or jumper setting changes are necessary | Ensure ERASE jumper is Open | Refer to the SAM E70/V71 Ethernet Starter Kit User Guide . | Connect the micro USB cable from the computer to the DEBUG USB connector on the SAM V71 Xplained Ultra Evaluation Kit . | Establish a connection between the router/switch with the SAM V71 Xplained Ultra Evaluation Kit through the RJ45 connector . | . | . ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/docs/readme_hardware_configuration.html#snmp-sdmmc-fatfs-hardware-configuration",
-    "relUrl": "/apps/snmpv3_sdcard_fatfs/docs/readme_hardware_configuration.html#snmp-sdmmc-fatfs-hardware-configuration"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/docs/readme_hardware_configuration.html#tcpip-snmp-sdmmc-fatfs-hardware-configuration",
+    "relUrl": "/apps/snmpv3_sdcard_fatfs/docs/readme_hardware_configuration.html#tcpip-snmp-sdmmc-fatfs-hardware-configuration"
   },"80": {
     "doc": "Hardware Configuration",
     "title": "Hardware Configuration",
@@ -943,10 +943,10 @@ var myVariable = `
     "relUrl": "/apps/web_server_nvm_mpfs/docs/readme_mhc_configuration.html"
   },"157": {
     "doc": "MHC Configuration",
-    "title": "SNMP SDMMC FATFS MHC Configuration",
+    "title": "TCP/IP SNMP SDMMC FATFS MHC Configuration",
     "content": "The following Project Graph diagram shows the Harmony components included in the application demonstration. | MHC is launched by selecting Tools &gt; Embedded &gt; MPLAB® Harmony 3 Configurator from the MPLAB X IDE and after successful database migration , TCP/IP demo project is ready to be configured and regenerated. | TCP/IP Root Layer Project Graph . HSMCI ( High Speed Multimedia Card Interface ) peripheral supports Multimedia card communication. SD multimedia memory card ( SDMMC ) driver provides abstraction to communicate with SD/eMMC card through the HSMCI peripheral library interface. The TCP/IP application use FAT file system with SDMMC driver to read/write to an SD card. Wolfssl crypto module enabled with MD5,SHA authentication and AES encryption/decryption privacy protocol are enabled. Wolfssl library configured with open secured socket. FreeRTOS component is required for RTOS application. For bare-metal (non-RTOS) FreeRTOS component should not be selected. The FAT file system is selected for this application to read and write from the SDHC( sdcard ) module. This is the below snapshot for the FAT FS configuration. | TCP/IP required application . TCP/IP demo use these application module components for this demo. Announce module to discover the Microchip devices within a local network. DHCP Client module to discover the IPv4 address from the nearest DHCP Server. HTTPNET module is selected to run the web_server for the port number 443. SNMP and SNMPv3 are an application layer protocols that facilitates the exchange of management information among network devices. Maximum SNMP Message Size can be increased and the value should be multiple of 32 bytes for larger GET-Bulk response. | TCPIP driver layer . Internal ethernet driver(gmac) is enabled with the external LAN8740 PHY driver library for SAME70 demonstartion. For SAM V71 demonstration , LAN8061 PHY driver ia selcted along with GMAC Internal ethernet driver. The MIIM Driver supports asynchronous read/write and scan operations for accessing the external PHY registers and notification when MIIM operations have completed. | . ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/docs/readme_mhc_configuration.html#snmp-sdmmc-fatfs-mhc-configuration",
-    "relUrl": "/apps/snmpv3_sdcard_fatfs/docs/readme_mhc_configuration.html#snmp-sdmmc-fatfs-mhc-configuration"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/docs/readme_mhc_configuration.html#tcpip-snmp-sdmmc-fatfs-mhc-configuration",
+    "relUrl": "/apps/snmpv3_sdcard_fatfs/docs/readme_mhc_configuration.html#tcpip-snmp-sdmmc-fatfs-mhc-configuration"
   },"158": {
     "doc": "MHC Configuration",
     "title": "MHC Configuration",
@@ -1015,10 +1015,10 @@ var myVariable = `
     "relUrl": "/apps/berkeley_tcp_client/docs/readme_mhc_configuration.html"
   },"169": {
     "doc": "Running Application",
-    "title": "TCP/IP Web NET Server NVM MPFS Application",
+    "title": "TCP/IP Web NET Server NVM MPFS Running Application",
     "content": "The HTTP net server module uses Microchip Proprietary File System (MPFS) to read web pages from the Non-Volatile Memory (NVM). The Non-Volatile Memory (NVM) is one of the memory media is used to store the web server pages. ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/docs/readme_run_application.html#tcpip-web-net-server-nvm-mpfs-application",
-    "relUrl": "/apps/web_net_server_nvm_mpfs/docs/readme_run_application.html#tcpip-web-net-server-nvm-mpfs-application"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/docs/readme_run_application.html#tcpip-web-net-server-nvm-mpfs-running-application",
+    "relUrl": "/apps/web_net_server_nvm_mpfs/docs/readme_run_application.html#tcpip-web-net-server-nvm-mpfs-running-application"
   },"170": {
     "doc": "Running Application",
     "title": "MPLAB X IDE Project",
@@ -1111,10 +1111,10 @@ var myVariable = `
     "relUrl": "/apps/berkeley_udp_server/docs/readme_run_application.html"
   },"185": {
     "doc": "Running Application",
-    "title": "TCP/IP WEB-NET &amp; FTP SERVER with MPFS &amp; FATF FS",
+    "title": "TCP/IP WEB-NET &amp; FTP SERVER Running Application",
     "content": "This application uses more than one FS for the TCP/IP application demonstration. Here HTTP Net server uses Microchip Proprietary File System (MPFS) as a read only FS. Here MPFS FS reads web pages from Non-Volatile Memory (NVM) media which is used to store the web server pages. The FAT FS File System read and writes to SDCard memory media which is used for storing any type of files. FTP server will read from and write to this SDcard media using FAT FS. ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/web_ftp_server_mpfs_fatfs/docs/readme_run_application.html#tcpip-web-net--ftp-server-with-mpfs--fatf-fs",
-    "relUrl": "/apps/web_ftp_server_mpfs_fatfs/docs/readme_run_application.html#tcpip-web-net--ftp-server-with-mpfs--fatf-fs"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/web_ftp_server_mpfs_fatfs/docs/readme_run_application.html#tcpip-web-net--ftp-server-running-application",
+    "relUrl": "/apps/web_ftp_server_mpfs_fatfs/docs/readme_run_application.html#tcpip-web-net--ftp-server-running-application"
   },"186": {
     "doc": "Running Application",
     "title": "MPLAB X IDE Project",
@@ -1212,26 +1212,26 @@ var myVariable = `
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/berkeley_udp_relay/docs/readme_run_application.html",
     "relUrl": "/apps/berkeley_udp_relay/docs/readme_run_application.html"
   },"202": {
-    "doc": "Application with bare-metal (non-RTOS)",
+    "doc": "Running Application",
     "title": "TCP/IP UDP Server Running Application",
     "content": " ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_udp_server/docs/readme_run_application.html#tcpip-udp-server-running-application",
     "relUrl": "/apps/tcpip_udp_server/docs/readme_run_application.html#tcpip-udp-server-running-application"
   },"203": {
-    "doc": "Application with bare-metal (non-RTOS)",
+    "doc": "Running Application",
     "title": "MPLAB X IDE Project",
     "content": "This table list the name and location of the MPLAB X IDE project folder for the demonstration. | Project Name | Target Device | Target Development Board | Description | . | sam_e70_xult.X | ATSAME70Q21B | SAME70 Xplained Ultra + LAN8740 PHY Daughter board | Demonstrates the UDP Server on development board with ATSAME70Q21B device and LAN8740 PHY daughter board. This implementation is based on Bare Metal ( non-RTOS). | . | sam_e70_xult_freertos.X | ATSAME70Q21B | SAME70 Xplained Ultra + LAN8740 PHY Daughter board | Demonstrates the UDP Server on development board with ATSAME70Q21B device and LAN8740 PHY daughter board. This implementation is based on Freertos. | . | sam_v71_xult.X | ATSAMV71Q21B | SAMV71 Xplained Ultra | Demonstrates the UDP Server on development board with ATSAMV71Q21B device and KSZ8061 PHY daughter board. This implementation is based on Bare Metal (non-RTOS). | . | sam_v71_xult_freertos.X | ATSAMV71Q21B | SAME70 Xplained Ultra | Demonstrates the UDP Server on development board with ATSAMV71Q21B device and KSZ8061 PHY daughter board. This implementation is based on Freertos. | . ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_udp_server/docs/readme_run_application.html#mplab-x-ide-project",
     "relUrl": "/apps/tcpip_udp_server/docs/readme_run_application.html#mplab-x-ide-project"
   },"204": {
-    "doc": "Application with bare-metal (non-RTOS)",
+    "doc": "Running Application",
     "title": "Running The Demonstration",
     "content": ". | Configure the Development Board as given Configure Hardware. | Make the demonstration setup as shown Network Setup. | Build and download the demonstration project on the target board. | If the board has a UART connection: . | A virtual COM port will be detected on the computer, when the USB cable is connected to USB-UART connector. | Open a standard terminal application on the computer (like Hyper-terminal or Tera Term) and configure the virtual COM port. | Set the serial baud rate to 115200 baud in the terminal application. | See that the initialization prints on the serial port terminal. | When the DHCP client is enabled in the demonstration, wait for the DHCP server to assign an IP address for the development board. This will be printed on the serial port terminal. | Alternatively: Use the Announce service or ping to get the IP address of the board. | Run tcpip_discoverer.jar to discover the IPv4 and IPv6 address for the board. | . | . | Execution: . | As soon as a valid IP address is assigned through the DHCP to the demonstration, it is ready to accept a UDP/IP connection on port 9760. | Send a UDP packet to the IP address of the hardware board and port 9760 from any UDP Client application running on the computer (SocketTest, Packet Sender etc). | The UDP Server demonstration running on the evaluation kit will echo back everything it receives along the connection. | . | . ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_udp_server/docs/readme_run_application.html#running-the-demonstration",
     "relUrl": "/apps/tcpip_udp_server/docs/readme_run_application.html#running-the-demonstration"
   },"205": {
-    "doc": "Application with bare-metal (non-RTOS)",
-    "title": "Application with bare-metal (non-RTOS)",
+    "doc": "Running Application",
+    "title": "Running Application",
     "content": ". ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_udp_server/docs/readme_run_application.html",
     "relUrl": "/apps/tcpip_udp_server/docs/readme_run_application.html"
@@ -1261,10 +1261,10 @@ var myVariable = `
     "relUrl": "/apps/web_server_sdcard_fatfs/docs/readme_run_application.html"
   },"210": {
     "doc": "Running Application",
-    "title": "TCP/IP TCP and UDP Client Server Application",
+    "title": "TCP/IP TCP and UDP Client Server Running Application",
     "content": "The Client Server configuration use combination of both TCP and UDP sockets for both client and server communication. ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_client_server/docs/readme_run_application.html#tcpip-tcp-and-udp-client-server-application",
-    "relUrl": "/apps/tcpip_client_server/docs/readme_run_application.html#tcpip-tcp-and-udp-client-server-application"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_client_server/docs/readme_run_application.html#tcpip-tcp-and-udp-client-server-running-application",
+    "relUrl": "/apps/tcpip_client_server/docs/readme_run_application.html#tcpip-tcp-and-udp-client-server-running-application"
   },"211": {
     "doc": "Running Application",
     "title": "MPLAB X IDE Project",
@@ -1363,10 +1363,10 @@ var myVariable = `
     "relUrl": "/apps/wolfmqtt_demo/docs/readme_run_application.html"
   },"227": {
     "doc": "Running Application",
-    "title": "TCP/IP TCP Client Application",
+    "title": "TCP/IP TCP Client Running Application",
     "content": " ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_client/docs/readme_run_application.html#tcpip-tcp-client-application",
-    "relUrl": "/apps/tcpip_tcp_client/docs/readme_run_application.html#tcpip-tcp-client-application"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_client/docs/readme_run_application.html#tcpip-tcp-client-running-application",
+    "relUrl": "/apps/tcpip_tcp_client/docs/readme_run_application.html#tcpip-tcp-client-running-application"
   },"228": {
     "doc": "Running Application",
     "title": "MPLAB X IDE Project",
@@ -1465,10 +1465,10 @@ var myVariable = `
     "relUrl": "/apps/wolfssl_tcp_client/docs/readme_run_application.html"
   },"244": {
     "doc": "Running Application",
-    "title": "TCP/IP TCP Client Server Application",
+    "title": "TCP/IP TCP Client Server Running Application",
     "content": " ",
-    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_client_server/docs/readme_run_application.html#tcpip-tcp-client-server-application",
-    "relUrl": "/apps/tcpip_tcp_client_server/docs/readme_run_application.html#tcpip-tcp-client-server-application"
+    "url": "http://localhost:4000/net_apps_sam_e70_v71/apps/tcpip_tcp_client_server/docs/readme_run_application.html#tcpip-tcp-client-server-running-application",
+    "relUrl": "/apps/tcpip_tcp_client_server/docs/readme_run_application.html#tcpip-tcp-client-server-running-application"
   },"245": {
     "doc": "Running Application",
     "title": "MPLAB X IDE Project",
@@ -1616,7 +1616,7 @@ var myVariable = `
   },"269": {
     "doc": "Harmony 3 TCP/IP Application for SAM E70/V71 Family",
     "title": "Harmony 3 TCP/IP Application for SAM E70/V71 Family",
-    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 TCP/IP Application for SAM E70/V71 Family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 Network Package (Net). The Net repo provides a free fast to market TCP/IP stack for Microchip 32-bit SAM and PIC microprocessor devices. The repo contains multiple applications that demonstrate communication over TCP/IP using well known protocols like TCP, UDP, HTTP, SMTP, etc. Refer to the following links for release notes, training materials, and interface reference information. - [Release Notes](release_notes.md) - [MPLAB® Harmony License](/net_apps_sam_e70_v71/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Demonstration of TCP/IP SAM e70/v71 Applications | docs | Documents TCP/IP Application in html format for offline viewing. Use [github pages](https://microchip-mplab-harmony.github.io/net_apps_pic32mz_da/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- |berkeley_tcp_client | [TCP/IP Berkeley TCP Client Application](/net_apps_sam_e70_v71/apps/berkeley_tcp_client/readme.html) |berkeley_tcp_server | [TCP/IP Berkeley TCP Server Application](/net_apps_sam_e70_v71/apps/berkeley_tcp_server/readme.html) |berkeley_udp_client | [TCP/IP Berkeley UDP Client Application](/net_apps_sam_e70_v71/apps/berkeley_udp_client/readme.html) |berkeley_udp_server | [TCP/IP Berkeley UDP Server Application](/net_apps_sam_e70_v71/apps/berkeley_udp_server/readme.html) |berkeley_udp_relay | [TCP/IP Berkeley UDP Relay Application](/net_apps_sam_e70_v71/apps/berkeley_udp_relay/readme.html) |iperf_demo | [TCP/IP IPERF Demo Applications](/net_apps_sam_e70_v71/apps/iperf_demo/readme.html) |tcpip_tcp_client | [TCP/IP TCP Client Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_client/readme.html) |tcpip_tcp_client_server | [TCP/IP TCP Client Server Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_client_server/readme.html) |tcpip_client_server | [TCP/IP Client Server Application](/net_apps_sam_e70_v71/apps/tcpip_client_server/readme.html) |tcpip_tcp_demo_at24mac| [TCP/IP TCP Client with AT24MAC Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_demo_at24mac/readme.html) |tcpip_tcp_server | [TCP/IP TCP Server Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_server/readme.html) |tcpip_udp_client | [TCP/IP UDP Client Application](/net_apps_sam_e70_v71/apps/tcpip_udp_client/readme.html) |tcpip_udp_server | [TCP/IP UDP Server Application](/net_apps_sam_e70_v71/apps/tcpip_udp_server/readme.html) |tcpip_udp_client_server | [TCP/IP UDP Client Server Application](/net_apps_sam_e70_v71/apps/tcpip_udp_client_server/readme.html) |snmpv3_nvm_mpfs | [TCP/IP SNMP & Secure Web Server NVM MPFS Application](/net_apps_sam_e70_v71/apps/snmpv3_nvm_mpfs/readme.html) |snmpv3_sdcard_fatfs | [TCP/IP SNMP & Secure Web Server SDCARD with FATFS Application](/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/readme.html) |web_ftp_server_mpfs_fatfs | [TCP/IP Secure WEB & FTP Server NVM MPFS & SDCARD FATFS Application](/net_apps_sam_e70_v71/apps/web_ftp_server_mpfs_fatfs/readme.html)|web_net_server_nvm_mpfs | [TCP/IP Secure WEB Server NVM MPFS Application](/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/readme.html)|web_net_server_sdcard_fatfs | [TCP/IP Secure WEB Server SDCARD FATFS Application](/net_apps_sam_e70_v71/apps/web_net_server_sdcard_fatfs/readme.html)|web_server_nvm_mpfs | [TCP/IP WEB Server NVM MPFS Application](/net_apps_sam_e70_v71/apps/web_server_nvm_mpfs/readme.html)|web_server_sdcard_fatfs | [TCP/IP WEB Server SDCARD FATFS Application](/net_apps_sam_e70_v71/apps/web_server_sdcard_fatfs/readme.html)|wolfssl_tcp_client | [TCP/IP Secured TCP Client Application](/net_apps_sam_e70_v71/apps/wolfssl_tcp_client/readme.html)|wolfssl_tcp_server | [TCP/IP Secured TCP Server Application](/net_apps_sam_e70_v71/apps/wolfssl_tcp_server/readme.html)|wolfmqtt_demo | [TCP/IP Secured MQTT Server Application](/net_apps_sam_e70_v71/apps/wolfmqtt_demo/readme.html)| ## TCP/IP New Application This following link guides through the steps to create a new TCP/IP application using MPLAB® Harmony 3 modules. [Create TCP/IP New Application Example](https://github.com/Microchip-MPLAB-Harmony/net/wiki/Create-your-first-tcpip-application) ## TCP/IP Migration from H2 to H3 Application This following link guides through the steps to migrate a TCP/IP application from H2 to H3. [H2 to H3 Migration](https://github.com/Microchip-MPLAB-Harmony/net/wiki/H2-to-H3-Migration) [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/net_apps_pic32mz_da.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/net_apps_pic32mz_da.svg?style=social)]() ",
+    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 TCP/IP Application for SAM E70/V71 Family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 Network Package (Net). The Net repo provides a free fast to market TCP/IP stack for Microchip 32-bit SAM and PIC microprocessor devices. The repo contains multiple applications that demonstrate communication over TCP/IP using well known protocols like TCP, UDP, HTTP, SMTP, etc. Refer to the following links for release notes, training materials, and interface reference information. - [Release Notes](release_notes.md) - [MPLAB® Harmony License](/net_apps_sam_e70_v71/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Demonstration of TCP/IP SAM e70/v71 Applications | docs | Documents TCP/IP Application in html format for offline viewing. Use [github pages](https://microchip-mplab-harmony.github.io/net_apps_pic32mz_da/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- |berkeley_tcp_client | [TCP/IP Berkeley TCP Client Application](/net_apps_sam_e70_v71/apps/berkeley_tcp_client/readme.html) |berkeley_tcp_server | [TCP/IP Berkeley TCP Server Application](/net_apps_sam_e70_v71/apps/berkeley_tcp_server/readme.html) |berkeley_udp_client | [TCP/IP Berkeley UDP Client Application](/net_apps_sam_e70_v71/apps/berkeley_udp_client/readme.html) |berkeley_udp_server | [TCP/IP Berkeley UDP Server Application](/net_apps_sam_e70_v71/apps/berkeley_udp_server/readme.html) |berkeley_udp_relay | [TCP/IP Berkeley UDP Relay Application](/net_apps_sam_e70_v71/apps/berkeley_udp_relay/readme.html) |iperf_demo | [TCP/IP IPERF Demo Applications](/net_apps_sam_e70_v71/apps/iperf_demo/readme.html) |tcpip_tcp_client | [TCP/IP TCP Client Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_client/readme.html) |tcpip_tcp_client_server | [TCP/IP TCP Client Server Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_client_server/readme.html) |tcpip_client_server | [TCP/IP Client Server Application](/net_apps_sam_e70_v71/apps/tcpip_client_server/readme.html) |tcpip_tcp_demo_at24mac| [TCP/IP TCP Client with AT24MAC Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_demo_at24mac/readme.html) |tcpip_tcp_server | [TCP/IP TCP Server Application](/net_apps_sam_e70_v71/apps/tcpip_tcp_server/readme.html) |tcpip_udp_client | [TCP/IP UDP Client Application](/net_apps_sam_e70_v71/apps/tcpip_udp_client/readme.html) |tcpip_udp_server | [TCP/IP UDP Server Application](/net_apps_sam_e70_v71/apps/tcpip_udp_server/readme.html) |tcpip_udp_client_server | [TCP/IP UDP Client Server Application](/net_apps_sam_e70_v71/apps/tcpip_udp_client_server/readme.html) |snmpv3_nvm_mpfs | [TCP/IP SNMP & Secure Web Server NVM MPFS Application](/net_apps_sam_e70_v71/apps/snmpv3_nvm_mpfs/readme.html) |snmpv3_sdcard_fatfs | [TCP/IP SNMP & Secure Web Server SDCARD with FATFS Application](/net_apps_sam_e70_v71/apps/snmpv3_sdcard_fatfs/readme.html) |web_ftp_server_mpfs_fatfs | [TCP/IP Secure WEB & FTP Server NVM MPFS & SDCARD FATFS Application](/net_apps_sam_e70_v71/apps/web_ftp_server_mpfs_fatfs/readme.html)|web_net_server_nvm_mpfs | [TCP/IP Secure WEB Server NVM MPFS Application](/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/readme.html)|web_net_server_sdcard_fatfs | [TCP/IP Secure WEB Server SDCARD FATFS Application](/net_apps_sam_e70_v71/apps/web_net_server_sdcard_fatfs/readme.html)|web_server_nvm_mpfs | [TCP/IP WEB Server NVM MPFS Application](/net_apps_sam_e70_v71/apps/web_server_nvm_mpfs/readme.html)|web_server_sdcard_fatfs | [TCP/IP WEB Server SDCARD FATFS Application](/net_apps_sam_e70_v71/apps/web_server_sdcard_fatfs/readme.html)|wolfssl_tcp_client | [TCP/IP Secured TCP Client Application](/net_apps_sam_e70_v71/apps/wolfssl_tcp_client/readme.html)|wolfssl_tcp_server | [TCP/IP Secured TCP Server Application](/net_apps_sam_e70_v71/apps/wolfssl_tcp_server/readme.html)|wolfmqtt_demo | [TCP/IP Secured MQTT Server Application](/net_apps_sam_e70_v71/apps/wolfmqtt_demo/readme.html)| ## TCP/IP New Application This following link guides through the steps to create a new TCP/IP application using MPLAB® Harmony 3 modules. [Create TCP/IP New Application Example](https://github.com/Microchip-MPLAB-Harmony/net/wiki/Create-your-first-tcpip-application) ## TCP/IP Migration from H2 to H3 Application This following link guides through the steps to migrate a TCP/IP application from H2 to H3. [H2 to H3 Migration](https://github.com/Microchip-MPLAB-Harmony/net/wiki/H2-to-H3-Migration) [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/net_apps_pic32mz_da.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/net_apps_pic32mz_da.svg?style=social)]() ",
     "url": "http://localhost:4000/net_apps_sam_e70_v71/",
     "relUrl": "/"
   }

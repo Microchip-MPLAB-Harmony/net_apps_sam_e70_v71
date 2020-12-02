@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 TCP/IP Application for SAM E70/V71 Family
-title: TCP/IP SNMP SDMMC Application
+title: TCP/IP SNMP SDMMC FATFS Application
 has_children: true
 has_toc: false
 ---

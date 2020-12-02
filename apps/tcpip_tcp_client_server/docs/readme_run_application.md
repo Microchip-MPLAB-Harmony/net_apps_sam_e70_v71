@@ -8,7 +8,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# TCP/IP TCP Client Server Application
+# TCP/IP TCP Client Server Running Application
 
 ## MPLAB X IDE Project
 

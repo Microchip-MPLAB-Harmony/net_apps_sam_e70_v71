@@ -1,5 +1,5 @@
 ---
-grand_parent:  Harmony 3 TCP/IP Application for PIC32MZ EF Family
+grand_parent:  Harmony 3 TCP/IP Application for SAM E70/V71 Family
 parent: TCP/IP TCP Client
 title: Running Application
 nav_order: 3
@@ -8,7 +8,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# TCP/IP TCP Client Application
+# TCP/IP TCP Client Running Application
 
 ## MPLAB X IDE Project
 This table list the name and location of the MPLAB X IDE project folder for the demonstration.

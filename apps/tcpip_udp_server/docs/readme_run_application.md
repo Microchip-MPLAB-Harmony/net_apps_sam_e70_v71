@@ -1,7 +1,7 @@
 ---
 grand_parent:  Harmony 3 TCP/IP Application for SAM E70/V71 Family
 parent: TCP/IP UDP Server
-title: Application with bare-metal (non-RTOS)
+title: Running Application
 nav_order: 3
 has_children: false
 has_toc: false

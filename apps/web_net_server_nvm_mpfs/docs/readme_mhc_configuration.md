@@ -1,5 +1,5 @@
 ---
-grand_parent:  Harmony 3 TCP/IP Application for SAm E70/V71 Family
+grand_parent:  Harmony 3 TCP/IP Application for SAM E70/V71 Family
 parent: TCP/IP Web NET Server NVM MPFS Application
 title: MHC Configuration
 nav_order: 1

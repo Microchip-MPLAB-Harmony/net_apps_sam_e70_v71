@@ -8,7 +8,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# TCP/IP TCP and UDP Client Server Application
+# TCP/IP TCP and UDP Client Server Running Application
 
 The Client Server configuration use combination of both TCP and UDP sockets for both client and server communication.
 

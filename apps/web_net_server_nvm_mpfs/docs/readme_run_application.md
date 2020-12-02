@@ -8,7 +8,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# TCP/IP Web NET Server NVM MPFS Application
+# TCP/IP Web NET Server NVM MPFS Running Application
 
 The HTTP net server module uses Microchip Proprietary File System (MPFS) to read web pages from the Non-Volatile Memory (NVM). The Non-Volatile Memory (NVM) is one of the memory media is used to store the web server pages.
 

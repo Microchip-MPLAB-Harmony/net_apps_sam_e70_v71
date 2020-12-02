@@ -8,7 +8,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# TCP/IP WEB-NET & FTP SERVER with MPFS & FATF FS
+# TCP/IP WEB-NET & FTP SERVER Running Application
 
 This application uses more than one FS for the TCP/IP application demonstration.
 Here HTTP Net server uses Microchip Proprietary File System (MPFS) as a read only FS. Here MPFS FS reads web pages from Non-Volatile Memory (NVM) media which is used to store the web server pages.
