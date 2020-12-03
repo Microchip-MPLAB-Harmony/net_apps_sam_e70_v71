@@ -29,7 +29,7 @@ This table lists the name and location of the IAR IDE project folder for the dem
 |sam_e70_xult_iar.IAR | ATSAME70Q21B | SAME70 Xplained Ultra + LAN8740 PHY Daughter board | Demonstrates the Berkeley TCP Client on development board with ATSAME70Q21B device and LAN8740 PHY daughter board. This implementation is based on Bare Metal ( non-RTOS).  |
 |sam_v71_xult_iar.IAR | ATSAMV71Q21B | SAMV71 Xplained Ultra | Demonstrates the Berkeley TCP Client on development board with ATSAMV71Q21B device and KSZ8061 PHY daughter board. This implementation is based on Bare Metal (non-RTOS).  |
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 

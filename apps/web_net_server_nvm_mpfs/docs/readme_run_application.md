@@ -23,7 +23,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 |sam_v71_xult_freertos.X | ATSAMV71Q21B | SAMV71 Xplained Ultra | Demonstrates the web net server NVM MPFS on development board with ATSAME70Q21B device and KSZ8061 PHY daughter board. This implementation is based on Freertos.  |
 
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 

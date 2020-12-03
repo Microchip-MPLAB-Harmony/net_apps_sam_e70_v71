@@ -19,7 +19,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 |sam_v71_xult.X | ATSAMV71Q21B | SAMV71 Xplained Ultra | Demonstrates the TCP Client using ATMAC on development board with ATSAMV71Q21B device and KSZ8061 PHY daughter board. This implementation is based on Bare Metal (non-RTOS).  |
 
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 

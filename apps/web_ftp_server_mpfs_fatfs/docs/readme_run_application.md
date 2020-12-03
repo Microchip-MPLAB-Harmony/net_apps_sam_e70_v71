@@ -24,7 +24,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 |sam_e70_xult_freertos.X | ATSAME70Q21B | SAME70 Xplained Ultra + LAN8740 PHY Daughter board |Demonstrates the TCP/IP Web Server with more than one FS on a development board with ATSAME70Q21B device and LAN8740 PHY daughter board. This implementation is based on FreeRTOS.    |
 
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Ensure a microSD/SD card is formatted and loaded with the web pages provided within the < install-dir >/net/apps/web_ftp_server_mpfs_fatfs/firmware/src/web_pages directory.
 

@@ -47,18 +47,18 @@ There are several different commands available in the demonstration from the con
 
 ### Relay Client Configuration and Commands:
 
-- relayclienthost <host name> - Sets the host to which packets are to be sent
+- relayclienthost < host name > - Sets the host to which packets are to be sent
 
-- relayclientiter <number> - The number of packets to generate
+- relayclientiter < number > - The number of packets to generate
 
 - relayclientstart - Starts the relay client. This command must be used after the general application start. After a start is called, and the first packet is received by either the relay or the relay server, periodic updates will be sent to the console with information about the number of packets and bytes received.
 
 
-## Running the demonstration
+## Running The Demonstration
 
-1. Configure the Development Board as given **[Configure Hardware](readme_hardware_configuration.md)**.
+1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 
-2. Make the demonstration setup as shown [NOTE](../../../readme.md).
+2. Make the demonstration setup as shown [Network Setup](../../readme.md).
 
 3. Build and download the demonstration project on the target board.
 
@@ -74,14 +74,11 @@ There are several different commands available in the demonstration from the con
 
     5. When the DHCP client is enabled in the demonstration, wait for the DHCP server to assign an IP address for the development board. This will be printed on the serial port terminal.
 
-5. Alternatively:
+		* Alternatively: Use the Announce service or ping to get the IP address of the board.
 
-    1. When the DHCP client is enabled in the demonstration, wait for the DHCP server to assign an IP address for the development board.
+        * Run **tcpip_discoverer.jar** to discover the IPv4 and IPv6 address for the board.
 
-    2. Use the Announce service or ping to get the IP address of the board.
-
-
-6. Test and Output with IPv4:
+5. Execution:
 
 * To test the UDP packet relay with IPv4, send the following commands,
 

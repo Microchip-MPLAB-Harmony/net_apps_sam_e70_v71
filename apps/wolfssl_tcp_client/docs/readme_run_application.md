@@ -20,7 +20,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 |sam_e70_xult_sw.X | ATSAME70Q21B | SAME70 Xplained Ultra + LAN8740 PHY Daughter board | Demonstrates the wolfSSL TCP Client on a development board with ATSAME70Q21B device with  and LAN8740 PHY daughter board. This is a bare-metal (non-RTOS) implementation. WolfSSL Software crypto enabled |
 
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 

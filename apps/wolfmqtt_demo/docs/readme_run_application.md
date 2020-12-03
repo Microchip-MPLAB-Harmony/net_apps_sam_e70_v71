@@ -20,7 +20,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 
 
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 

@@ -22,7 +22,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 |sam_v71_xult_freertos.X | ATSAMV71Q21B | SAMV71 Xplained Ultra | Demonstrates the web server SDCARD FAT FS on development board with ATSAMV71Q21B device and KSZ8061 PHY daughter board. This implementation is based on Freertos.  |
 
 
-## Running the demonstration
+## Running The Demonstration
 
 1. Ensure a microSD/SD card is formatted and loaded with the web pages provided within the < install-dir >/net/apps/web_net_server_sdcard_fatfs/firmware/src/web_pages directory.
 

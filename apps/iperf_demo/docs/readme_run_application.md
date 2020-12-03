@@ -21,18 +21,18 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 |sam_v71_xult_freertos.X | ATSAMV71Q21B | SAME70 Xplained Ultra | Demonstrates the IPERF application on development board with ATSAMV71Q21B device and KSZ8061 PHY daughter board. This implementation is based on Freertos.  |
 
 
-## Running the demonstration
+## Running The Demonstration
 
-1. Configure the Development Board as given **[Configure Hardware](readme_hardware_configuration.md)**.
+1. Configure the Development Board as given  **[Configure Hardware](readme_hardware_configuration.md)**.
 
-2. Make the demonstration setup as shown [NOTE](../../../readme.md).
+2. Make the demonstration setup as shown [Network Setup](../../readme.md).
 
 3. Build and download the demonstration project on the target board.
 
 4. If the board has a UART connection:
 
     1. A virtual COM port will be detected on the computer, when the USB cable is connected to USB-UART connector.
-    
+
     2. Open a standard terminal application on the computer (like Hyper-terminal or Tera Term) and configure the virtual COM port.
 
     3. Set the serial baud rate to 115200 baud in the terminal application.
@@ -41,7 +41,11 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 
     5. When the DHCP client is enabled in the demonstration, wait for the DHCP server to assign an IP address for the development board. This will be printed on the serial port terminal.
 
-5. Alternatively:
+		* Alternatively: Use the Announce service or ping to get the IP address of the board.
+
+        * Run **tcpip_discoverer.jar** to discover the IPv4 and IPv6 address for the board.
+
+5. Execution:
 
     1. When the DHCP client is enabled in the demonstration, wait for the DHCP server to assign an IP address for the development board.
 
