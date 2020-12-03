@@ -16,7 +16,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](images/database_migration_successful.png)
 
-* **TCP/IP root layer project graph**
+* **TCP/IP Root Layer Project Graph**
 
   The root layer project shows that UART2 peripheral is selected to do read and write operation for TCP/IP commands.
 

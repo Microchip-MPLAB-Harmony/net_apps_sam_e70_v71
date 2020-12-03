@@ -54,8 +54,16 @@ This table list the name and location of the MPLAB X IDE project folder for the 
     ipmode < mode > - The < mode > argument selects the IP version. 0 - Any IP version, 4 - IPv4 only, 6 - IPv6 only
     stats - Output the statistics of the previous openurl run. Statistics such as how long each phase of the connection took, and how many bytes were transferred.
 
-    1. Input the following command from the serial port: openurl < url > - The < url > argument must be a fully formed URL; for instance, https://www.microchip.com/.
+    1. After the successful broad bring up, the console output becomes
 
-    2. After the command is input, the demonstration will make a DNS query. Then it will open a connection to the requested URL and perform a simple HTTP GET command.
+        ![tcpip_tcp_wolfssl_client_project](images/dhcp_5.png)
 
-    3. The response received from the server will be printed on the terminal application through the serial port.
+    2. Input the following command from the serial port: openurl < url > - The < url > argument must be a fully formed URL; for instance, https://www.microchip.com/.
+
+        For this above URL , the DNS module will make a DNS query. Then it will open a connection to the requested URL and perform a simple HTTP GET command.
+        The response received from the server will be printed on the terminal application through the serial port.
+
+        The expected output -
+
+        ![tcpip_tcp_wolfssl_client_project](images/http_put_6.png)
+

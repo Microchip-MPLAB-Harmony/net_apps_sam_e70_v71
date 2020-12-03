@@ -16,7 +16,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](images/database_migration_successful.png)
 
-* **TCP/IP root layer project graph**
+* **TCP/IP Root Layer Project Graph**
 
     HSMCI ( High Speed Multimedia Card Interface ) peripheral supports Multimedia card communication. SD multimedia memory card ( SDMMC ) driver provides abstraction to communicate with SD/eMMC card through the HSMCI peripheral library interface. The TCP/IP application use FAT file system with SDMMC driver to read/write to an SD card. 
 
@@ -36,7 +36,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     TCP sockets calculate the ISN using the wolfSSL crypto library. 
 
-* **TCP/IP required application**
+* **TCP/IP Required Application**
 
     TCP/IP demo use these application module components for this demo. 
     
@@ -49,7 +49,7 @@ The following Project Graph diagram shows the Harmony components included in the
     ![tcpip_same70_v71_project](images/tcpip_app_module_selected.png)
 
 
-* **TCPIP driver layer**
+* **TCPIP Driver Layer**
 
   **Internal ethernet driver(gmac)** is enabled with the external **LAN8740 PHY driver** library for SAME70 demonstartion. 
 

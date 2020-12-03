@@ -32,7 +32,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](images/fatfs_configuration.png)
 
-* **TCP/IP required application**
+* **TCP/IP Required Application**
     
 	TCP/IP demo use these application module components for this demo.
     
@@ -48,7 +48,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     **Maximum SNMP Message Size** can be increased and the value should be multiple of 32 bytes for larger GET-Bulk response.
 
-* **TCPIP driver layer**
+* **TCPIP Driver Layer**
 
     **Internal ethernet driver(gmac)** is enabled with the external **LAN8740 PHY driver** library for SAME70 demonstartion. 
 

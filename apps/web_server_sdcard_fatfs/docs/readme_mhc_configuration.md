@@ -16,7 +16,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](images/database_migration_successful.png)
 
-* **TCP/IP root layer project graph**
+* **TCP/IP Root Layer Project Graph**
 
     HSMCI ( High Speed Multimedia Card Interface ) peripheral supports Multimedia card communication. SD multimedia memory card ( SDMMC ) driver provides abstraction to communicate with SD/eMMC card through the HSMCI peripheral library interface. The TCP/IP application use FAT file system with SDMMC driver to read/write to an SD card. 
 

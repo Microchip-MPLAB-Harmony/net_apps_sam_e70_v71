@@ -16,7 +16,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](images/database_migration_successful.png)
 
-* **TCP/IP root layer project graph**
+* **TCP/IP Root Layer Project Graph**
 
   The root layer project shows that USART1 peripheral is selected to do read and write operation for TCP/IP commands. 
 
@@ -30,7 +30,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
   ![tcpip_same70_v71_project](images/tcpip_default_required_root_v71_e70.png)
 
-* **TCP/IP required application**
+* **TCP/IP Required Application**
 
   TCP/IP demo use these application module components for this demo. **Announce** module to discover the Microchip devices within a local network.
   
@@ -42,7 +42,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](images/tcpip_berkeley_tcp_demo_app.png)
 
-* **TCPIP driver layer** 
+* **TCPIP Driver Layer** 
 
   **Internal ethernet driver(gmac)** is enabled with the external **LAN8740 PHY driver** library for SAME70 demonstartion. 
 
