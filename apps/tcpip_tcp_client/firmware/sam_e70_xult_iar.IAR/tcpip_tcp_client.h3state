@@ -11,7 +11,10 @@
         "device": "ATSAME70Q21B"
     }, 
     "compiler": {
-        "macros": [], 
+        "macros": [
+            "HAVE_CONFIG_H", 
+            "WOLFSSL_IGNORE_FILE_WARN"
+        ], 
         "includes": [
             "..\\src\\config\\sam_e70_xult_iar\\library", 
             "..\\src\\config\\sam_e70_xult_iar\\library\\tcpip\\src", 
@@ -20,7 +23,9 @@
             "..\\src\\config\\sam_e70_xult_iar", 
             "..\\src\\packs\\ATSAME70Q21B_DFP", 
             "..\\src\\packs\\CMSIS\\CMSIS\\Core\\Include", 
-            "..\\src\\packs\\CMSIS"
+            "..\\src\\packs\\CMSIS", 
+            "..\\src\\third_party\\wolfssl", 
+            "..\\src\\third_party\\wolfssl\\wolfssl"
         ]
     }
 }

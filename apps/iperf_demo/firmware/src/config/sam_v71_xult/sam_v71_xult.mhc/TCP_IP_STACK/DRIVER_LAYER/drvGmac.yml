@@ -1,0 +1,29 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: drvGmac}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: DRV_GMAC_HEAP_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: '19728'}
+  - type: String
+    attributes: {id: DRV_INTMAC_PHY_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: KSZ8061}
+  - type: Integer
+    attributes: {id: TCPIP_GMAC_RX_BUFF_SIZE_QUE0}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1536'}
+- type: ElementPosition
+  attributes: {x: '280', y: '20', id: drvGmac}

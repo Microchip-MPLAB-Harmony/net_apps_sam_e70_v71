@@ -1,0 +1,13 @@
+configName: sam_v71_xult_iar
+folderName: ''
+format_version: v1.0
+frameworkPath: D:\11_Repo\01_H3\h3
+processor: ATSAMV71Q21B
+projectName: tcpip_tcp_server
+settings:
+  PackageFilter: bsp;core;crypto;csp;net;net;net;net;net;net;net;net;touch;usb;wireless;
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: OVERWRITE
+  DFPPath: .\dev_packs\Microchip\SAMV71_DFP\4.4.74\samv71b\atdf\ATSAMV71Q21B.atdf
