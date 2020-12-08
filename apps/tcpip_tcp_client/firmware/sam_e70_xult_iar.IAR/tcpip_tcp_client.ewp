@@ -3888,4 +3888,10 @@
             </file>
         </group>
     </group>
-    </project>
+    <file>
+        <name>$PROJ_DIR$\..\src\app_commands.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\..\src\app_commands.h</name>
+    </file>
+</project>
