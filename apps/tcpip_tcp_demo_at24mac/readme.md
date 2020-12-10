@@ -6,7 +6,7 @@ has_toc: false
 ---
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# TCP/IP TCP Client
+# TCP/IP TCP Client Using ATMAC
 
 The TCP Client configuration demonstrates creating a network client using AT24MAC with the MPLAB Harmony TCP API to make a TCP/IP connection to a web server.
 The Atmel AT24MAC402 and AT24MAC602 provides 2048 bits of Serial Electrically-Erasable Programmable Read-Only Memory (EEPROM) organized as 256 words of eight bits each and is accessed via an I2C-compatible (2-wire) serial interface.
