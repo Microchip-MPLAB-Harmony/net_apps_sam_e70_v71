@@ -44,6 +44,8 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 #include "wolfssl/wolfcrypt/logging.h"
 #include "wolfssl/wolfcrypt/random.h"
 
+extern  int CheckAvailableSize(WOLFSSL *ssl, int size);
+
 
 typedef struct 
 {
@@ -120,7 +122,7 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
         _net_pres_wolfsslUsers++;
     }
     net_pres_wolfSSLInfoStreamClient0.transObject = transObject;
-    net_pres_wolfSSLInfoStreamClient0.context = wolfSSL_CTX_new(wolfSSLv23_client_method());
+	net_pres_wolfSSLInfoStreamClient0.context = wolfSSL_CTX_new(wolfSSLv23_client_method());
     if (net_pres_wolfSSLInfoStreamClient0.context == 0)
     {
         return false;
@@ -129,8 +131,8 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
     wolfSSL_SetIOSend(net_pres_wolfSSLInfoStreamClient0.context, (CallbackIOSend)&NET_PRES_EncGlue_StreamClientSendCb0);
     if (wolfSSL_CTX_load_verify_buffer(net_pres_wolfSSLInfoStreamClient0.context, caCertsPtr, caCertsLen, SSL_FILETYPE_ASN1) != SSL_SUCCESS)
     {
-        // Couldn't load the certificates
-        //SYS_CONSOLE_MESSAGE("Something went wrong loading the certificates\r\n");
+        // Couldn't load the CA certificates
+        //SYS_CONSOLE_MESSAGE("Something went wrong loading the CA certificates\r\n");
         wolfSSL_CTX_free(net_pres_wolfSSLInfoStreamClient0.context);
         return false;
     }
@@ -139,7 +141,7 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
     net_pres_wolfSSLInfoStreamClient0.isInited = true;
     return true;
 }
-bool NET_PRES_EncProviderStreamClientDeinit0()
+bool NET_PRES_EncProviderStreamClientDeinit0(void)
 {
     wolfSSL_CTX_free(net_pres_wolfSSLInfoStreamClient0.context);
     net_pres_wolfSSLInfoStreamClient0.isInited = false;
@@ -165,7 +167,7 @@ bool NET_PRES_EncProviderStreamClientOpen0(uintptr_t transHandle, void * provide
         memcpy(providerData, &ssl, sizeof(WOLFSSL*));
         return true;
 }
-bool NET_PRES_EncProviderStreamClientIsInited0()
+bool NET_PRES_EncProviderStreamClientIsInited0(void)
 {
     return net_pres_wolfSSLInfoStreamClient0.isInited;
 }
@@ -212,7 +214,7 @@ int32_t NET_PRES_EncProviderWrite0(void * providerData, const uint8_t * buffer, 
 }
 uint16_t NET_PRES_EncProviderWriteReady0(void * providerData, uint16_t reqSize, uint16_t minSize)
 {
-    extern  int CheckAvailableSize(WOLFSSL *ssl, int size);
+    
     char buffer;
     WOLFSSL* ssl;
     memcpy(&ssl, providerData, sizeof(WOLFSSL*));
