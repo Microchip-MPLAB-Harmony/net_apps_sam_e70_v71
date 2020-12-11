@@ -1301,13 +1301,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F849420C740D2B32346B4B4D9F46C136
-- generatedChecksum: 6A09070BE2D0F22C6CB508CC16539F7A
+- generatedChecksum: 15C55177C47CFB103D5B624C27001578
   logicalPath: config\sam_e70_xult_freertos
   name: tasks.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 6A09070BE2D0F22C6CB508CC16539F7A
+  userChecksum: 15C55177C47CFB103D5B624C27001578
 - generatedChecksum: D1ABB4D71D616179AC47C0D67CFD8CD7
   logicalPath: config\sam_e70_xult_freertos\library\tcpip\src
   name: tcp.c
@@ -2001,13 +2001,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BBE2AB9763E7BB36934A49D9681301A3
-- generatedChecksum: 83848B75EA5D18836E85947D50D234D9
+- generatedChecksum: D7A953E0F672606AECCE61DE2250AF8F
   logicalPath: config\sam_e70_xult_freertos
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 83848B75EA5D18836E85947D50D234D9
+  userChecksum: D7A953E0F672606AECCE61DE2250AF8F
 - generatedChecksum: 8DA90CDFAED934C14DB1E81B104CEE2F
   logicalPath: packs\CMSIS\CMSIS\Core\Include
   name: core_cm7.h
