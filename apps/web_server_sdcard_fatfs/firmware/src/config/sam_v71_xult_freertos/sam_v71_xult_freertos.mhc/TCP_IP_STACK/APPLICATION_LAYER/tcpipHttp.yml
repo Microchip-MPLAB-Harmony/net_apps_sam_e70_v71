@@ -1,0 +1,43 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: tcpipHttp}
+children:
+- type: Symbols
+  children:
+  - type: Boolean
+    attributes: {id: TCPIP_HTTP_CUSTOM_TEMPLATE_SL}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tcpipHttp, value: 'false'}
+  - type: String
+    attributes: {id: TCPIP_HTTP_FREE_FUNC}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: vPortFree}
+  - type: Integer
+    attributes: {id: TCPIP_HTTP_HEAP_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tcpipHttp, value: '1840'}
+  - type: String
+    attributes: {id: TCPIP_HTTP_MALLOC_FUNC}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: pvPortMalloc}
+  - type: String
+    attributes: {id: TCPIP_HTTP_WEB_DIR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: /mnt/mchpSite1/web_pages}
+- type: ElementPosition
+  attributes: {x: '293', y: '184', id: tcpipHttp}
