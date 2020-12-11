@@ -1700,13 +1700,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BBE2AB9763E7BB36934A49D9681301A3
-- generatedChecksum: 006E565F0B5DF626A4915DA74EDF20FD
+- generatedChecksum: 1901C14FFB57AF7664B7B61852BC208F
   logicalPath: config\sam_e70_xplained_ultra_rtos
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 006E565F0B5DF626A4915DA74EDF20FD
+  userChecksum: 1901C14FFB57AF7664B7B61852BC208F
 - generatedChecksum: 8DA90CDFAED934C14DB1E81B104CEE2F
   logicalPath: packs\CMSIS\CMSIS\Core\Include
   name: core_cm7.h
