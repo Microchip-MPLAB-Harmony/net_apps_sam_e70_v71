@@ -1,0 +1,76 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_sam_e70_v71_snmpv3_sdcard_fatfs_sam_e70_xult_freertos",
+		"version": "3.7.0",
+		"displayName": "TCP/IP SNMP SDMMC Application Example for SAM E70/S70/V70/V71 Family",
+		"projectName": "snmpv3_sdcard_fatfs_freertos",
+		"shortDescription": "The Microchip SNMP Server is a multi-lingual implementation, which supports SNMPv1, V2c, and V3 server features simultaneously. The SNMP Server is implemented to address the requirements of embedded applications and works with both IPv4 and IPv6 addresses.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "SAME70_DFP",
+			"semverRange": "^4.2.59"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.6.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAME70Q21B",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM E70 Xplained Ultra Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "TCP/IP", "SNMPV3_SDCARD_FATFS"
+			],
+			[
+				"Middleware", "TCP/IP", "SNMPV3_SDCARD_FATFS"
+			]
+		],
+		"peripherals": [
+			"MAC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"TCP/IP",
+			"ATSAME70Q21B",
+			"SAM E70/S70/V70/V71 Family",
+			"Ethernet MAC",
+			"GMAC"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

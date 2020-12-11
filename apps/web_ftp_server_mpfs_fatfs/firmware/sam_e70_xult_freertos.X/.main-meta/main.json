@@ -1,0 +1,76 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_sam_e70_v71_web_ftp_server_mpfs_fatfs_sam_e70_xult_freertos",
+		"version": "3.7.0",
+		"displayName": "TCP/IP WEB & FTP SERVER Application with MPFS & FATF FS Example for SAM E70/S70/V70/V71 Family",
+		"projectName": "web_ftp_server_mpfs_fatfs_freertos",
+		"shortDescription": "The Web and FTP Server configuration demonstrates creating an application where HTTP web server will use MPFS FS with NVM media and FTP server will use FAT FS with SDCARD as media.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "SAME70_DFP",
+			"semverRange": "^4.2.59"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.6.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAME70Q21B",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM E70 Xplained Ultra Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "TCP/IP", "WEB_FTP_SERVER_MPFS_FATFS"
+			],
+			[
+				"Middleware", "TCP/IP", "WEB_FTP_SERVER_MPFS_FATFS"
+			]
+		],
+		"peripherals": [
+			"MAC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"TCP/IP",
+			"ATSAME70Q21B",
+			"SAM E70/S70/V70/V71 Family",
+			"Ethernet MAC",
+			"GMAC"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
