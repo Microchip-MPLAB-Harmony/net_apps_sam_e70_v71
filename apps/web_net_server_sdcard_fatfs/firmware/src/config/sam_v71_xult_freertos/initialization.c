@@ -118,6 +118,7 @@ const DRV_SDMMC_INIT drvSDMMC0InitData =
     .isWriteProtectCheckEnabled     = false,
     .speedMode                      = DRV_SDMMC_CONFIG_SPEED_MODE_IDX0,
     .busWidth                       = DRV_SDMMC_CONFIG_BUS_WIDTH_IDX0,
+	.sleepWhenIdle 					= false,
     .isFsEnabled                    = true,
 };
 
@@ -138,63 +139,6 @@ SYSTEM_OBJECTS sysObj;
 // Section: Library/Stack Initialization Data
 // *****************************************************************************
 // *****************************************************************************
-// <editor-fold defaultstate="collapsed" desc="File System Initialization Data">
-
-
-const SYS_FS_MEDIA_MOUNT_DATA sysfsMountTable[SYS_FS_VOLUME_NUMBER] =
-{
-    {NULL}
-};
-
-const SYS_FS_FUNCTIONS FatFsFunctions =
-{
-    .mount             = FATFS_mount,
-    .unmount           = FATFS_unmount,
-    .open              = FATFS_open,
-    .read              = FATFS_read,
-    .close             = FATFS_close,
-    .seek              = FATFS_lseek,
-    .fstat             = FATFS_stat,
-    .getlabel          = FATFS_getlabel,
-    .currWD            = FATFS_getcwd,
-    .getstrn           = FATFS_gets,
-    .openDir           = FATFS_opendir,
-    .readDir           = FATFS_readdir,
-    .closeDir          = FATFS_closedir,
-    .chdir             = FATFS_chdir,
-    .chdrive           = FATFS_chdrive,
-    .write             = FATFS_write,
-    .tell              = FATFS_tell,
-    .eof               = FATFS_eof,
-    .size              = FATFS_size,
-    .mkdir             = FATFS_mkdir,
-    .remove            = FATFS_unlink,
-    .setlabel          = FATFS_setlabel,
-    .truncate          = FATFS_truncate,
-    .chmode            = FATFS_chmod,
-    .chtime            = FATFS_utime,
-    .rename            = FATFS_rename,
-    .sync              = FATFS_sync,
-    .putchr            = FATFS_putc,
-    .putstrn           = FATFS_puts,
-    .formattedprint    = FATFS_printf,
-    .testerror         = FATFS_error,
-    .formatDisk        = (FORMAT_DISK)FATFS_mkfs,
-    .partitionDisk     = FATFS_fdisk,
-    .getCluster        = FATFS_getclusters
-};
-
-
-const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
-{
-    {
-        .nativeFileSystemType = FAT,
-        .nativeFileSystemFunctions = &FatFsFunctions
-    }
-};
-
-// </editor-fold>
-
 /* Net Presentation Layer Data Definitions */
 #include "net_pres/pres/net_pres_enc_glue.h"
 
@@ -297,6 +241,7 @@ static const NET_PRES_TransportObject netPresTransObject0DC = {
 
 static const NET_PRES_INST_DATA netPresCfgs[] = 
 {  
+        
     {
         .pTransObject_ss = &netPresTransObject0SS,
         .pTransObject_sc = &netPresTransObject0SC,
@@ -307,6 +252,7 @@ static const NET_PRES_INST_DATA netPresCfgs[] =
         .pProvObject_ds = NULL,
         .pProvObject_dc = NULL,
     },
+        
 };
 
 static const NET_PRES_INIT_DATA netPresInitData = 
@@ -316,6 +262,63 @@ static const NET_PRES_INIT_DATA netPresInitData =
 };
   
  
+
+// <editor-fold defaultstate="collapsed" desc="File System Initialization Data">
+
+
+const SYS_FS_MEDIA_MOUNT_DATA sysfsMountTable[SYS_FS_VOLUME_NUMBER] =
+{
+    {NULL}
+};
+
+const SYS_FS_FUNCTIONS FatFsFunctions =
+{
+    .mount             = FATFS_mount,
+    .unmount           = FATFS_unmount,
+    .open              = FATFS_open,
+    .read              = FATFS_read,
+    .close             = FATFS_close,
+    .seek              = FATFS_lseek,
+    .fstat             = FATFS_stat,
+    .getlabel          = FATFS_getlabel,
+    .currWD            = FATFS_getcwd,
+    .getstrn           = FATFS_gets,
+    .openDir           = FATFS_opendir,
+    .readDir           = FATFS_readdir,
+    .closeDir          = FATFS_closedir,
+    .chdir             = FATFS_chdir,
+    .chdrive           = FATFS_chdrive,
+    .write             = FATFS_write,
+    .tell              = FATFS_tell,
+    .eof               = FATFS_eof,
+    .size              = FATFS_size,
+    .mkdir             = FATFS_mkdir,
+    .remove            = FATFS_unlink,
+    .setlabel          = FATFS_setlabel,
+    .truncate          = FATFS_truncate,
+    .chmode            = FATFS_chmod,
+    .chtime            = FATFS_utime,
+    .rename            = FATFS_rename,
+    .sync              = FATFS_sync,
+    .putchr            = FATFS_putc,
+    .putstrn           = FATFS_puts,
+    .formattedprint    = FATFS_printf,
+    .testerror         = FATFS_error,
+    .formatDisk        = (FORMAT_DISK)FATFS_mkfs,
+    .partitionDisk     = FATFS_fdisk,
+    .getCluster        = FATFS_getclusters
+};
+
+
+const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
+{
+    {
+        .nativeFileSystemType = FAT,
+        .nativeFileSystemFunctions = &FatFsFunctions
+    }
+};
+
+// </editor-fold>
 
 
 // <editor-fold defaultstate="collapsed" desc="TCP/IP Stack Initialization Data">
@@ -365,14 +368,14 @@ const TCPIP_TCP_MODULE_CONFIG tcpipTCPInitData =
 const TCPIP_HTTP_NET_MODULE_CONFIG tcpipHTTPNetInitData =
 {
     .nConnections   = TCPIP_HTTP_NET_MAX_CONNECTIONS,
-    .dataLen		= TCPIP_HTTP_NET_MAX_DATA_LEN,
-    .sktTxBuffSize	= TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE,
-    .sktRxBuffSize	= TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE,
-    .listenPort	    = TCPIP_HTTP_NET_LISTEN_PORT,
+    .dataLen        = TCPIP_HTTP_NET_MAX_DATA_LEN,
+    .sktTxBuffSize  = TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE,
+    .sktRxBuffSize  = TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE,
+    .listenPort     = TCPIP_HTTP_NET_LISTEN_PORT,
     .nDescriptors   = TCPIP_HTTP_NET_DYNVAR_DESCRIPTORS_NUMBER,
     .nChunks        = TCPIP_HTTP_NET_CHUNKS_NUMBER, 
     .maxRecurseLevel= TCPIP_HTTP_NET_MAX_RECURSE_LEVEL,    
-    .configFlags	= TCPIP_HTTP_NET_CONFIG_FLAGS,
+    .configFlags    = TCPIP_HTTP_NET_CONFIG_FLAGS,
     .nFileBuffers   = TCPIP_HTTP_NET_FILE_PROCESS_BUFFERS_NUMBER,
     .fileBufferSize = TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_SIZE,
     .chunkPoolRetries = TCPIP_HTTP_NET_CHUNK_RETRIES,
@@ -387,13 +390,13 @@ const TCPIP_HTTP_NET_MODULE_CONFIG tcpipHTTPNetInitData =
 /*** SNTP Client Initialization Data ***/
 const TCPIP_SNTP_MODULE_CONFIG tcpipSNTPInitData =
 {
-    .ntp_server		        = TCPIP_NTP_SERVER,
-    .ntp_interface		    = TCPIP_NTP_DEFAULT_IF,
-    .ntp_connection_type	= TCPIP_NTP_DEFAULT_CONNECTION_TYPE,
-    .ntp_reply_timeout		= TCPIP_NTP_REPLY_TIMEOUT,
-    .ntp_stamp_timeout		= TCPIP_NTP_TIME_STAMP_TMO,
-    .ntp_success_interval	= TCPIP_NTP_QUERY_INTERVAL,
-    .ntp_error_interval		= TCPIP_NTP_FAST_QUERY_INTERVAL,
+    .ntp_server             = TCPIP_NTP_SERVER,
+    .ntp_interface          = TCPIP_NTP_DEFAULT_IF,
+    .ntp_connection_type    = TCPIP_NTP_DEFAULT_CONNECTION_TYPE,
+    .ntp_reply_timeout      = TCPIP_NTP_REPLY_TIMEOUT,
+    .ntp_stamp_timeout      = TCPIP_NTP_TIME_STAMP_TMO,
+    .ntp_success_interval   = TCPIP_NTP_QUERY_INTERVAL,
+    .ntp_error_interval     = TCPIP_NTP_FAST_QUERY_INTERVAL,
 };
 
 
@@ -414,7 +417,7 @@ const TCPIP_SMTPC_MODULE_CONFIG tcpipSMTPCInitData =
 /*** DHCP client Initialization Data ***/
 const TCPIP_DHCP_MODULE_CONFIG tcpipDHCPInitData =
 {     
-    .dhcpEnable     = TCPIP_DHCP_CLIENT_ENABLED,   
+    .dhcpEnable     = false,   
     .dhcpTmo        = TCPIP_DHCP_TIMEOUT,
     .dhcpCliPort    = TCPIP_DHCP_CLIENT_CONNECT_PORT,
     .dhcpSrvPort    = TCPIP_DHCP_SERVER_LISTEN_PORT,
@@ -455,65 +458,84 @@ const DRV_ETHPHY_INIT tcpipPhyInitData =
 
 };
 
+
+const DRV_GMAC_RXQUE_FILTER_INIT DRV_GMAC_Rx_Filt_Init =
+{ 
+	.type1FiltCount = TCPIP_GMAC_SCREEN1_COUNT_QUE,
+	.type2FiltCount = TCPIP_GMAC_SCREEN2_COUNT_QUE,
+};
+	
 /*** GMAC MAC Initialization Data ***/
 const TCPIP_MODULE_MAC_PIC32C_CONFIG tcpipMACPIC32CINTInitData =
 { 
 	/** QUEUE 0 Intialization**/
-		.gmac_queue_config[0].queueEnable	= true,
+	.gmac_queue_config[0].queueTxEnable	= true,
+	.gmac_queue_config[0].queueRxEnable	= true,
 	.gmac_queue_config[0].nRxDescCnt	= TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0,
 	.gmac_queue_config[0].nTxDescCnt	= TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0,
 	.gmac_queue_config[0].rxBufferSize	= TCPIP_GMAC_RX_BUFF_SIZE_QUE0,
 	.gmac_queue_config[0].txBufferSize	= TCPIP_GMAC_TX_BUFF_SIZE_QUE0,
+	.gmac_queue_config[0].txMaxPktSize	= TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE0,
 	.gmac_queue_config[0].nRxBuffCount	= TCPIP_GMAC_RX_BUFF_COUNT_QUE0,
 	.gmac_queue_config[0].nRxBuffCntThres	= TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0,
 	.gmac_queue_config[0].nRxBuffAllocCnt	= TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0,
 
 	/** QUEUE 1 Intialization**/
-		.gmac_queue_config[1].queueEnable	= false,	
+	.gmac_queue_config[1].queueTxEnable	= false,
+	.gmac_queue_config[1].queueRxEnable	= false,
 	.gmac_queue_config[1].nRxDescCnt	= TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE1,
 	.gmac_queue_config[1].nTxDescCnt	= TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE1,
 	.gmac_queue_config[1].rxBufferSize	= TCPIP_GMAC_RX_BUFF_SIZE_QUE1,
 	.gmac_queue_config[1].txBufferSize	= TCPIP_GMAC_TX_BUFF_SIZE_QUE1,
+	.gmac_queue_config[1].txMaxPktSize	= TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE1,
 	.gmac_queue_config[1].nRxBuffCount	= TCPIP_GMAC_RX_BUFF_COUNT_QUE1,
 	.gmac_queue_config[1].nRxBuffCntThres	= TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE1,
 	.gmac_queue_config[1].nRxBuffAllocCnt	= TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE1,
 
 	/** QUEUE 2 Intialization**/
-		.gmac_queue_config[2].queueEnable	= false,	
+	.gmac_queue_config[2].queueTxEnable	= false,
+	.gmac_queue_config[2].queueRxEnable	= false,		
 	.gmac_queue_config[2].nRxDescCnt	= TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE2,
 	.gmac_queue_config[2].nTxDescCnt	= TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE2,
 	.gmac_queue_config[2].rxBufferSize	= TCPIP_GMAC_RX_BUFF_SIZE_QUE2,
 	.gmac_queue_config[2].txBufferSize	= TCPIP_GMAC_TX_BUFF_SIZE_QUE2,
+	.gmac_queue_config[2].txMaxPktSize	= TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE2,
 	.gmac_queue_config[2].nRxBuffCount	= TCPIP_GMAC_RX_BUFF_COUNT_QUE2,
 	.gmac_queue_config[2].nRxBuffCntThres	= TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE2,
 	.gmac_queue_config[2].nRxBuffAllocCnt	= TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE2,
 
 	/** QUEUE 3 Intialization**/
-		.gmac_queue_config[3].queueEnable	= false,	
+	.gmac_queue_config[3].queueTxEnable	= false,
+	.gmac_queue_config[3].queueRxEnable	= false,
 	.gmac_queue_config[3].nRxDescCnt	= TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE3,
 	.gmac_queue_config[3].nTxDescCnt	= TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE3,
 	.gmac_queue_config[3].rxBufferSize	= TCPIP_GMAC_RX_BUFF_SIZE_QUE3,
 	.gmac_queue_config[3].txBufferSize	= TCPIP_GMAC_TX_BUFF_SIZE_QUE3,
+	.gmac_queue_config[3].txMaxPktSize	= TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE3,
 	.gmac_queue_config[3].nRxBuffCount	= TCPIP_GMAC_RX_BUFF_COUNT_QUE3,
 	.gmac_queue_config[3].nRxBuffCntThres	= TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE3,
 	.gmac_queue_config[3].nRxBuffAllocCnt	= TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE3,
 
 	/** QUEUE 4 Intialization**/
-		.gmac_queue_config[4].queueEnable	= false,	
+	.gmac_queue_config[4].queueTxEnable	= false,
+	.gmac_queue_config[4].queueRxEnable	= false,		
 	.gmac_queue_config[4].nRxDescCnt	= TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE4,
 	.gmac_queue_config[4].nTxDescCnt	= TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE4,
 	.gmac_queue_config[4].rxBufferSize	= TCPIP_GMAC_RX_BUFF_SIZE_QUE4,
 	.gmac_queue_config[4].txBufferSize	= TCPIP_GMAC_TX_BUFF_SIZE_QUE4,
+	.gmac_queue_config[4].txMaxPktSize	= TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE4,
 	.gmac_queue_config[4].nRxBuffCount	= TCPIP_GMAC_RX_BUFF_COUNT_QUE4,
 	.gmac_queue_config[4].nRxBuffCntThres	= TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE4,
 	.gmac_queue_config[4].nRxBuffAllocCnt	= TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE4,
 
 	/** QUEUE 5 Intialization**/
-	.gmac_queue_config[5].queueEnable	= false,	
+	.gmac_queue_config[5].queueTxEnable	= false,
+	.gmac_queue_config[5].queueRxEnable	= false,
 	.gmac_queue_config[5].nRxDescCnt	= TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE5,
 	.gmac_queue_config[5].nTxDescCnt	= TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE5,
 	.gmac_queue_config[5].rxBufferSize	= TCPIP_GMAC_RX_BUFF_SIZE_QUE5,
 	.gmac_queue_config[5].txBufferSize	= TCPIP_GMAC_TX_BUFF_SIZE_QUE5,
+	.gmac_queue_config[5].txMaxPktSize	= TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE5,
 	.gmac_queue_config[5].nRxBuffCount	= TCPIP_GMAC_RX_BUFF_COUNT_QUE5,
 	.gmac_queue_config[5].nRxBuffCntThres	= TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE5,
 	.gmac_queue_config[5].nRxBuffAllocCnt	= TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE5,
@@ -522,6 +544,11 @@ const TCPIP_MODULE_MAC_PIC32C_CONFIG tcpipMACPIC32CINTInitData =
     .ethModuleId            = TCPIP_INTMAC_MODULE_ID,
     .pPhyBase               = &DRV_ETHPHY_OBJECT_BASE_Default,
     .pPhyInit               = &tcpipPhyInitData,
+	.checksumOffloadRx      = DRV_GMAC_RX_CHKSM_OFFLOAD,
+    .checksumOffloadTx      = DRV_GMAC_TX_CHKSM_OFFLOAD,
+    .macTxPrioNum           = TCPIP_GMAC_TX_PRIO_COUNT,
+    .macRxPrioNum           = TCPIP_GMAC_RX_PRIO_COUNT,
+	.pRxQueFiltInit			= &DRV_GMAC_Rx_Filt_Init,
 };
 
 
@@ -553,6 +580,18 @@ const TCPIP_IPV6_MODULE_CONFIG  tcpipIPv6InitData =
     .fragmentPktRxTimeout   = TCPIP_IPV6_FRAGMENT_PKT_TIMEOUT,
 };
 
+/*** IPv4 Initialization Data ***/
+
+
+const TCPIP_IPV4_MODULE_CONFIG  tcpipIPv4InitData = 
+{
+    .arpEntries = TCPIP_IPV4_ARP_SLOTS, 
+};
+
+
+
+
+
 
 TCPIP_STACK_HEAP_INTERNAL_CONFIG tcpipHeapConfig =
 {
@@ -568,7 +607,7 @@ TCPIP_STACK_HEAP_INTERNAL_CONFIG tcpipHeapConfig =
 
 const TCPIP_NETWORK_CONFIG __attribute__((unused))  TCPIP_HOSTS_CONFIGURATION[] =
 {
-	/*** Network Configuration Index 0 ***/
+    /*** Network Configuration Index 0 ***/
     {
         TCPIP_NETWORK_DEFAULT_INTERFACE_NAME_IDX0,       // interface
         TCPIP_NETWORK_DEFAULT_HOST_NAME_IDX0,            // hostName
@@ -588,7 +627,7 @@ const size_t TCPIP_HOSTS_CONFIGURATION_SIZE = sizeof (TCPIP_HOSTS_CONFIGURATION)
 
 const TCPIP_STACK_MODULE_CONFIG TCPIP_STACK_MODULE_CONFIG_TBL [] =
 {
-    {TCPIP_MODULE_IPV4,             0},
+    {TCPIP_MODULE_IPV4,             &tcpipIPv4InitData},
 
     {TCPIP_MODULE_ICMP,             0},                             // TCPIP_MODULE_ICMP
 
@@ -636,7 +675,7 @@ const size_t TCPIP_STACK_MODULE_CONFIG_TBL_SIZE = sizeof (TCPIP_STACK_MODULE_CON
  ********************************************************************/
 
 
-SYS_MODULE_OBJ TCPIP_STACK_Init()
+SYS_MODULE_OBJ TCPIP_STACK_Init(void)
 {
     TCPIP_STACK_INIT    tcpipInit;
 
@@ -749,6 +788,7 @@ const SYS_DEBUG_INIT debugInit =
 void SYS_Initialize ( void* data )
 {
 
+
     EFC_Initialize();
   
     CLOCK_Initialize();
@@ -764,7 +804,7 @@ void SYS_Initialize ( void* data )
     TC0_CH0_TimerInitialize(); 
      
     
-	USART1_Initialize();
+    USART1_Initialize();
 
     XDMAC_Initialize();
 
@@ -794,9 +834,9 @@ void SYS_Initialize ( void* data )
     /*** File System Service Initialization Code ***/
     SYS_FS_Initialize( (const void *) sysFSInit );
 
-    sysObj.netPres = NET_PRES_Initialize(0, (SYS_MODULE_INIT*)&netPresInitData);
 
-
+	/* Network Presentation Layer Initialization */
+	sysObj.netPres = NET_PRES_Initialize(0, (SYS_MODULE_INIT*)&netPresInitData);
     /* TCPIP Stack Initialization */
     sysObj.tcpip = TCPIP_STACK_Init();
     SYS_ASSERT(sysObj.tcpip != SYS_MODULE_OBJ_INVALID, "TCPIP_STACK_Init Failed" );
