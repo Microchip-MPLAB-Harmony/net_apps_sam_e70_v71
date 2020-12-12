@@ -80,13 +80,13 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* TIME System Service Configuration Options */
-#define SYS_TIME_INDEX_0                     0
-#define SYS_TIME_MAX_TIMERS                  5
-#define SYS_TIME_HW_COUNTER_WIDTH            16
-#define SYS_TIME_HW_COUNTER_PERIOD           65535U
-#define SYS_TIME_HW_COUNTER_HALF_PERIOD	     (SYS_TIME_HW_COUNTER_PERIOD>>1)
-#define SYS_TIME_CPU_CLOCK_FREQUENCY         300000000
-#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES      (900)
+#define SYS_TIME_INDEX_0                            (0)
+#define SYS_TIME_MAX_TIMERS                         (5)
+#define SYS_TIME_HW_COUNTER_WIDTH                   (16)
+#define SYS_TIME_HW_COUNTER_PERIOD                  (65535U)
+#define SYS_TIME_HW_COUNTER_HALF_PERIOD             (SYS_TIME_HW_COUNTER_PERIOD>>1)
+#define SYS_TIME_CPU_CLOCK_FREQUENCY                (300000000)
+#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (900)
 
 #define SYS_CONSOLE_INDEX_0                       0
 
@@ -113,6 +113,7 @@ extern "C" {
 #define SYS_FS_FAT_READONLY               false
 #define SYS_FS_FAT_CODE_PAGE              437
 #define SYS_FS_FAT_MAX_SS                 SYS_FS_MEDIA_MAX_BLOCK_SIZE
+#define SYS_FS_FAT_ALIGNED_BUFFER_LEN     512
 
 
 
@@ -190,10 +191,10 @@ extern "C" {
 #define TCPIP_SNMP_OID_MAX_LEN						18
 #define TCPIP_SNMP_MAX_MSG_SIZE 					480
 #define TCPIP_SNMP_MAX_NON_REC_ID_OID 				3
-#define TCPIP_SNMP_COMMUNITY_MAX_LEN 				8
+#define TCPIP_SNMP_COMMUNITY_MAX_LEN 				16
 #define TCPIP_SNMP_MAX_COMMUNITY_SUPPORT 			3
-#define TCPIP_SNMP_NOTIFY_COMMUNITY_LEN 			8
-#define TCPIP_SNMP_TRAP_COMMUNITY_MAX_LEN_MEM_USE 	8
+#define TCPIP_SNMP_NOTIFY_COMMUNITY_LEN 			16
+#define TCPIP_SNMP_TRAP_COMMUNITY_MAX_LEN_MEM_USE 	16
 #define TCPIP_SNMP_TRAP_TABLE_SIZE 					2
 #define TCPIP_SNMP_USE_TRAP_SUPPORT   				true
 
@@ -202,8 +203,8 @@ extern "C" {
 #define TCPIP_SNMP_TRAP_COMMUNITY_MAX_LEN       	(TCPIP_SNMP_TRAP_COMMUNITY_MAX_LEN_MEM_USE+1)
 
 /*** SNMP Stack Configuration Index 0 ***/
-#define TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX0 	"public" 
-#define TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX0 	"private" 
+#define TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX0 	"harmony" 
+#define TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX0 	"unicorn" 
 
 /*** SNMP Stack Configuration Index 1 ***/
 #define TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX1 	"read" 
@@ -211,7 +212,7 @@ extern "C" {
 
 /*** SNMP Stack Configuration Index 2 ***/
 #define TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX2		0
-#define TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX2 	"public" 
+#define TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX2 	"harmony" 
 
 
 
@@ -230,32 +231,19 @@ extern "C" {
 #define KEEP_PEER_CERT
 #define HAVE_CRL_IO
 #define HAVE_IO_TIMEOUT
-#define HAVE_FFDHE_2048
-#define HAVE_FFDHE_3072
-#define HAVE_FFDHE_4096
-#define HAVE_FFDHE_6144
-#define HAVE_FFDHE_8192
 #define TFM_NO_ASM
 #define WOLFSSL_NO_ASM
 #define SIZEOF_LONG_LONG 8
 #define WOLFSSL_USER_IO
 #define NO_WRITEV
 #define MICROCHIP_TCPIP
+#define XMALLOC_OVERRIDE
+#define XMALLOC(s, h, type)  OSAL_Malloc((s))
+#define XFREE(p, h, type)    OSAL_Free((p))
 #define WOLFSSL_DTLS
-
-
-
-    
-    
-    
-
+#define NO_PWDBASED
 #define NO_ERROR_STRINGS
-    
-    
-    
-    
-    
-   
+#define NO_OLD_TLS
 
 
 /*** TCP Configuration ***/
@@ -293,8 +281,9 @@ extern "C" {
 #define TCPIP_ARP_CACHE_PURGE_QUANTA		    		1
 #define TCPIP_ARP_CACHE_ENTRY_RETRIES		    		3
 #define TCPIP_ARP_GRATUITOUS_PROBE_COUNT			1
-#define TCPIP_ARP_TASK_PROCESS_RATE		        	2
+#define TCPIP_ARP_TASK_PROCESS_RATE		        	2000
 #define TCPIP_ARP_PRIMARY_CACHE_ONLY		        	true
+#define TCPIP_ARP_COMMANDS false
 
 
 
@@ -358,7 +347,14 @@ extern "C" {
 
 
 /*** IPv4 Configuration ***/
+#define TCPIP_IPV4_ARP_SLOTS                        10
 #define TCPIP_IPV4_EXTERN_PACKET_PROCESS   false
+
+#define TCPIP_IPV4_COMMANDS false
+
+#define TCPIP_IPV4_FORWARDING_ENABLE    false 
+
+
 
 
 
@@ -400,6 +396,12 @@ extern "C" {
 #define TCPIP_UDP_USE_RX_CHECKSUM             			true
 #define TCPIP_UDP_COMMANDS   false
 #define TCPIP_UDP_EXTERN_PACKET_PROCESS   false
+
+
+/* MPLAB Harmony Net Presentation Layer Definitions*/
+#define NET_PRES_NUM_INSTANCE 1
+#define NET_PRES_NUM_SOCKETS 10
+
 
 
 
@@ -494,6 +496,7 @@ extern "C" {
 #define TCPIP_DNS_CLIENT_MAX_HOSTNAME_LEN			64
 #define TCPIP_DNS_CLIENT_MAX_SELECT_INTERFACES		4
 #define TCPIP_DNS_CLIENT_DELETE_OLD_ENTRIES			true
+#define TCPIP_DNS_CLIENT_CONSOLE_CMD               	true
 #define TCPIP_DNS_CLIENT_USER_NOTIFICATION   false
 
 
@@ -527,12 +530,12 @@ extern "C" {
 #define TCPIP_HTTP_NET_CHUNKS_NUMBER                    10
 #define TCPIP_HTTP_NET_CHUNK_RETRIES                    10
 #define TCPIP_HTTP_NET_MAX_RECURSE_LEVEL				3
-#define TCPIP_HTTP_NET_DYNVAR_PROCESS           1
+#define TCPIP_HTTP_NET_DYNVAR_PROCESS           		1
 #define TCPIP_HTTP_NET_DYNVAR_DESCRIPTORS_NUMBER		10
 #define TCPIP_HTTP_NET_DYNVAR_MAX_LEN					50
 #define TCPIP_HTTP_NET_DYNVAR_ARG_MAX_NUMBER			4
 #define TCPIP_HTTP_NET_DYNVAR_PROCESS_RETRIES			10
-#define TCPIP_HTTP_NET_SSI_PROCESS           1
+#define TCPIP_HTTP_NET_SSI_PROCESS           			1
 #define TCPIP_HTTP_NET_SSI_ATTRIBUTES_MAX_NUMBER        4
 #define TCPIP_HTTP_NET_SSI_STATIC_ATTTRIB_NUMBER        2
 #define TCPIP_HTTP_NET_SSI_CMD_MAX_LEN                  100
@@ -540,9 +543,10 @@ extern "C" {
 #define TCPIP_HTTP_NET_SSI_VARIABLE_NAME_MAX_LENGTH     10
 #define TCPIP_HTTP_NET_SSI_VARIABLE_STRING_MAX_LENGTH   20
 #define TCPIP_HTTP_NET_SSI_ECHO_NOT_FOUND_MESSAGE       "SSI Echo - Not Found: "
-#define TCPIP_HTTP_NET_CONNECTION_TIMEOUT          		0
-#define TCPIP_HTTP_NET_MALLOC_FUNC                     0
-#define TCPIP_HTTP_NET_FREE_FUNC                        0
+#define TCPIP_HTTP_NET_CONNECTION_TIMEOUT          	0
+#define TCPIP_HTTP_NET_MALLOC_FUNC                  malloc
+#define TCPIP_HTTP_NET_FREE_FUNC                    free
+#define TCPIP_HTTP_NET_CONSOLE_CMD           		false
 
 
 
@@ -559,7 +563,8 @@ extern "C" {
 #define TCPIP_DHCP_HOST_NAME_SIZE                   20
 #define TCPIP_DHCP_CLIENT_CONNECT_PORT              68
 #define TCPIP_DHCP_SERVER_LISTEN_PORT               67
-#define TCPIP_DHCP_CLIENT_ENABLED                   true
+#define TCPIP_DHCP_CLIENT_CONSOLE_CMD               true
+
 #define TCPIP_DHCP_USE_OPTION_TIME_SERVER           0
 #define TCPIP_DHCP_TIME_SERVER_ADDRESSES            0
 #define TCPIP_DHCP_USE_OPTION_NTP_SERVER            0
@@ -570,27 +575,14 @@ extern "C" {
 #define TCPIP_STACK_USE_ICMPV6_SERVER
 
 
-/*** tcpip_cmd Configuration ***/
-#define TCPIP_STACK_COMMAND_ENABLE
-#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUESTS         4
-#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUEST_DELAY    1000
-#define TCPIP_STACK_COMMANDS_ICMP_ECHO_TIMEOUT          5000
-#define TCPIP_STACK_COMMANDS_WIFI_ENABLE             	false
-#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUEST_BUFF_SIZE    2000
-#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUEST_DATA_SIZE    100
-
-
-/* MPLAB Harmony Net Presentation Layer Definitions*/
-#define NET_PRES_NUM_INSTANCE 1
-#define NET_PRES_NUM_SOCKETS 10
-
+	/*** tcpip_cmd Configuration ***/
+	#define TCPIP_STACK_COMMAND_ENABLE
 
 
 
 /*** TCPIP Heap Configuration ***/
-
 #define TCPIP_STACK_USE_INTERNAL_HEAP
-#define TCPIP_STACK_DRAM_SIZE                       64960
+#define TCPIP_STACK_DRAM_SIZE                       96960
 #define TCPIP_STACK_DRAM_RUN_LIMIT                  2048
 
 #define TCPIP_STACK_MALLOC_FUNC                     malloc
@@ -649,57 +641,73 @@ extern "C" {
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY				    	64
 #define TCPIP_GMAC_TX_BUFF_SIZE_DUMMY				    	64
 
-/*** QUEUE 0 Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0				10
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0				10
+		/*** QUEUE 0 TX Configuration ***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0				8
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE0				    	1536			
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE0				    	1536
+		
+		/*** QUEUE 0 RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0				8
 #define TCPIP_GMAC_RX_BUFF_SIZE_QUE0				    	1536
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE0				    	1536
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE0				   		12
-#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0				1
-#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0					1
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE0				   		10
+#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0			1
+#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0				2
 
-/*** QUEUE 1 Disabled; Dummy Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE1				TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE1				TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_BUFF_SIZE_QUE1				    	TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE1				    	TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE1				   		1
+
+		/*** Dummy TX Configuration ***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE1					TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE1				    		TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE1				    	0
+		/*** Dummy RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE1					TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_RX_BUFF_SIZE_QUE1				    		TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE1				   			1
 #define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE1				0
 #define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE1					0
 
-/*** QUEUE 2 Disabled; Dummy Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE2				TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE2				TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_BUFF_SIZE_QUE2				    	TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE2				    	TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE2				   		1
+
+
+		/*** Dummy TX Configuration ***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE2					TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE2				    		TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE2				    	0
+		/*** Dummy RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE2					TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_RX_BUFF_SIZE_QUE2				    		TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE2				   			1
 #define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE2				0
 #define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE2					0
 
-/*** QUEUE 3 Disabled; Dummy Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE3				TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE3				TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_BUFF_SIZE_QUE3				    	TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE3				    	TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE3				   		1
+		/*** Dummy TX Configuration ***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE3					TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE3				    		TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE3				    	0
+		/*** Dummy RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE3					TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_RX_BUFF_SIZE_QUE3				    		TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE3				   			1
 #define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE3				0
 #define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE3					0
 
-/*** QUEUE 4 Disabled; Dummy Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE4				TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE4				TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_BUFF_SIZE_QUE4				    	TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE4				    	TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE4				   		1
+		/*** Dummy TX Configuration 1***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE4					TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE4				    		TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE4				    	0
+		/*** Dummy RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE4					TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_RX_BUFF_SIZE_QUE4				    		TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE4				   			1
 #define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE4				0
 #define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE4					0
 
-/*** QUEUE 5 Disabled; Dummy Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE5				TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE5				TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
-#define TCPIP_GMAC_RX_BUFF_SIZE_QUE5				    	TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE5				    	TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE5				   		1
+		/*** Dummy TX Configuration ***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE5					TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE5				    		TCPIP_GMAC_TX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE5				    	0
+		/*** Dummy RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE5					TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY
+#define TCPIP_GMAC_RX_BUFF_SIZE_QUE5				    		TCPIP_GMAC_RX_BUFF_SIZE_DUMMY
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE5				   			1
 #define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE5				0
 #define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE5					0
 
@@ -709,7 +717,10 @@ extern "C" {
                                                     TCPIP_MAC_RX_FILTER_TYPE_MCAST_ACCEPT |\
                                                     TCPIP_MAC_RX_FILTER_TYPE_UCAST_ACCEPT |\
                                                     TCPIP_MAC_RX_FILTER_TYPE_CRC_ERROR_REJECT |\
-                                                    0
+													0
+#define TCPIP_GMAC_SCREEN1_COUNT_QUE							0
+#define TCPIP_GMAC_SCREEN2_COUNT_QUE							0		
+													
 #define TCPIP_GMAC_ETH_OPEN_FLAGS       			\
                                                     TCPIP_ETH_OPEN_AUTO |\
                                                     TCPIP_ETH_OPEN_FDUPLEX |\
@@ -725,32 +736,26 @@ extern "C" {
 
 #define DRV_GMAC_RX_CHKSM_OFFLOAD				(TCPIP_MAC_CHECKSUM_NONE)			
 #define DRV_GMAC_TX_CHKSM_OFFLOAD				(TCPIP_MAC_CHECKSUM_NONE)		
-
-#define DRV_GMAC_INSTANCES_NUMBER				1
+#define TCPIP_GMAC_TX_PRIO_COUNT				1
+#define TCPIP_GMAC_RX_PRIO_COUNT				1
 #define DRV_GMAC_NUMBER_OF_QUEUES				6
-#define DRV_GMAC_CLIENTS_NUMBER					1
-#define DRV_GMAC_INDEX	    	    				1
-#define DRV_GMAC_PERIPHERAL_ID					1
-#define DRV_GMAC_INTERRUPT_SOURCE				GMAC_IRQn
-
-#define DRV_GMAC_INTERRUPT_MODE        				true
 #define DRV_GMAC_RMII_MODE					0
 
 
 
 /*** SNTP Configuration ***/
 #define TCPIP_STACK_USE_SNTP_CLIENT
-#define TCPIP_NTP_DEFAULT_IF		        		"GMAC"
-#define TCPIP_NTP_VERSION             			    	4
-#define TCPIP_NTP_DEFAULT_CONNECTION_TYPE   			IP_ADDRESS_TYPE_IPV4
-#define TCPIP_NTP_EPOCH		                		2208988800ul
-#define TCPIP_NTP_REPLY_TIMEOUT		        		6
-#define TCPIP_NTP_MAX_STRATUM		        		15
+#define TCPIP_NTP_DEFAULT_IF		        	"GMAC"
+#define TCPIP_NTP_VERSION             			4
+#define TCPIP_NTP_DEFAULT_CONNECTION_TYPE   	IP_ADDRESS_TYPE_IPV4
+#define TCPIP_NTP_EPOCH		                	2208988800ul
+#define TCPIP_NTP_REPLY_TIMEOUT		        	6
+#define TCPIP_NTP_MAX_STRATUM		        	15
 #define TCPIP_NTP_TIME_STAMP_TMO				660
 #define TCPIP_NTP_SERVER		        		"pool.ntp.org"
 #define TCPIP_NTP_SERVER_MAX_LENGTH				30
 #define TCPIP_NTP_QUERY_INTERVAL				600
-#define TCPIP_NTP_FAST_QUERY_INTERVAL	    			14
+#define TCPIP_NTP_FAST_QUERY_INTERVAL	    	14
 #define TCPIP_NTP_TASK_TICK_RATE				1100
 #define TCPIP_NTP_RX_QUEUE_LIMIT				2
 
@@ -769,6 +774,7 @@ extern "C" {
 #define NO_PWDBASED
 #define HAVE_MCAPI
 #define WOLF_CRYPTO_CB  // provide call-back support
+// ---------- FUNCTIONAL CONFIGURATION START ----------
 #define NO_MD4
 #define WOLFSSL_SHA224
 #define WOLFSSL_AES_128
@@ -788,6 +794,7 @@ extern "C" {
 #define HAVE_ECC
 #define NO_DH
 #define NO_DSA
+#define FP_MAX_BITS 4096
 #define USE_CERT_BUFFERS_2048
 #define NO_DEV_RANDOM
 #define HAVE_HASHDRBG
@@ -795,6 +802,10 @@ extern "C" {
 #define SINGLE_THREADED
 #define NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
+// ---------- FUNCTIONAL CONFIGURATION END ----------
+
+
+
 
 
 
