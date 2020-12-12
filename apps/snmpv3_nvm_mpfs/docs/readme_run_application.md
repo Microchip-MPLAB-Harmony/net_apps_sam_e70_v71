@@ -58,13 +58,11 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 
         - Verify SNMP Get, GetNext, GetBulk, Set requests and Get response operations .
 
-        - For SNMP v2c , the Agent is configured with three Read communities ("public", "read", " ") and three Write communities ("private","write","public").
+        - For SNMP v2c , the Agent can be configured with three Read communities (E.g - "public", "read", " ") and three Write communities (e.g - "private","write","public").
+        
+           Also the SNMP v2c Community string can be Configured from the web browser.
 
-            |community Index|  Read |  Write |
-            |:-----: | ----- | ----- |
-            |1 | public | private |
-            |2 |  read|  write|
-            |3 | ----- | public |
+           ![snmp_demo_config](images/snmpConfig.png)
 
         - For SNMP v3, the Agent is configured as per the following table:
 
@@ -73,8 +71,8 @@ This table list the name and location of the MPLAB X IDE project folder for the 
             |USM User | microchip | SnmpAdmin | root  |
             |Security Level|  auth, priv|  auth, no priv|  no auth, no priv  |
             |Auth Algorithm|  MD5 |  SHA1 | N/A  |
-            |Auth Password  |auth12345 | ChandlerUS | N/A  |
+            |Auth Password  |< As Per The Configuration >  | < As Per The Configuration >  | N/A  |
             |Privacy Algorithm | AES  |N/A | N/A |
-            |Privacy Password | priv12345 |  N/A | N/A  |
+            |Privacy Password | < As Per The Configuration > |  N/A | N/A  |
 
     	    The Microchip SNMP Stack supports both TRAP version 1 and TRAP version 2. The default trap output is a multi-varbind SNMPv3 TRAP version 2. Trap receiver setting of iReasoning to be selected and configured to visualize the trap output in the iReasoning MIB browser.
