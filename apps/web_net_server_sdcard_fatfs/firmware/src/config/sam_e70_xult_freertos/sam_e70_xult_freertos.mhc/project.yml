@@ -2001,13 +2001,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BBE2AB9763E7BB36934A49D9681301A3
-- generatedChecksum: D7A953E0F672606AECCE61DE2250AF8F
+- generatedChecksum: 9A4A7F6CFFB132D68F98FA51735CE3B6
   logicalPath: config\sam_e70_xult_freertos
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: D7A953E0F672606AECCE61DE2250AF8F
+  userChecksum: 9A4A7F6CFFB132D68F98FA51735CE3B6
 - generatedChecksum: 8DA90CDFAED934C14DB1E81B104CEE2F
   logicalPath: packs\CMSIS\CMSIS\Core\Include
   name: core_cm7.h

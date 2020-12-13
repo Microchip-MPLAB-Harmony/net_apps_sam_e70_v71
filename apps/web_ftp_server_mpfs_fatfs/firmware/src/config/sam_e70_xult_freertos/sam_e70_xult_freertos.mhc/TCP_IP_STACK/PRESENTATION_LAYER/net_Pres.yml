@@ -180,6 +180,15 @@ children:
       children:
       - type: User
         attributes: {value: '1'}
+  - type: Menu
+    attributes: {id: NET_PRES_RTOS_MENU}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: NET_PRES_RTOS_STACK_SIZE}
     children:
@@ -196,6 +205,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: Boolean
+    attributes: {id: NET_PRES_SUPPORT_DATAGRAM}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'true'}
   - type: Boolean
     attributes: {id: NET_PRES_SUPPORT_DATAGRAM_ENC}
     children:
@@ -226,12 +242,28 @@ children:
       - type: User
         attributes: {value: 'true'}
   - type: Boolean
+    attributes: {id: NET_PRES_SUPPORT_STREAM}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'true'}
+  - type: Boolean
     attributes: {id: NET_PRES_SUPPORT_STREAM_ENC}
     children:
     - type: Attributes
       children:
       - type: Boolean
         attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: NET_PRES_SYS_RTOS_TASK}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
         children:
         - {type: Value, value: 'true'}
   - type: Boolean

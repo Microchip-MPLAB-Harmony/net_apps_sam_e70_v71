@@ -1046,7 +1046,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl;../src;../src/config/sam_e70_xult_freertos;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_e70_xult_freertos/library;../src/config/sam_e70_xult_freertos/library/tcpip/src;../src/config/sam_e70_xult_freertos/library/tcpip/src/common;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/file_system;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/hardware_access;../src/packs/CMSIS;../src/third_party/rtos/FreeRTOS/Source/Include"/>
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl;../src;../src/config/sam_e70_xult_freertos;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_e70_xult_freertos/library;../src/config/sam_e70_xult_freertos/library/tcpip/src;../src/config/sam_e70_xult_freertos/library/tcpip/src/common;;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/file_system;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/hardware_access;../src/packs/CMSIS;../src/third_party/rtos/FreeRTOS/Source/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1143,7 +1143,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e70_xult_freertos;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/file_system;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/hardware_access"/>
+                  value="../src;../src/config/sam_e70_xult_freertos;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/file_system;../src/config/sam_e70_xult_freertos/system/fs/fat_fs/hardware_access"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

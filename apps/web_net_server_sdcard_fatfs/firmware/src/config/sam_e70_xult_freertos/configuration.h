@@ -216,6 +216,9 @@ extern "C" {
 #define WOLFSSL_USER_IO
 #define NO_WRITEV
 #define MICROCHIP_TCPIP
+#define XMALLOC_OVERRIDE
+#define XMALLOC(s, h, type)  OSAL_Malloc((s))
+#define XFREE(p, h, type)    OSAL_Free((p))
 #define WOLFSSL_DTLS
 #define NO_PWDBASED
 #define NO_ERROR_STRINGS
@@ -725,7 +728,7 @@ extern "C" {
 #define NO_DEV_RANDOM
 #define HAVE_HASHDRBG
 #define WC_NO_HARDEN
-#define SINGLE_THREADED
+#define FREERTOS
 #define NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 // ---------- FUNCTIONAL CONFIGURATION END ----------

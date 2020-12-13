@@ -34,6 +34,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tcpipStack, value: '59'}
+  - type: Boolean
+    attributes: {id: TCPIP_STACK_INTERFACE_CHANGE_SIGNALING}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: String
     attributes: {id: TCPIP_STACK_MALLOC_FUNC}
     children:
@@ -41,6 +50,15 @@ children:
       children:
       - type: User
         attributes: {value: malloc}
+  - type: Menu
+    attributes: {id: TCPIP_STACK_RTOS_MENU}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: TCPIP_STACK_SYS_RANDOM_H2_ADAPTER}
     children:
@@ -48,5 +66,14 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tcpipStack, value: 'true'}
+  - type: File
+    attributes: {id: TCPIP_SYS_RTOS_TASK}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
 - type: ElementPosition
   attributes: {x: '239', y: '19', id: tcpipStack}
