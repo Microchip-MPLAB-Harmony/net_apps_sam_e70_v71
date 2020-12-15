@@ -122,8 +122,8 @@
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/lldp_manager.h</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/lldp_private.h</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/lldp_tlv.h</itemPath>
-                <itemPath>..\src\config\sam_e70_xult\library\tcpip\src\tcpip_mac_bridge_manager.h</itemPath>
-                <itemPath>..\src\config\sam_e70_xult\library\tcpip\src\tcpip_mac_bridge_private.h</itemPath>
+                <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_mac_bridge_manager.h</itemPath>
+                <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_mac_bridge_private.h</itemPath>
               </logicalFolder>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_common_ports.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_mac.h</itemPath>
@@ -169,7 +169,7 @@
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_commands.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_ethernet.h</itemPath>
-              <itemPath>..\src\config\sam_e70_xult\library\tcpip\tcpip_mac_bridge.h</itemPath>
+              <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_mac_bridge.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f5" displayName="net_pres" projectFiles="true">
@@ -187,9 +187,9 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f9" displayName="osal" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\osal\osal.h</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\osal\osal_definitions.h</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\osal\osal_impl_basic.h</itemPath>
+            <itemPath>../src/config/sam_e70_xult/osal/osal.h</itemPath>
+            <itemPath>../src/config/sam_e70_xult/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/sam_e70_xult/osal/osal_impl_basic.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f4" displayName="clk" projectFiles="true">
@@ -260,8 +260,8 @@
           <itemPath>../src/config/sam_e70_xult/device_cache.h</itemPath>
           <itemPath>../src/config/sam_e70_xult/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/sam_e70_xult/definitions.h</itemPath>
-          <itemPath>..\src\config\sam_e70_xult\user_settings.h</itemPath>
-          <itemPath>..\src\config\sam_e70_xult\device.h</itemPath>
+          <itemPath>../src/config/sam_e70_xult/user_settings.h</itemPath>
+          <itemPath>../src/config/sam_e70_xult/device.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f4" displayName="packs" projectFiles="true">
@@ -322,7 +322,7 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
-                <itemPath>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -471,10 +471,10 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/sha256.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/sha512.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/wc_port.h</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\curve448.h</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\ed448.h</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\fe_448.h</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\ge_448.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/curve448.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ed448.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/fe_448.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ge_448.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="wolfssl" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/callbacks.h</itemPath>
@@ -499,78 +499,78 @@
       <logicalFolder name="f2" displayName="sam_e70_xult.mhc" projectFiles="true">
         <logicalFolder name="f1" displayName="TCP_IP_STACK" projectFiles="true">
           <logicalFolder name="f1" displayName="APPLICATION_LAYER" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\APPLICATION_LAYER\APPLICATION_LAYER.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\APPLICATION_LAYER\tcpipDhcp.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\APPLICATION_LAYER\tcpipDns.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\APPLICATION_LAYER\tcpipSntp.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\APPLICATION_LAYER\tcpip_apps_config.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/APPLICATION_LAYER/APPLICATION_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDhcp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDns.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipSntp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpip_apps_config.yml</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="BASIC_CONFIGURATION" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\BASIC_CONFIGURATION\BASIC_CONFIGURATION.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\BASIC_CONFIGURATION\tcpipCmd.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\BASIC_CONFIGURATION\tcpipNetConfig.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\BASIC_CONFIGURATION\tcpipStack.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\BASIC_CONFIGURATION\tcpip_basic_config.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/BASIC_CONFIGURATION.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipCmd.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipNetConfig.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipStack.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpip_basic_config.yml</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="DRIVER_LAYER" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\DRIVER_LAYER\DRIVER_LAYER.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\DRIVER_LAYER\drvExtPhyLan8740.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\DRIVER_LAYER\drvGmac.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\DRIVER_LAYER\drvMiim.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\DRIVER_LAYER\tcpip_driver_config.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/DRIVER_LAYER/DRIVER_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/DRIVER_LAYER/drvExtPhyLan8740.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/DRIVER_LAYER/drvGmac.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/DRIVER_LAYER/drvMiim.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/DRIVER_LAYER/tcpip_driver_config.yml</itemPath>
           </logicalFolder>
           <logicalFolder name="f4" displayName="NETWORK_LAYER" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\NETWORK_LAYER\NETWORK_LAYER.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\NETWORK_LAYER\tcpipArp.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\NETWORK_LAYER\tcpipIcmp.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\NETWORK_LAYER\tcpipIPv4.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\NETWORK_LAYER\tcpip_network_config.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/NETWORK_LAYER/NETWORK_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipArp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIcmp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIPv4.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpip_network_config.yml</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="PRESENTATION_LAYER" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\PRESENTATION_LAYER\net_Pres.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\PRESENTATION_LAYER\PRESENTATION_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/PRESENTATION_LAYER/net_Pres.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/PRESENTATION_LAYER/PRESENTATION_LAYER.yml</itemPath>
           </logicalFolder>
           <logicalFolder name="f6" displayName="TRANSPORT_LAYER" projectFiles="true">
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\TRANSPORT_LAYER\tcpipTcp.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\TRANSPORT_LAYER\tcpipUdp.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\TRANSPORT_LAYER\tcpip_transport_config.yml</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\TRANSPORT_LAYER\TRANSPORT_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpipTcp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpipUdp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpip_transport_config.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/TRANSPORT_LAYER/TRANSPORT_LAYER.yml</itemPath>
           </logicalFolder>
-          <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\TCP_IP_STACK\TCP_IP_STACK.yml</itemPath>
+          <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/TCP_IP_STACK/TCP_IP_STACK.yml</itemPath>
         </logicalFolder>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\BSP_SAM_E70_Xplained_Ultra.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\cmsis.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\core.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\dfp.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\efc.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\GraphSettings.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\HarmonyCore.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\lib_crypto.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\lib_wolfcrypt.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\lib_wolfmqtt.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\lib_wolfssl.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\project.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\settings.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\sys_command.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\sys_console.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\sys_debug.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\sys_time.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\tc0.yml</itemPath>
-        <itemPath>..\src\config\sam_e70_xult\sam_e70_xult.mhc\usart1.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/BSP_SAM_E70_Xplained_Ultra.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/core.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/efc.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/lib_crypto.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/lib_wolfcrypt.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/lib_wolfmqtt.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/lib_wolfssl.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/project.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/sys_command.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/sys_console.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/sys_debug.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/tc0.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/usart1.yml</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\evp.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/evp.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>..\src\config\sam_e70_xult\harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/sam_e70_xult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_e70_xult" projectFiles="true">
-          <itemPath>..\src\config\sam_e70_xult\ATSAME70Q21B.ld</itemPath>
+          <itemPath>../src/config/sam_e70_xult/ATSAME70Q21B.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -696,7 +696,7 @@
               <itemPath>../src/config/sam_e70_xult/system/time/src/sys_time.c</itemPath>
             </logicalFolder>
             <itemPath>../src/config/sam_e70_xult/system/sys_time_h2_adapter.c</itemPath>
-            <itemPath>..\src\config\sam_e70_xult\system\sys_random_h2_adapter.c</itemPath>
+            <itemPath>../src/config/sam_e70_xult/system/sys_random_h2_adapter.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="third_party_adapter" projectFiles="true">
             <logicalFolder name="f1" displayName="wolfMQTT" projectFiles="true">
@@ -809,12 +809,12 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha256.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha512.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\curve448.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ed448.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\fe_448.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ge_448.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\sp_dsp32.c</itemPath>
-        <itemPath>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\wc_dsp.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/curve448.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ed448.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/fe_448.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_448.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_dsp32.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/wc_dsp.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="wolfssl" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/src/crl.c</itemPath>
