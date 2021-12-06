@@ -56,8 +56,17 @@
 #include "tcpip/tcpip.h"
 
 #include "app_commands.h"
-#include <sys/errno.h>
+#ifdef __ICCARM__
+__attribute__((section(".bss.errno"))) int errno = 0;           // initialization required to provide definition
+#include "toolchain_specifics.h"                                // extended E codes not provided in IAR errno.h
+#else
 #include <errno.h>
+#if (__XC32_VERSION < 4000) || (__XC32_VERSION == 243739000)
+// xc32 versions >= v4.0 no longer have sys/errno.h 
+#include <sys/errno.h>
+#endif
+#endif
+
 int32_t _APP_ParseUrl(char *uri, char **host, char **path, uint16_t * port);
 int8_t _APP_PumpDNS(const char * hostname, IPV4_ADDR *ipv4Addr);
 
