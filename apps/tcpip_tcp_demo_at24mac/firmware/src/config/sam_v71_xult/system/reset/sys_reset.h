@@ -1,25 +1,21 @@
 /*******************************************************************************
-  TWIHS Peripheral Library Interface Header File
+  RESET Service
 
-  Company
+  Company:
     Microchip Technology Inc.
 
-  File Name
-    plib_twihs0.h
+  File Name:
+    sys_reset.h
 
-  Summary
-    TWIHS peripheral library interface.
+  Summary:
+    RESET Service Header File
 
-  Description
-    This file defines the interface to the TWIHS peripheral library.  This
-    library provides access to and control of the associated peripheral
-    instance.
-
-  Remarks:
+  Description:
+    This library provides an interface to control and interact with RESET
+    System Service.
 
 *******************************************************************************/
 
-// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -42,18 +38,9 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
-// DOM-IGNORE-END
 
-#ifndef PLIB_TWIHS0_H
-#define PLIB_TWIHS0_H
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Included Files
-// *****************************************************************************
-// *****************************************************************************
-
-#include "plib_twihs_master.h"
+#ifndef SYS_RESET_H
+#define SYS_RESET_H
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -64,26 +51,34 @@
 // DOM-IGNORE-END
 
 // *****************************************************************************
-// *****************************************************************************
-// Section: Interface Routines
-// *****************************************************************************
-// *****************************************************************************
+/* Function:
+    void SYS_RESET_SoftwareReset( void )
 
-void TWIHS0_Initialize( void );
+  Summary:
+    Triggers a software reset.
 
-void TWIHS0_CallbackRegister( TWIHS_CALLBACK callback, uintptr_t contextHandle );
+  Description:
+    This function triggers a software Reset.
 
-bool TWIHS0_IsBusy( void );
+  PreCondition:
+    None.
 
-bool TWIHS0_Read( uint16_t address, uint8_t *pdata, size_t length );
+  Parameters:
+    None.
 
-bool TWIHS0_Write( uint16_t address, uint8_t *pdata, size_t length );
+  Returns:
+    None.
 
-bool TWIHS0_WriteRead( uint16_t address, uint8_t *wdata, size_t wlength, uint8_t *rdata, size_t rlength );
+  Example:
+    <code>
+    
+    SYS_RESET_SoftwareReset();
+    </code>
 
-TWIHS_ERROR TWIHS0_ErrorGet( void );
-
-bool TWIHS0_TransferSetup( TWIHS_TRANSFER_SETUP* setup, uint32_t srcClkFreq );
+  Remarks:
+    None.
+*/
+void SYS_RESET_SoftwareReset( void );
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -92,5 +87,4 @@ bool TWIHS0_TransferSetup( TWIHS_TRANSFER_SETUP* setup, uint32_t srcClkFreq );
 
 #endif
 // DOM-IGNORE-END
-
-#endif //PLIB_TWIHS0_H
+#endif // SYS_RESET_H
