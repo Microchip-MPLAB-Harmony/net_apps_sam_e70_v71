@@ -189,12 +189,12 @@ typedef struct
 #define   DRV_GMAC_USE_TX_SEMAPHORE_LOCK
 
 
-#define DRV_GMAC_MIN_RX_SIZE           64     // minimum RX buffer size
+#define DRV_GMAC_MIN_RX_SIZE           64      // minimum RX buffer size
                                                 // less than this creates excessive fragmentation
-                                                // Keep it always multiple of 16!
+                                                // Keep it always multiple of 64!
 
 #define DRV_GMAC_MIN_TX_DESCRIPTORS    1       // minimum number of TX descriptors
-                                                 // needed to accomodate zero copy and TCP traffic
+                                                 // needed to accommodate zero copy and TCP traffic
                                                  
 // *****************************************************************************
 /* Ethernet Driver Module Link check states
@@ -229,20 +229,17 @@ typedef struct
 	/** Pointer to Rx TDs (must be 8-byte aligned) */
 	DRV_PIC32CGMAC_HW_RXDCPT *pRxDesc;
     // Rx queues for RX packet buffers
-	DRV_PIC32CGMAC_SGL_LIST _RxBuffNewQueue;
-    DRV_PIC32CGMAC_SGL_LIST _RxBuffAckQueue;
+    DRV_PIC32CGMAC_SGL_LIST _RxQueue;
 	
 	/** Pointer to Tx TDs (must be 8-byte aligned) */
 	DRV_PIC32CGMAC_HW_TXDCPT *pTxDesc;
-
-	DRV_PIC32CGMAC_SGL_LIST _TxNewQueue;		//Pool of New Queue list
-	DRV_PIC32CGMAC_SGL_LIST _TxStartQueue;		//Queue list of for transmission
-	DRV_PIC32CGMAC_SGL_LIST _TxAckQueue;        // TX acknowledgement queue; stores TX packets that need to be acknowledged
-
+    //Queue list of for transmission
+	DRV_PIC32CGMAC_SGL_LIST _TxQueue;
+    
 	/** RX index of current processing Descriptor */
 	uint16_t nRxDescIndex;
 
-	/** Circular buffer head pointer by upper layer (buffer to be sent) */
+	/** Circular buffer head pointer by upper layer (buffer to send) */
 	uint16_t nTxDescHead;
 	/** Circular buffer tail pointer incremented by handlers (buffer sent) */
 	uint16_t nTxDescTail;	
@@ -274,7 +271,7 @@ typedef struct {
 			uint16_t    _linkPresent        : 1;    // lif connection to the PHY properly detected : on/off
 			uint16_t    _linkNegotiation    : 1;    // if an auto-negotiation is in effect : on/off
 			uint16_t	_linkPrev           : 1;    // last value of the link status: on/off
-			uint16_t	_linkUpDone       : 1;      // the link up sequence done
+			uint16_t	_linkUpDone         : 1;    // the link up sequence done
 			// add another flags here
 		};
 	}_macFlags;										// corresponding MAC flags
@@ -297,20 +294,37 @@ typedef struct {
 	uint32_t                        _linkWaitTick;				// tick value to wait for
 	DRV_ETHPHY_NEGOTIATION_RESULT   _negResult;		// negotiation result storage
 	DRV_GMAC_LINK_CHECK_STATE       _linkCheckState;    // link state machine current status
-	INT_SOURCE                      _macIntSrc;							// this MAC interrupt source
+	INT_SOURCE                      _macIntSrc;			// this MAC interrupt source
 	
 	DRV_GMAC_EVENT_DCPT             _gmac_event_group_dcpt;
-	uintptr_t                       _syncRxH;          // synch object handle for RX operations
-	uintptr_t                       _syncTxH;          // synch object handle for TX operations
+    // synch object handle for RX operations
+	uintptr_t                       _syncRxH;          
+    // synch object handle for TX operations
+	uintptr_t                       _syncTxH;          
 	
 	// debug: run time statistics
 	TCPIP_MAC_RX_STATISTICS         _rxStat;
 	TCPIP_MAC_TX_STATISTICS         _txStat;
                
     // GMAC queues
-	DRV_GMAC_QUEUE                  gmac_queue[DRV_GMAC_NUMBER_OF_QUEUES];	
-	TCPIP_MODULE_MAC_PIC32C_CONFIG  gmacConfig;  // configuration parameters
-	
+	DRV_GMAC_QUEUE                  gmac_queue[DRV_GMAC_NUMBER_OF_QUEUES];
+    // GMAC configuration parameters	
+	TCPIP_MODULE_MAC_PIC32C_CONFIG  gmacConfig;  
+    
+    // gap descriptor offset
+    int16_t                        _dcptOffset;
+    // control flags from the stack
+
+    // mask corresponding to _dataOffset
+    uint32_t                        _dataOffsetMask;
+
+    // TCPIP_MAC_CONTROL_FLAGS
+    uint16_t                        _controlFlags;
+    // data payload offset required    
+    uint8_t                         _dataOffset;
+    // flag to discard tx packets and reinitialize Tx    
+    uint8_t                         _txDiscard;
+    
 } DRV_GMAC_INSTANCE;
 
 
