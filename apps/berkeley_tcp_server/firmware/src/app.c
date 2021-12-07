@@ -54,8 +54,16 @@
 
 #include "tcpip/tcpip.h"
 
+#ifdef __ICCARM__
+__attribute__((section(".bss.errno"))) int errno = 0;           // initialization required to provide definition
+#include "toolchain_specifics.h"                                // extended E codes not provided in IAR errno.h
+#else
 #include <errno.h>
+#if (__XC32_VERSION < 4000) || (__XC32_VERSION == 243739000)
+// xc32 versions >= v4.0 no longer have sys/errno.h 
 #include <sys/errno.h>
+#endif
+#endif
 
 #define SERVER_PORT 9760
 // *****************************************************************************
