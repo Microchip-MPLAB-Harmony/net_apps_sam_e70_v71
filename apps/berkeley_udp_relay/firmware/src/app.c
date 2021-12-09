@@ -53,8 +53,16 @@
 
 #include "app.h"
 #include "tcpip/berkeley_api.h"
+#ifdef __ICCARM__
+__attribute__((section(".bss.errno"))) int errno = 0;           // initialization required to provide definition
+#include "toolchain_specifics.h"                                // extended E codes not provided in IAR errno.h
+#else
 #include <errno.h>
+#if (__XC32_VERSION < 4000) || (__XC32_VERSION == 243739000)
+// xc32 versions >= v4.0 no longer have sys/errno.h 
 #include <sys/errno.h>
+#endif
+#endif
 
 // *****************************************************************************
 // *****************************************************************************
@@ -731,12 +739,8 @@ static void _APP_RelayClientTasks() {
         }
             break;
         case APP_STATE_RELAY_CLIENT_RUNNING:
-        {
-#if !defined(__PIC32C__) && !defined(__SAMA5D2)
-            itoa(cannedData, appData.relayClientNumberOfPackets, 10);
-#else
-            itoa(appData.relayClientNumberOfPackets, cannedData, 10);
-#endif            
+        {           
+            sprintf(cannedData, "%lu", appData.relayClientNumberOfPackets);
             int i = sendto(appData.relayClientSocket, (const char *) cannedData, sizeof (cannedData), 0, (const struct sockaddr*) &appData.relayClientAddr, sizeof (struct sockaddr_in6));
             if (i < 0) {
                 break;
