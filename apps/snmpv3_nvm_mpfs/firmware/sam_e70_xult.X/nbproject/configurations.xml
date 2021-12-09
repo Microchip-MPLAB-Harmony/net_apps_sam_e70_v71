@@ -128,6 +128,8 @@
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/lldp_tlv.h</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_mac_bridge_manager.h</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_mac_bridge_private.h</itemPath>
+                <itemPath>../src/config/sam_e70_xult/library/tcpip/src/dhcp_server_manager.h</itemPath>
+                <itemPath>../src/config/sam_e70_xult/library/tcpip/src/dhcp_server_private.h</itemPath>
               </logicalFolder>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_common_ports.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_mac.h</itemPath>
@@ -174,6 +176,7 @@
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_ethernet.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/library/tcpip/tcpip_mac_bridge.h</itemPath>
+              <itemPath>../src/config/sam_e70_xult/library/tcpip/dhcp_server.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f5" displayName="net_pres" projectFiles="true">
@@ -248,6 +251,9 @@
               <itemPath>../src/config/sam_e70_xult/system/int/sys_int.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/system/int/sys_int_mapping.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f8" displayName="reset" projectFiles="true">
+              <itemPath>../src/config/sam_e70_xult/system/reset/sys_reset.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f1" displayName="time" projectFiles="true">
               <itemPath>../src/config/sam_e70_xult/system/time/sys_time.h</itemPath>
               <itemPath>../src/config/sam_e70_xult/system/time/sys_time_definitions.h</itemPath>
@@ -271,12 +277,11 @@
           <itemPath>../src/config/sam_e70_xult/definitions.h</itemPath>
           <itemPath>../src/config/sam_e70_xult/config.h</itemPath>
           <itemPath>../src/config/sam_e70_xult/device.h</itemPath>
+          <itemPath>../src/config/sam_e70_xult/interrupts.h</itemPath>
+          <itemPath>../src/config/sam_e70_xult/device_vectors.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/sam_e70_xult/osal/osal.h</itemPath>
-        <itemPath>../src/config/sam_e70_xult/osal/osal_definitions.h</itemPath>
-        <itemPath>../src/config/sam_e70_xult/osal/osal_impl_basic.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAME70Q21B_DFP" projectFiles="true">
@@ -317,12 +322,72 @@
             <itemPath>../src/packs/ATSAME70Q21B_DFP/component/utmi.h</itemPath>
             <itemPath>../src/packs/ATSAME70Q21B_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAME70Q21B_DFP/component/xdmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/component/fuses.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/acc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/afec0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/afec1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/chipid.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/dacc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/efc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/fuses.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/gpbr.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/hsmci.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/i2sc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/i2sc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/isi.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/matrix.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/mcan0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/mcan1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/pioe.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/pmc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/pwm0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/pwm1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/qspi.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/rswdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/rtt.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/sdramc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/smc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/spi0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/spi1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/ssc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/tc2.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/tc3.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/twihs0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/twihs1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/twihs2.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/uart0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/uart1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/uart2.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/uart3.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/uart4.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/usart0.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/usart1.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/usart2.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/usbhs.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/utmi.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME70Q21B_DFP/instance/xdmac.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAME70Q21B_DFP/pio/same70q21b.h</itemPath>
           </logicalFolder>
           <itemPath>../src/packs/ATSAME70Q21B_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAME70Q21B_DFP/atsame70q21b.h</itemPath>
+          <itemPath>../src/packs/ATSAME70Q21B_DFP/same70q21b.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
@@ -478,6 +543,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ed448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/fe_448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ge_448.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/rc2.h</itemPath>
       </logicalFolder>
       <itemPath>../src/mib.h</itemPath>
       <itemPath>../src/app.h</itemPath>
@@ -708,6 +774,9 @@
             <logicalFolder name="f3" displayName="int" projectFiles="true">
               <itemPath>../src/config/sam_e70_xult/system/int/src/sys_int.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="f8" displayName="reset" projectFiles="true">
+              <itemPath>../src/config/sam_e70_xult/system/reset/sys_reset.c</itemPath>
+            </logicalFolder>
             <logicalFolder name="f1" displayName="time" projectFiles="true">
               <itemPath>../src/config/sam_e70_xult/system/time/src/sys_time.c</itemPath>
             </logicalFolder>
@@ -848,6 +917,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_448.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_dsp32.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/wc_dsp.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/rc2.c</itemPath>
       </logicalFolder>
       <itemPath>../src/custom_snmp_app.c</itemPath>
       <itemPath>../src/mpfs_net_img.c</itemPath>
@@ -868,13 +938,13 @@
         <targetDevice>ATSAME70Q21B</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>4.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME70_DFP" vendor="Microchip" version="4.5.86"/>
+        <pack name="SAME70_DFP" vendor="Microchip" version="4.4.78"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
@@ -937,7 +1007,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl;../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_e70_xult/library;../src/config/sam_e70_xult/library/tcpip/src;../src/config/sam_e70_xult/library/tcpip/src/common"/>
+                  value="../src;../src/config/sam_e70_xult;../src/config/sam_e70_xult/library;../src/config/sam_e70_xult/library/tcpip/src;../src/config/sam_e70_xult/library/tcpip/src/common;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -947,9 +1017,10 @@
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros"
-                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H"/>
+                  value="HAVE_CONFIG_H;WOLFSSL_IGNORE_FILE_WARN"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
+        <property key="tentative-definitions" value="-fno-common"/>
         <property key="toplevel-reordering" value=""/>
         <property key="unaligned-access" value=""/>
         <property key="use-cci" value="false"/>
@@ -981,6 +1052,7 @@
       </C32-AS>
       <C32-CO>
         <property key="coverage-enable" value=""/>
+        <property key="stack-guidance" value="false"/>
       </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
@@ -1034,7 +1106,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;"/>
+                  value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1062,19 +1134,27 @@
         <property key="omit-pack-options" value="1"/>
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
+        <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="arm.use_vtor" value="false"/>
+        <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="firmware.path"
                   value="Press to browse for a specific firmware version"/>
         <property key="firmware.toolpack"
                   value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -1099,6 +1179,10 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.has_reset" value="true"/>
+        <property key="script.log_level" value="1"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"
@@ -1131,8 +1215,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/microchip/h3/net_apps_sam_e70_v71/apps/snmpv3_nvm_mpfs/firmware/sam_e70_xult.X/debug/sam_e70_xult/sam_e70_xult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
