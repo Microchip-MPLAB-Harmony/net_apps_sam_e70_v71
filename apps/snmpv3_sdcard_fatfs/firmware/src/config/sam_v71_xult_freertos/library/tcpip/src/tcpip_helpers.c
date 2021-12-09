@@ -292,6 +292,8 @@ bool TCPIP_Helper_StringToIPv6Address(const char * addStr, IPV6_ADDR * addr)
         return true;
     }
 
+    memset(convAddr.v, 0, sizeof(convAddr));
+
     while(isspace(*addStr))
     {   // skip leading space
         addStr++;
@@ -608,7 +610,7 @@ bool TCPIP_Helper_MACAddressToString(const TCPIP_MAC_ADDR* macAddr, char* buff, 
 
 typedef struct
 {
-    TCPIP_MAC_POWER_MODE  pwrMode;    // the power mode
+    TCPIP_MAC_POWER_MODE    pwrMode;    // the power mode
     const char*             pwrName;    // corresponding name
 }TCPIP_MAC_POWER_ENTRY;
 
@@ -645,20 +647,22 @@ static const TCPIP_MAC_POWER_ENTRY TCPIP_MAC_POWER_TBL[] =
   ***************************************************************************/
 TCPIP_MAC_POWER_MODE TCPIP_Helper_StringToPowerMode(const char* str)
 {
-    int pwrIx;
-    const TCPIP_MAC_POWER_ENTRY* pEntry;
-
-    pEntry = TCPIP_MAC_POWER_TBL + 0;
-    for(pwrIx = 0; pwrIx < sizeof(TCPIP_MAC_POWER_TBL)/sizeof(*TCPIP_MAC_POWER_TBL); pwrIx++)
+    if(str)
     {
-        if(str && pEntry->pwrName)
+        int pwrIx;
+        const TCPIP_MAC_POWER_ENTRY* pEntry;
+
+        pEntry = TCPIP_MAC_POWER_TBL + 0;
+        for(pwrIx = 0; pwrIx < sizeof(TCPIP_MAC_POWER_TBL)/sizeof(*TCPIP_MAC_POWER_TBL); pwrIx++, pEntry++)
         {
-            if(!strcmp(str, pEntry->pwrName))
+            if(pEntry->pwrName)
             {
-                return pEntry->pwrMode;
+                if(!strcmp(str, pEntry->pwrName))
+                {
+                    return pEntry->pwrMode;
+                }
             }
         }
-        pEntry++;
     }
 
     return TCPIP_MAC_POWER_NONE;
