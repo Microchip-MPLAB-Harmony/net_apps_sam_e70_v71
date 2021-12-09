@@ -7,21 +7,40 @@ children:
   - type: KeyValueSet
     attributes: {id: NET_PRES_BLOB_CERT}
     children:
-    - type: Attributes
+    - type: Values
       children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: KeyValueSet
-    attributes: {id: NET_PRES_ENC_PROVIDE}
+      - type: Dynamic
+        attributes: {id: net_Pres, value: '1'}
+  - type: Boolean
+    attributes: {id: NET_PRES_BLOB_CERT_REPO}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'false'}
+  - type: Boolean
+    attributes: {id: NET_PRES_CERT_STORE_STUBS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'true'}
+  - type: Boolean
+    attributes: {id: NET_PRES_GENERATE_ENC_STUBS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'true'}
+  - type: Menu
+    attributes: {id: NET_PRES_RTOS_MENU}
     children:
     - type: Attributes
       children:
       - type: Boolean
         attributes: {id: visible}
         children:
-        - {type: Value, value: 'false'}
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: NET_PRES_RTOS_STACK_SIZE}
     children:
@@ -30,40 +49,34 @@ children:
       - type: User
         attributes: {value: '32768'}
   - type: Boolean
-    attributes: {id: NET_PRES_SUPPORT_CLIENT_ENC}
+    attributes: {id: NET_PRES_SUPPORT_DATAGRAM}
     children:
-    - type: Attributes
+    - type: Values
       children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'true'}
   - type: Boolean
-    attributes: {id: NET_PRES_SUPPORT_DATAGRAM_ENC}
+    attributes: {id: NET_PRES_SUPPORT_STREAM}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'true'}
+  - type: File
+    attributes: {id: NET_PRES_SYS_RTOS_TASK}
     children:
     - type: Attributes
       children:
       - type: Boolean
-        attributes: {id: visible}
+        attributes: {id: enabled}
         children:
-        - {type: Value, value: 'false'}
+        - {type: Value, value: 'true'}
   - type: Boolean
-    attributes: {id: NET_PRES_SUPPORT_SERVER_ENC}
+    attributes: {id: NET_PRES_USE_WOLF_SSL}
     children:
-    - type: Attributes
+    - type: Values
       children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Boolean
-    attributes: {id: NET_PRES_SUPPORT_STREAM_ENC}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
+      - type: Dynamic
+        attributes: {id: net_Pres, value: 'false'}
 - type: ElementPosition
   attributes: {x: '20', y: '20', id: net_Pres}
