@@ -40,4 +40,4 @@ children:
       - type: User
         attributes: {value: '20'}
 - type: ElementPosition
-  attributes: {x: '760', y: '20', id: tcpipHttpNet}
+  attributes: {x: '172', y: '192', id: tcpipHttpNet}

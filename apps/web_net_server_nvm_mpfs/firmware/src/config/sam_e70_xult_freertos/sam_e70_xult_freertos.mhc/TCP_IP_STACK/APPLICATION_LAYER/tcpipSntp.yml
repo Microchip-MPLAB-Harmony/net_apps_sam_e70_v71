@@ -19,4 +19,4 @@ children:
       - type: User
         attributes: {value: pool.ntp.org}
 - type: ElementPosition
-  attributes: {x: '263', y: '164', id: tcpipSntp}
+  attributes: {x: '158', y: '211', id: tcpipSntp}

@@ -12,4 +12,4 @@ children:
       - type: Dynamic
         attributes: {id: tcpipDns, value: '504'}
 - type: ElementPosition
-  attributes: {x: '566', y: '48', id: tcpipDns}
+  attributes: {x: '349', y: '150', id: tcpipDns}
