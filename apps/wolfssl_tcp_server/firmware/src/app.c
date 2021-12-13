@@ -188,7 +188,7 @@ char buffer[513];
 char successBuffer[] = "HTTP/1.1 200 Success\r\n"
         "Connection: Close\r\n"
         "Content-Type:text/html\r\n"
-        "\r\n<html><head><title>Test Page</title></head><body>Nothing here</body></html>\r\n";
+        "\r\n<html><head><title>Test Page</title></head><body>Nothing Here To Demonstrate as a HTTP Server</body></html>\r\n";
 
 void APP_ClearText_Tasks(IP_ADDRESS_TYPE ipType, NET_PRES_SKT_HANDLE_T * socket, APP_STATES *state) {
     NET_PRES_SKT_ERROR_T error;
