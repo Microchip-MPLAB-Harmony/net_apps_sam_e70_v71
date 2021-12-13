@@ -62,7 +62,7 @@
 /****************************** XDMAC Data Types ******************************/
 /* XDMAC Channels */
 typedef enum {
-    XDMAC_CHANNEL_0,
+    XDMAC_CHANNEL_0 = 0,
 } XDMAC_CHANNEL;
 
 
@@ -83,6 +83,12 @@ XDMAC_CHANNEL_CONFIG XDMAC_ChannelSettingsGet (XDMAC_CHANNEL channel);
 bool XDMAC_ChannelSettingsSet (XDMAC_CHANNEL channel, XDMAC_CHANNEL_CONFIG setting);
 
 void XDMAC_ChannelBlockLengthSet (XDMAC_CHANNEL channel, uint16_t length);
+
+void XDMAC_ChannelSuspend (XDMAC_CHANNEL channel);
+
+void XDMAC_ChannelResume (XDMAC_CHANNEL channel);
+
+XDMAC_TRANSFER_EVENT XDMAC_ChannelTransferStatusGet(XDMAC_CHANNEL channel);
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility

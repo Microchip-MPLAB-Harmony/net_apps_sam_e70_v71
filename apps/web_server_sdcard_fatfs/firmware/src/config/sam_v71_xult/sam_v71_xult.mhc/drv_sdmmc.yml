@@ -44,6 +44,12 @@ children:
       - type: Combo
         attributes: {id: DRV_SDMMC_CARD_DETECTION_METHODS_LIST2}
         children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
         - type: Values
           children:
           - type: Dynamic
@@ -158,4 +164,4 @@ children:
             children:
             - {type: Value, value: HSMCI_SDHC}
 - type: ElementPosition
-  attributes: {x: '146', y: '298', id: drv_sdmmc}
+  attributes: {x: '147', y: '297', id: drv_sdmmc}
