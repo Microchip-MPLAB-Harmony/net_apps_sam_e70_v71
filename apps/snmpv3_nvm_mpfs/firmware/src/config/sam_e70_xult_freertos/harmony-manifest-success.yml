@@ -19,5 +19,5 @@ modules:
     - {name: "wolfssl", version: "v4.7.0"}
     - {name: "net", version: "unknown"}
     - {name: "crypto", version: "v3.7.4"}
-    - {name: "CMSIS-FreeRTOS", version: "unknown"}
+    - {name: "CMSIS-FreeRTOS", version: "v10.3.1"}
 
