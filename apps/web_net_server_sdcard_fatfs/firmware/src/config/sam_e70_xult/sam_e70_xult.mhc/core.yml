@@ -4048,7 +4048,7 @@ children:
       - type: String
         attributes: {id: value}
         children:
-        - {type: Value, value: '226960'}
+        - {type: Value, value: '186960'}
   - type: Integer
     attributes: {id: XC32_HEAP_SIZE}
     children:
@@ -4057,7 +4057,7 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '1024'}
       - type: User
-        attributes: {value: '226960'}
+        attributes: {value: '186960'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC0_CSIZE}
     children:

@@ -50,11 +50,28 @@
 #include <stdbool.h>
 #include "crypto/crypto.h"
 #include "peripheral/efc/plib_efc.h"
+#include "peripheral/tc/plib_tc0.h"
 #include "system/time/sys_time.h"
+#include "peripheral/usart/plib_usart1.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
+#include "system/reset/sys_reset.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
+#include "library/tcpip/tcpip.h"
+#include "system/sys_time_h2_adapter.h"
+#include "system/sys_random_h2_adapter.h"
+#include "driver/gmac/drv_gmac.h"
+#include "driver/sdmmc/drv_sdmmc.h"
+#include "system/command/sys_command.h"
+#include "peripheral/clk/plib_clk.h"
+#include "peripheral/pio/plib_pio.h"
+#include "peripheral/nvic/plib_nvic.h"
+#include "peripheral/mpu/plib_mpu.h"
+#include "peripheral/xdmac/plib_xdmac.h"
+#include "driver/miim/drv_miim.h"
+#include "bsp/bsp.h"
+#include "wolfssl/wolfcrypt/port/pic32/crypt_wolfcryptcb.h"
 #include "net_pres/pres/net_pres.h"
 #include "net_pres/pres/net_pres_encryptionproviderapi.h"
 #include "net_pres/pres/net_pres_transportapi.h"
@@ -65,27 +82,11 @@
 #include "system/fs/fat_fs/file_system/ff.h"
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
-#include "peripheral/hsmci/plib_hsmci.h"
-#include "peripheral/tc/plib_tc0.h"
-#include "peripheral/usart/plib_usart1.h"
-#include "library/tcpip/tcpip.h"
-#include "driver/gmac/drv_gmac.h"
-#include "driver/miim/drv_miim.h"
-#include "system/sys_time_h2_adapter.h"
-#include "system/sys_random_h2_adapter.h"
-#include "driver/sdmmc/drv_sdmmc.h"
-#include "system/command/sys_command.h"
-#include "peripheral/clk/plib_clk.h"
-#include "peripheral/pio/plib_pio.h"
-#include "peripheral/nvic/plib_nvic.h"
-#include "peripheral/mpu/plib_mpu.h"
-#include "peripheral/xdmac/plib_xdmac.h"
-#include "bsp/bsp.h"
-#include "wolfssl/wolfcrypt/port/pic32/crypt_wolfcryptcb.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "peripheral/hsmci/plib_hsmci.h"
 #include "app.h"
 
 
@@ -97,6 +98,9 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* CPU clock frequency */
+#define CPU_CLOCK_FREQUENCY 300000000
 
 // *****************************************************************************
 // *****************************************************************************
@@ -190,34 +194,34 @@ void SYS_Tasks ( void );
 // Section: Type Definitions
 // *****************************************************************************
 // *****************************************************************************
-    
+
 // *****************************************************************************
 /* System Objects
-        
+
 Summary:
     Structure holding the system's object handles
-        
+
 Description:
     This structure contains the object handles for all objects in the
     MPLAB Harmony project's system configuration.
-        
+
 Remarks:
     These handles are returned from the "Initialize" functions for each module
     and must be passed into the "Tasks" function for each module.
 */
-        
+
 typedef struct
 {
     SYS_MODULE_OBJ  sysTime;
     SYS_MODULE_OBJ  sysConsole0;
 
 
-    SYS_MODULE_OBJ  drvMiim;
-    SYS_MODULE_OBJ  netPres;
-
-
     SYS_MODULE_OBJ  tcpip;
+
+    SYS_MODULE_OBJ  drvMiim;
     SYS_MODULE_OBJ  sysDebug;
+
+    SYS_MODULE_OBJ  netPres;
 
     SYS_MODULE_OBJ  drvSDMMC0;
 
