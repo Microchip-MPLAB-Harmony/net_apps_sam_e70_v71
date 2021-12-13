@@ -60,6 +60,6 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'false'}
+        - {type: Value, value: 'true'}
 - type: ElementPosition
-  attributes: {x: '570', y: '59', id: FreeRTOS}
+  attributes: {x: '570', y: '66', id: FreeRTOS}

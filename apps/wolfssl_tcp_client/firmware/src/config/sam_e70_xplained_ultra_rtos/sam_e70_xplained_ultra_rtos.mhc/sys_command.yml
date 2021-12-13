@@ -48,4 +48,4 @@ children:
         children:
         - {type: Value, value: sys_console}
 - type: ElementPosition
-  attributes: {x: '347', y: '208', id: sys_command}
+  attributes: {x: '399', y: '210', id: sys_command}
