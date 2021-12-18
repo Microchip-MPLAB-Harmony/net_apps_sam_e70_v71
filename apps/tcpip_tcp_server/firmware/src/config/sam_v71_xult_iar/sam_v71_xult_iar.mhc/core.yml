@@ -82,6 +82,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
+      - type: User
+        attributes: {value: 'true'}
+  - type: Boolean
+    attributes: {id: CoreMPU_PRIVDEFENA}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
   - type: Boolean
     attributes: {id: CoreUseMPU}
     children:
@@ -89,6 +98,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
+      - type: User
+        attributes: {value: 'true'}
   - type: Menu
     attributes: {id: CoreXC32Menu}
     children:
@@ -381,6 +392,78 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '150000000'}
+  - type: Menu
+    attributes: {id: MPU_MENU_0}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_1}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_2}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_3}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_4}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_5}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_6}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Menu
+    attributes: {id: MPU_MENU_CONF}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: KeyValueSet
     attributes: {id: MPU_Region_0_Access}
     children:
@@ -808,6 +891,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: GMAC Descriptor}
+  - type: File
+    attributes: {id: MPU_SYSTEM_DEFINITIONS_H}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: NVIC_14_0_ENABLE}
     children:
@@ -1494,6 +1586,33 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '4112'}
+  - type: File
+    attributes: {id: PLIB_MPU_C}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: PLIB_MPU_H}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: PLIB_MPU_LOCAL_H}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
   - type: Hex
     attributes: {id: PMC_PCER0}
     children:
@@ -1660,7 +1779,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '0x493e0'}
+        attributes: {id: core, value: '0x493E0'}
   - type: Integer
     attributes: {id: SYSTICK_PERIOD_US}
     children:

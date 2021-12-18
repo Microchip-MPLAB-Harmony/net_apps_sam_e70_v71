@@ -2246,6 +2246,12 @@
                             </file>
                         </group>
                         <group>
+                            <name>reset</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\system\reset\sys_reset.h</name>
+                            </file>
+                        </group>
+                        <group>
                             <name>debug</name>
                             <file>
                                 <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\system\debug\sys_debug.h</name>
@@ -2344,6 +2350,12 @@
                                 </file>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\src\dhcps_private.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\src\dhcp_server_manager.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\src\dhcp_server_private.h</name>
                                 </file>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\src\zero_conf_helper.h</name>
@@ -2551,6 +2563,9 @@
                                 <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\dhcps.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\dhcp_server.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\library\tcpip\zero_conf_link_local.h</name>
                             </file>
                             <file>
@@ -2753,6 +2768,12 @@
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\definitions.h</name>
                     </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\interrupts.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\device_vectors.h</name>
+                    </file>
                     <group>
                         <name>bsp</name>
                         <file>
@@ -2793,6 +2814,9 @@
                         </file>
                         <file>
                             <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\component\efc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\component\fuses.h</name>
                         </file>
                         <file>
                             <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\component\gmac.h</name>
@@ -2888,8 +2912,185 @@
                             <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\component\xdmac.h</name>
                         </file>
                     </group>
+                    <group>
+                        <name>instance</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\acc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\aes.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\afec0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\afec1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\chipid.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\dacc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\efc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\fuses.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\gmac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\gpbr.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\hsmci.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\i2sc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\i2sc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\icm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\isi.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\matrix.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\mcan0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\mcan1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\mlb.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\pioa.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\piob.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\pioc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\piod.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\pioe.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\pmc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\pwm0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\pwm1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\qspi.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\rstc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\rswdt.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\rtc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\rtt.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\sdramc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\smc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\spi0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\spi1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\ssc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\supc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\tc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\tc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\tc2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\tc3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\trng.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\twihs0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\twihs1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\twihs2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\uart0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\uart1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\uart2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\uart3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\uart4.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\usart0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\usart1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\usart2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\usbhs.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\utmi.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\wdt.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\instance\xdmac.h</name>
+                        </file>
+                    </group>
                     <file>
-                        <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\atsamv71q21b.h</name>
+                        <name>$PROJ_DIR$\..\src\packs\ATSAMV71Q21B_DFP\samv71q21b.h</name>
                     </file>
                     <group>
                         <name>pio</name>
@@ -3004,9 +3205,6 @@
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\dsa.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\ecc.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\ed25519.h</name>
                 </file>
                 <file>
@@ -3094,6 +3292,9 @@
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\random.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\rc2.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\ripemd.h</name>
                 </file>
                 <file>
@@ -3119,9 +3320,6 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\tfm.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\types.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\visibility.h</name>
@@ -3343,6 +3541,12 @@
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\wc_port.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\ecc.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\types.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\certs_test.h</name>
                 </file>
             </group>
@@ -3506,6 +3710,12 @@
                             </file>
                         </group>
                         <group>
+                            <name>reset</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\system\reset\sys_reset.c</name>
+                            </file>
+                        </group>
+                        <group>
                             <name>command</name>
                             <file>
                                 <name>$PROJ_DIR$\..\src\config\sam_v71_xult_iar\system\command\src\sys_command.c</name>
@@ -3661,9 +3871,6 @@
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\dsa.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ecc.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ecc_fp.c</name>
                 </file>
                 <file>
@@ -3737,6 +3944,9 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\rabbit.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\rc2.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ripemd.c</name>
@@ -3881,6 +4091,9 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\sha512.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ecc.c</name>
                 </file>
             </group>
         </group>

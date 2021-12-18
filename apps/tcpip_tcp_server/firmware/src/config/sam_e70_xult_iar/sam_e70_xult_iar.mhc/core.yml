@@ -82,6 +82,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
+      - type: User
+        attributes: {value: 'true'}
+  - type: Boolean
+    attributes: {id: CoreMPU_PRIVDEFENA}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
   - type: Boolean
     attributes: {id: CoreUseMPU}
     children:
@@ -89,6 +98,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
+      - type: User
+        attributes: {value: 'true'}
   - type: Menu
     attributes: {id: CoreXC32Menu}
     children:
@@ -1705,7 +1716,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '0x493e0'}
+        attributes: {id: core, value: '0x493E0'}
   - type: Integer
     attributes: {id: SYSTICK_PERIOD_US}
     children:

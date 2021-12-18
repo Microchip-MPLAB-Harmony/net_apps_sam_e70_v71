@@ -4,13 +4,6 @@ attributes: {id: sys_command}
 children:
 - type: Symbols
   children:
-  - type: Integer
-    attributes: {id: SYS_COMMAND_PRINT_BUFFER_SIZE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: tcpip_basic_config, value: '2560'}
   - type: String
     attributes: {id: SYS_CONSOLE_DEVICE}
     children:

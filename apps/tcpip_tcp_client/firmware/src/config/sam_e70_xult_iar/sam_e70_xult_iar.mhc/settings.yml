@@ -5,9 +5,9 @@ frameworkPath: D:\11_Repo\01_H3\h3
 processor: ATSAME70Q21B
 projectName: tcpip_tcp_client
 settings:
-  PackageFilter: bsp;core;crypto;csp;net;net;net;net;net;net;net;net;touch;usb;wireless;
+  PackageFilter: audio;azure-rtos-threadx;azure_rtos;bsp;core;core_apps_sam_d5x_e5x;crypto;csp;dev_packs;dummy_package;gfx;net;net_apps_pic32mx;net_apps_pic32mz;net_apps_sam_9x60;net_apps_sam_a5d2;net_apps_sam_e5x;net_apps_sam_e70_v71;net_apps_sam_rh71;quick_docs;touch;usb;wireless;wireless_wifi
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
-  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: OVERWRITE
-  DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.3.73\same70b\atdf\ATSAME70Q21B.atdf
+  DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.6.98\same70b\atdf\ATSAME70Q21B.atdf
