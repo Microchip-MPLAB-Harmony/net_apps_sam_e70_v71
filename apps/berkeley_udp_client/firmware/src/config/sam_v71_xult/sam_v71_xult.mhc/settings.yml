@@ -9,5 +9,5 @@ settings:
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
-  MERGE_STRATEGY: OVERWRITE
+  MERGE_STRATEGY: ALL
   DFPPath: .\dev_packs\Microchip\SAMV71_DFP\4.6.90\samv71b\atdf\ATSAMV71Q21B.atdf

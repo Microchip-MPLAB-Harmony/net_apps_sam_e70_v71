@@ -41,8 +41,6 @@ children:
     children:
     - type: Values
       children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: 'true'}
       - type: User
         attributes: {value: 'true'}
   - type: Boolean
@@ -50,8 +48,6 @@ children:
     children:
     - type: Values
       children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: 'true'}
       - type: User
         attributes: {value: 'true'}
   - type: KeyValueSet
@@ -655,8 +651,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
-      - type: User
-        attributes: {value: 'true'}
   - type: String
     attributes: {id: MPU_Region_6_Length}
     children:
