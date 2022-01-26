@@ -1,17 +1,18 @@
 /*******************************************************************************
-  NVIC PLIB Header
+  RESET Service
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_nvic.h
+    sys_reset.h
 
   Summary:
-    NVIC PLIB Header File
+    RESET Service Header File
 
   Description:
-    None
+    This library provides an interface to control and interact with RESET
+    System Service.
 
 *******************************************************************************/
 
@@ -38,11 +39,8 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef PLIB_NVIC_H
-#define PLIB_NVIC_H
-
-#include <stddef.h>
-#include <stdbool.h>
+#ifndef SYS_RESET_H
+#define SYS_RESET_H
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -52,14 +50,35 @@
 #endif
 // DOM-IGNORE-END
 
+// *****************************************************************************
+/* Function:
+    void SYS_RESET_SoftwareReset( void )
 
-/***************************** NVIC Inline *******************************/
+  Summary:
+    Triggers a software reset.
 
-void NVIC_Initialize( void );
-void NVIC_INT_Enable( void );
-bool NVIC_INT_Disable( void );
-void NVIC_INT_Restore( bool state );
+  Description:
+    This function triggers a software Reset.
 
+  PreCondition:
+    None.
+
+  Parameters:
+    None.
+
+  Returns:
+    None.
+
+  Example:
+    <code>
+    
+    SYS_RESET_SoftwareReset();
+    </code>
+
+  Remarks:
+    None.
+*/
+void SYS_RESET_SoftwareReset( void );
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -68,4 +87,4 @@ void NVIC_INT_Restore( bool state );
 
 #endif
 // DOM-IGNORE-END
-#endif // PLIB_NVIC_H
+#endif // SYS_RESET_H

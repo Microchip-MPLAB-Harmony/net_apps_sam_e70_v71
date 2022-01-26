@@ -1,21 +1,22 @@
 /*******************************************************************************
-  NVIC PLIB Header
+  Reset System Service Source File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_nvic.h
+    sys_reset.c
 
   Summary:
-    NVIC PLIB Header File
+    Reset System Service source file.
 
   Description:
-    None
-
+    This source file contains the function implementations of the APIs
+    supported by the module.
 *******************************************************************************/
 
-/*******************************************************************************
+//DOM-IGNORE-BEGIN
+/******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
@@ -37,35 +38,17 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
+//DOM-IGNORE-END
 
-#ifndef PLIB_NVIC_H
-#define PLIB_NVIC_H
+#include "device.h"
+#include "system/reset/sys_reset.h"
 
-#include <stddef.h>
-#include <stdbool.h>
+void __attribute__((noreturn)) SYS_RESET_SoftwareReset(void)
+{
+ 
+    NVIC_SystemReset();
+}
 
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    extern "C" {
-
-#endif
-// DOM-IGNORE-END
-
-
-/***************************** NVIC Inline *******************************/
-
-void NVIC_Initialize( void );
-void NVIC_INT_Enable( void );
-bool NVIC_INT_Disable( void );
-void NVIC_INT_Restore( bool state );
-
-
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    }
-
-#endif
-// DOM-IGNORE-END
-#endif // PLIB_NVIC_H
+/*******************************************************************************
+ End of File
+*/
