@@ -1476,13 +1476,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: null
-- generatedChecksum: 8798D0655262C08492B48FCD655FD079
+- generatedChecksum: 6ADB7A3553F7BCDFE3043FA4E3D58DA4
   logicalPath: ''
   name: app_mqtt_task.h
   physicalPath: ../..
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8798D0655262C08492B48FCD655FD079
+  userChecksum: 6ADB7A3553F7BCDFE3043FA4E3D58DA4
 - generatedChecksum: F18EBACF5A587D5E164EFFDFADEC07AE
   logicalPath: wolfcrypt
   name: arc4.h
@@ -1700,13 +1700,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9537C1E41F14DFF1B50CF8AE3880105C
-- generatedChecksum: 763084AD58AA0BBFC8EEEB5D3262397E
+- generatedChecksum: B22436A8A60E93FFA7CC435BDD19B84F
   logicalPath: config/sam_e70_xult
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 763084AD58AA0BBFC8EEEB5D3262397E
+  userChecksum: B22436A8A60E93FFA7CC435BDD19B84F
 - generatedChecksum: 948CEA542F04017255B040816F368DF8
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: core_cm7.h
