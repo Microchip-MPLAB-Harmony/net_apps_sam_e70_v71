@@ -538,7 +538,7 @@ extern "C" {
 #define HAVE_ECC
 #define HAVE_DH
 #define NO_DSA
-//#define FP_MAX_BITS 4096
+#define FP_MAX_BITS 4096
 #define USE_CERT_BUFFERS_2048
 #define WC_RSA_PSS
 #define NO_DEV_RANDOM

@@ -4,7 +4,7 @@
 
 
 project: wolfssl_tcp_client
-creation_date: 2021-12-13T15:14:26.316+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-01-26T21:39:29.205+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: unknown
@@ -19,5 +19,5 @@ modules:
     - {name: "wolfssl", version: "v4.7.0"}
     - {name: "net", version: "unknown"}
     - {name: "bsp", version: "v3.10.0"}
-    - {name: "crypto", version: "v3.7.4"}
+    - {name: "crypto", version: "v3.7.5"}
 
