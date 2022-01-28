@@ -4,7 +4,7 @@
 
 
 project: snmpv3_nvm_mpfs
-creation_date: 2021-12-08T17:08:36.051+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-01-26T14:47:23.723+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: unknown
@@ -18,6 +18,6 @@ modules:
     - {name: "dev_packs", version: "v3.10.0"}
     - {name: "wolfssl", version: "v4.7.0"}
     - {name: "net", version: "unknown"}
-    - {name: "crypto", version: "v3.7.4"}
+    - {name: "crypto", version: "v3.7.5"}
     - {name: "CMSIS-FreeRTOS", version: "v10.3.1"}
 
