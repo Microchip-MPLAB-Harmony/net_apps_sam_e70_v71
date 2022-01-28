@@ -4,7 +4,7 @@
 
 
 project: snmpv3_sdcard_fatfs
-creation_date: 2021-12-09T10:31:39.654+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-01-28T06:41:09.005+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: unknown
@@ -18,7 +18,7 @@ modules:
     - {name: "dev_packs", version: "v3.10.0"}
     - {name: "wolfssl", version: "v4.7.0"}
     - {name: "net", version: "unknown"}
-    - {name: "bsp", version: "v3.8.2"}
-    - {name: "crypto", version: "v3.7.4"}
+    - {name: "bsp", version: "v3.10.0"}
+    - {name: "crypto", version: "v3.7.5"}
     - {name: "CMSIS-FreeRTOS", version: "v10.3.1"}
 

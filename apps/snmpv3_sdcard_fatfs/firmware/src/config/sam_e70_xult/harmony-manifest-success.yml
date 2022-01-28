@@ -4,13 +4,13 @@
 
 
 project: snmpv3_sdcard_fatfs
-creation_date: 2021-12-08T18:17:49.411+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-01-26T16:11:12+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: unknown
 mplabx_version: v6.00        # if MPLAB X plugin only
 plugin_version: v3.6.4        # if MPLAB X plugin only
-compiler: XC32 (2.50)
+compiler: XC32 (4.00)
 
 modules:
     - {name: "csp", version: "v3.10.0"}
@@ -18,6 +18,6 @@ modules:
     - {name: "dev_packs", version: "v3.10.0"}
     - {name: "wolfssl", version: "v4.7.0"}
     - {name: "net", version: "unknown"}
-    - {name: "bsp", version: "v3.8.2"}
-    - {name: "crypto", version: "v3.7.4"}
+    - {name: "bsp", version: "v3.10.0"}
+    - {name: "crypto", version: "v3.7.5"}
 

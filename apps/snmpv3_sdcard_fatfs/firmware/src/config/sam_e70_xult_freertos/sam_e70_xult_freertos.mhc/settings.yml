@@ -5,9 +5,9 @@ frameworkPath: ../../..
 processor: ATSAME70Q21B
 projectName: ''
 settings:
-  PackageFilter: aws_cloud;azure_rtos;bootloader;bsp;core;crypto;csp;dev_packs;ethercat;net;net_apps_pic32mx;net_apps_pic32mx_notworking;net_apps_pic32mz;net_apps_sam_9x60;net_apps_sam_a5d2;net_apps_sam_e5x;net_apps_sam_e70_v71;quick_docs;usb;wireless
+  PackageFilter: aws_cloud;azure_rtos;bootloader;bsp;core;core_apps_pic32cz_ca;crypto;csp;csp_apps_pic32cz_ca;csp_apps_sam_9x60;Devices;dev_packs;ethercat;net;net_apps_pic32mx;net_apps_pic32mx_notworking;net_apps_pic32mz;net_apps_sam_9x60;net_apps_sam_a5d2;net_apps_sam_e5x;net_apps_sam_e70_v71;quick_docs;usb;wireless
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
-  MERGE_STRATEGY: ALL
+  MERGE_STRATEGY: OVERWRITE
   DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.6.98\same70b\atdf\ATSAME70Q21B.atdf
