@@ -118,4 +118,4 @@ children:
             children:
             - {type: Value, value: USART1_UART}
 - type: ElementPosition
-  attributes: {x: '318', y: '224', id: sys_console}
+  attributes: {x: '485', y: '152', id: sys_console}

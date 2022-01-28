@@ -5,6 +5,13 @@ children:
 - type: Symbols
   children:
   - type: Integer
+    attributes: {id: SYS_COMMAND_PRINT_BUFFER_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2560'}
+  - type: Integer
     attributes: {id: SYS_COMMAND_RTOS_DELAY}
     children:
     - type: Values
@@ -48,4 +55,4 @@ children:
         children:
         - {type: Value, value: sys_console}
 - type: ElementPosition
-  attributes: {x: '504', y: '122', id: sys_command}
+  attributes: {x: '677', y: '273', id: sys_command}

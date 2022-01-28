@@ -108,6 +108,9 @@ extern "C" {
 #define SYS_FS_FILE_NAME_LEN              255
 #define SYS_FS_CWD_STRING_LEN             1024
 
+/* File System RTOS Configurations*/
+#define SYS_FS_STACK_SIZE                 1024
+#define SYS_FS_PRIORITY                   1
 
 
 
@@ -120,6 +123,9 @@ extern "C" {
 #define SYS_CMD_PRINT_BUFFER_SIZE          1024
 #define SYS_CMD_BUFFER_DMA_READY
 
+/* Command System Service RTOS Configurations*/
+#define SYS_CMD_RTOS_STACK_SIZE                2560
+#define SYS_CMD_RTOS_TASK_PRIORITY             1
 
 
 #define SYS_DEBUG_ENABLE
@@ -155,19 +161,25 @@ extern "C" {
 #define DRV_MIIM_DRIVER_OBJECT              DRV_MIIM_OBJECT_BASE_Default
 #define DRV_MIIM_DRIVER_INDEX               DRV_MIIM_INDEX_0              
 
+/* MIIM RTOS Configurations*/
+#define DRV_MIIM_RTOS_STACK_SIZE                1024
+#define DRV_MIIM_RTOS_TASK_PRIORITY             1
 
 
 
 /* Memory Driver Instance 0 Configuration */
 #define DRV_MEMORY_INDEX_0                   0
 #define DRV_MEMORY_CLIENTS_NUMBER_IDX0       1
-#define DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0    1
 #define DRV_MEMORY_DEVICE_START_ADDRESS      0x500000
 #define DRV_MEMORY_DEVICE_MEDIA_SIZE         1024UL
 #define DRV_MEMORY_DEVICE_MEDIA_SIZE_BYTES   (DRV_MEMORY_DEVICE_MEDIA_SIZE * 1024)
 #define DRV_MEMORY_DEVICE_PROGRAM_SIZE       512
 #define DRV_MEMORY_DEVICE_ERASE_SIZE         8192
 
+/* Memory Driver Instance 0 RTOS Configurations*/
+#define DRV_MEMORY_STACK_SIZE_IDX0           1024
+#define DRV_MEMORY_PRIORITY_IDX0             1
+#define DRV_MEMORY_RTOS_DELAY_IDX0                         10
 
 
 
@@ -413,6 +425,11 @@ extern "C" {
 #define NET_PRES_NUM_INSTANCE 1
 #define NET_PRES_NUM_SOCKETS 10
 
+/* Net Pres RTOS Configurations*/
+#define NET_PRES_RTOS_STACK_SIZE                8192
+#define NET_PRES_RTOS_TASK_PRIORITY             1
+	
+#define FREERTOS
 
 
 
@@ -479,8 +496,8 @@ extern "C" {
 #define TCPIP_HTTP_NET_SSI_VARIABLE_STRING_MAX_LENGTH   20
 #define TCPIP_HTTP_NET_SSI_ECHO_NOT_FOUND_MESSAGE       "SSI Echo - Not Found: "
 #define TCPIP_HTTP_NET_CONNECTION_TIMEOUT          	0
-#define TCPIP_HTTP_NET_MALLOC_FUNC                  malloc
-#define TCPIP_HTTP_NET_FREE_FUNC                    free
+#define TCPIP_HTTP_NET_MALLOC_FUNC                  pvPortMalloc
+#define TCPIP_HTTP_NET_FREE_FUNC                    vPortFree
 #define TCPIP_HTTP_NET_CONSOLE_CMD           		false
 
 
@@ -568,6 +585,9 @@ extern "C" {
 
 
 
+/* TCP/IP RTOS Configurations*/
+#define TCPIP_RTOS_STACK_SIZE                1024
+#define TCPIP_RTOS_PRIORITY             1
 
 
 /*** TCPIP MAC Configuration ***/
@@ -736,7 +756,7 @@ extern "C" {
 #define NO_DEV_RANDOM
 #define HAVE_HASHDRBG
 #define WC_NO_HARDEN
-#define SINGLE_THREADED
+#define FREERTOS
 #define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY

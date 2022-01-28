@@ -24,13 +24,10 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
-  - type: Boolean
-    attributes: {id: wolfssl_debug}
-    children:
     - type: Values
       children:
       - type: User
-        attributes: {value: 'false'}
+        attributes: {value: 'true'}
 - type: Attachments
   children:
   - type: DirectDependency
@@ -60,4 +57,4 @@ children:
         children:
         - {type: Value, value: Net_Pres_Crypto_Dependency}
 - type: ElementPosition
-  attributes: {x: '706', y: '53', id: lib_wolfssl}
+  attributes: {x: '847', y: '42', id: lib_wolfssl}

@@ -311,7 +311,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: tc0, value: '150000000'}
+        attributes: {id: tc0, value: '32000'}
   - type: Boolean
     attributes: {id: TC3_PCK7}
     children:
@@ -327,7 +327,7 @@ children:
       - type: String
         attributes: {id: text}
         children:
-        - {type: Value, value: '****Clock resolution is 6.66666666667 nS****'}
+        - {type: Value, value: '****Clock resolution is 31250.0 nS****'}
   - type: Comment
     attributes: {id: TC_QEI_PERIOD_COMMENT}
     children:
@@ -336,7 +336,7 @@ children:
       - type: String
         attributes: {id: text}
         children:
-        - {type: Value, value: '****Time Base is 100.1 uS****'}
+        - {type: Value, value: '****Time Base is 469218.75 uS****'}
   - type: String
     attributes: {id: TIMER_START_API_NAME}
     children:
@@ -367,4 +367,4 @@ children:
         children:
         - {type: Value, value: sys_time_TMR_dependency}
 - type: ElementPosition
-  attributes: {x: '26', y: '94', id: tc0}
+  attributes: {x: '15', y: '69', id: tc0}

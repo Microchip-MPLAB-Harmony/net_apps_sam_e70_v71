@@ -12,4 +12,4 @@ children:
       - type: Dynamic
         attributes: {id: tcpipSmtpc, value: '352'}
 - type: ElementPosition
-  attributes: {x: '22', y: '199', id: tcpipSmtpc}
+  attributes: {x: '30', y: '160', id: tcpipSmtpc}

@@ -3,4 +3,4 @@ type: UniqueComponent
 attributes: {id: tcpipNbns}
 children:
 - type: ElementPosition
-  attributes: {x: '533', y: '16', id: tcpipNbns}
+  attributes: {x: '470', y: '140', id: tcpipNbns}

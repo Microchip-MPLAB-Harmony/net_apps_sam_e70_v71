@@ -198,7 +198,7 @@
           <logicalFolder name="f8" displayName="osal" projectFiles="true">
             <itemPath>../src/config/sam_e70_xult/osal/osal.h</itemPath>
             <itemPath>../src/config/sam_e70_xult/osal/osal_definitions.h</itemPath>
-            <itemPath>../src/config/sam_e70_xult/osal/osal_impl_basic.h</itemPath>
+            <itemPath>../src/config/sam_e70_xult/osal/osal_freertos.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f4" displayName="clk" projectFiles="true">
@@ -279,6 +279,38 @@
           <itemPath>../src/config/sam_e70_xult/device.h</itemPath>
           <itemPath>../src/config/sam_e70_xult/interrupts.h</itemPath>
           <itemPath>../src/config/sam_e70_xult/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_e70_xult/FreeRTOSConfig.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="f1" displayName="Source" projectFiles="true">
+          <logicalFolder name="f1" displayName="include" projectFiles="true">
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/croutine.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/event_groups.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/list.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/portable.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/queue.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/semphr.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/task.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/timers.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="portable" projectFiles="true">
+            <logicalFolder name="f1" displayName="GCC" projectFiles="true">
+              <logicalFolder name="f1" displayName="SAM" projectFiles="true">
+                <logicalFolder name="f1" displayName="CM7" projectFiles="true">
+                  <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7/portmacro.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f4" displayName="packs" projectFiles="true">
@@ -561,6 +593,75 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
+      <logicalFolder name="f4" displayName="pic32mz_ef_sk.mhc" projectFiles="true">
+        <logicalFolder name="f1" displayName="TCP_IP_STACK" projectFiles="true">
+          <logicalFolder name="f1" displayName="APPLICATION_LAYER" projectFiles="true">
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/APPLICATION_LAYER.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipAnnounce.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDhcp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDns.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipHttpNet.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipNbns.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipSmtpc.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipSntp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpip_apps_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="BASIC_CONFIGURATION" projectFiles="true">
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/BASIC_CONFIGURATION.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipCmd.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipNetConfig.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipStack.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpip_basic_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="DRIVER_LAYER" projectFiles="true">
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/DRIVER_LAYER/DRIVER_LAYER.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/DRIVER_LAYER/drvExtPhyLan8740.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/DRIVER_LAYER/drvMiim.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/DRIVER_LAYER/drvPic32mEthmac.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/DRIVER_LAYER/tcpip_driver_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="NETWORK_LAYER" projectFiles="true">
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/NETWORK_LAYER.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipArp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIcmp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIcmpv6.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIPv4.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIPv6.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipNdp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpip_network_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="PRESENTATION_LAYER" projectFiles="true">
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/PRESENTATION_LAYER/net_Pres.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/PRESENTATION_LAYER/PRESENTATION_LAYER.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="TRANSPORT_LAYER" projectFiles="true">
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpipTcp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpipUdp.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpip_transport_config.yml</itemPath>
+            <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/TRANSPORT_LAYER/TRANSPORT_LAYER.yml</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/TCP_IP_STACK/TCP_IP_STACK.yml</itemPath>
+        </logicalFolder>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/BSP_PIC32MZ_EF_Starter_Kit.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/core.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/core_timer.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/dfp.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/drv_memory.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/lib_crypto.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/lib_wolfcrypt.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/lib_wolfssl.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/nvm.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/project.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/settings.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/sys_command.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/sys_console.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/sys_debug.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/sys_fs.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/sys_time.yml</itemPath>
+        <itemPath>../../../../../net_apps_pic32mz/apps/web_net_server_nvm_mpfs/firmware/src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/uart2.yml</itemPath>
+      </logicalFolder>
       <logicalFolder name="f2" displayName="sam_e70_xult.mhc" projectFiles="true">
         <logicalFolder name="f1" displayName="TCP_IP_STACK" projectFiles="true">
           <logicalFolder name="f1" displayName="APPLICATION_LAYER" projectFiles="true">
@@ -618,6 +719,7 @@
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/dfp.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/drv_memory.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/efc.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/FreeRTOS.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/GraphSettings.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/HarmonyCore.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/lib_crypto.yml</itemPath>
@@ -632,6 +734,79 @@
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/sys_time.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/tc0.yml</itemPath>
         <itemPath>../src/config/sam_e70_xult/sam_e70_xult.mhc/usart1.yml</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3"
+                     displayName="sam_e70_xult_freertos.mhc"
+                     projectFiles="true">
+        <logicalFolder name="f1" displayName="TCP_IP_STACK" projectFiles="true">
+          <logicalFolder name="f1" displayName="APPLICATION_LAYER" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/APPLICATION_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipAnnounce.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDhcp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDns.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipHttpNet.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipNbns.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipSmtpc.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipSntp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpip_apps_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="BASIC_CONFIGURATION" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/BASIC_CONFIGURATION.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipCmd.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipNetConfig.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpipStack.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/BASIC_CONFIGURATION/tcpip_basic_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="DRIVER_LAYER" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/DRIVER_LAYER/DRIVER_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/DRIVER_LAYER/drvExtPhyLan8740.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/DRIVER_LAYER/drvGmac.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/DRIVER_LAYER/drvMiim.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/DRIVER_LAYER/tcpip_driver_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="NETWORK_LAYER" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/NETWORK_LAYER.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipArp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIcmp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIcmpv6.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIPv4.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipIPv6.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpipNdp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/NETWORK_LAYER/tcpip_network_config.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="PRESENTATION_LAYER" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/PRESENTATION_LAYER/net_Pres.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/PRESENTATION_LAYER/PRESENTATION_LAYER.yml</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="TRANSPORT_LAYER" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpipTcp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpipUdp.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/TRANSPORT_LAYER/tcpip_transport_config.yml</itemPath>
+            <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/TRANSPORT_LAYER/TRANSPORT_LAYER.yml</itemPath>
+          </logicalFolder>
+          <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/TCP_IP_STACK/TCP_IP_STACK.yml</itemPath>
+        </logicalFolder>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/BSP_SAM_E70_Xplained_Ultra.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/core.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/drv_memory.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/efc.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/FreeRTOS.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/lib_crypto.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/lib_wolfcrypt.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/lib_wolfssl.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/project.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/sys_command.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/sys_console.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/sys_debug.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/sys_fs.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/tc0.yml</itemPath>
+        <itemPath>../src/config/sam_e70_xult_freertos/sam_e70_xult_freertos.mhc/usart1.yml</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
@@ -735,6 +910,9 @@
               <itemPath>../src/config/sam_e70_xult/net_pres/pres/net_pres_cert_store.c</itemPath>
             </logicalFolder>
           </logicalFolder>
+          <logicalFolder name="f9" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_e70_xult/osal/osal_freertos.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="f3" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f4" displayName="clk" projectFiles="true">
               <itemPath>../src/config/sam_e70_xult/peripheral/clk/plib_clk.c</itemPath>
@@ -804,6 +982,30 @@
           <itemPath>../src/config/sam_e70_xult/exceptions.c</itemPath>
           <itemPath>../src/config/sam_e70_xult/startup_xc32.c</itemPath>
           <itemPath>../src/config/sam_e70_xult/libc_syscalls.c</itemPath>
+          <itemPath>../src/config/sam_e70_xult/freertos_hooks.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="f1" displayName="Source" projectFiles="true">
+          <logicalFolder name="f1" displayName="portable" projectFiles="true">
+            <logicalFolder name="f2" displayName="GCC" projectFiles="true">
+              <logicalFolder name="f1" displayName="SAM" projectFiles="true">
+                <logicalFolder name="f1" displayName="CM7" projectFiles="true">
+                  <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7/port.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="MemMang" projectFiles="true">
+              <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_3.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/croutine.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/list.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/queue.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/timers.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/event_groups.c</itemPath>
+          <itemPath>../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f1" displayName="web_pages" projectFiles="true">
@@ -963,13 +1165,13 @@
         <targetDevice>ATSAME70Q21B</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME70_DFP" vendor="Microchip" version="4.7.105"/>
+        <pack name="SAME70_DFP" vendor="Microchip" version="4.6.98"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
@@ -1032,7 +1234,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e70_xult;../src/config/sam_e70_xult/library;../src/config/sam_e70_xult/library/tcpip/src;../src/config/sam_e70_xult/library/tcpip/src/common;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
+                  value="../src;../src/config/sam_e70_xult;../src/config/sam_e70_xult/library;../src/config/sam_e70_xult/library/tcpip/src;../src/config/sam_e70_xult/library/tcpip/src/common;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1099,7 +1301,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="126960"/>
+        <property key="heap-size" value="156960"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -1131,7 +1333,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+                  value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1217,8 +1419,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/microchip/h3/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/firmware/sam_e70_xult.X/debug/sam_e70_xult/sam_e70_xult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -1738,6 +1938,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/microchip/h3/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/firmware/sam_e70_xult.X/debug/sam_e70_xult/sam_e70_xult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>

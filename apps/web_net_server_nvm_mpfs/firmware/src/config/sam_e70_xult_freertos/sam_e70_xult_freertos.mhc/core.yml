@@ -4,34 +4,6 @@ attributes: {id: core}
 children:
 - type: Symbols
   children:
-  - type: Integer
-    attributes: {id: ACC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: AES_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: AFEC0_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: AFEC1_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: KeyValueSet
     attributes: {id: COMPILER_CHOICE}
     children:
@@ -46,13 +18,6 @@ children:
       children:
       - type: User
         attributes: {value: LQFP144}
-  - type: String
-    attributes: {id: CPU_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: '300000000'}
   - type: Menu
     attributes: {id: CoreIARMenu}
     children:
@@ -96,13 +61,6 @@ children:
         attributes: {id: drvGmac, value: 'true'}
       - type: User
         attributes: {value: 'true'}
-  - type: Integer
-    attributes: {id: DACC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: KeyValueSet
     attributes: {id: DEVICE_BOOT}
     children:
@@ -124,6 +82,20 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
+  - type: Integer
+    attributes: {id: DMA_CH_FOR_HSMCI}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '-1'}
+  - type: Boolean
+    attributes: {id: DMA_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: EFC_INTERRUPT_ENABLE_UPDATE}
     children:
@@ -138,13 +110,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
-  - type: Integer
-    attributes: {id: GMAC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Boolean
     attributes: {id: GMAC_INTERRUPT_ENABLE}
     children:
@@ -278,34 +243,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvGmac, value: 'true'}
-  - type: Integer
-    attributes: {id: HSMCI_CLOCK_FREQUENCY}
+  - type: Boolean
+    attributes: {id: HSMCI_INTERRUPT_ENABLE_UPDATE}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: String
-    attributes: {id: I2S0_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: '32000'}
-  - type: Integer
-    attributes: {id: ICM_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: ISI_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
+        attributes: {id: core, value: 'true'}
   - type: String
     attributes: {id: KEIL_STACK_HEAP_SIZE}
     children:
@@ -313,13 +257,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0x1200'}
-  - type: String
-    attributes: {id: MASTER_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: '150000000'}
   - type: Menu
     attributes: {id: MPU_MENU_0}
     children:
@@ -780,6 +717,50 @@ children:
         attributes: {id: drvGmac, value: '5'}
       - type: User
         attributes: {value: '5'}
+  - type: KeyValueSet
+    attributes: {id: MPU_Region_7_Access}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: '3'}
+  - type: Hex
+    attributes: {id: MPU_Region_7_Address}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: '541454336'}
+  - type: Boolean
+    attributes: {id: MPU_Region_7_Enable}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: 'true'}
+      - type: User
+        attributes: {value: 'false'}
+  - type: String
+    attributes: {id: MPU_Region_7_Length}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 4KB}
+  - type: KeyValueSet
+    attributes: {id: MPU_Region_7_Size}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: '7'}
+  - type: KeyValueSet
+    attributes: {id: MPU_Region_7_Type}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: '5'}
   - type: String
     attributes: {id: MPU_Region_Name0}
     children:
@@ -831,6 +812,13 @@ children:
         attributes: {id: drvGmac, value: GMAC Descriptor}
       - type: User
         attributes: {value: GMAC Descriptor}
+  - type: String
+    attributes: {id: MPU_Region_Name7}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: GMAC Descriptor}
   - type: File
     attributes: {id: MPU_SYSTEM_DEFINITIONS_H}
     children:
@@ -946,6 +934,27 @@ children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
   - type: Boolean
+    attributes: {id: NVIC_18_0_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: String
+    attributes: {id: NVIC_18_0_HANDLER}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: HSMCI_Handler}
+  - type: Boolean
+    attributes: {id: NVIC_18_0_HANDLER_LOCK}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
     attributes: {id: NVIC_23_0_ENABLE}
     children:
     - type: Values
@@ -1045,6 +1054,27 @@ children:
         attributes: {id: core, value: WDT_Handler}
   - type: Boolean
     attributes: {id: NVIC_4_0_HANDLER_LOCK}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
+    attributes: {id: NVIC_58_0_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: String
+    attributes: {id: NVIC_58_0_HANDLER}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: XDMAC_Handler}
+  - type: Boolean
+    attributes: {id: NVIC_58_0_HANDLER_LOCK}
     children:
     - type: Values
       children:
@@ -1162,13 +1192,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
-  - type: String
-    attributes: {id: PCK0_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: '32000'}
   - type: String
     attributes: {id: PIN_100_PIO_CHANNEL}
     children:
@@ -1380,6 +1403,20 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '18'}
   - type: String
+    attributes: {id: PIN_112_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
+    attributes: {id: PIN_112_PERIPHERAL_FUNCTION}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
     attributes: {id: PIN_112_PIO_CHANNEL}
     children:
     - type: Values
@@ -1450,6 +1487,20 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_116_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
+    attributes: {id: PIN_116_PERIPHERAL_FUNCTION}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
     attributes: {id: PIN_116_PIO_CHANNEL}
     children:
     - type: Values
@@ -1477,6 +1528,20 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '19'}
+  - type: String
+    attributes: {id: PIN_118_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
+    attributes: {id: PIN_118_PERIPHERAL_FUNCTION}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
   - type: String
     attributes: {id: PIN_118_PIO_CHANNEL}
     children:
@@ -1940,26 +2005,12 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
-    attributes: {id: PIN_141_FUNCTION_NAME}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: LED3}
-  - type: String
-    attributes: {id: PIN_141_FUNCTION_TYPE}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: GPIO}
-  - type: String
     attributes: {id: PIN_141_PERIPHERAL_FUNCTION}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: GPIO}
+        attributes: {value: LED_AL}
   - type: String
     attributes: {id: PIN_141_PIO_CHANNEL}
     children:
@@ -2731,6 +2782,20 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
   - type: String
+    attributes: {id: PIN_59_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
+    attributes: {id: PIN_59_PERIPHERAL_FUNCTION}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
     attributes: {id: PIN_59_PIO_CHANNEL}
     children:
     - type: Values
@@ -2786,6 +2851,20 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_62_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
+    attributes: {id: PIN_62_PERIPHERAL_FUNCTION}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
   - type: String
     attributes: {id: PIN_62_PIO_CHANNEL}
     children:
@@ -2934,6 +3013,20 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
   - type: String
+    attributes: {id: PIN_70_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
+    attributes: {id: PIN_70_PERIPHERAL_FUNCTION}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: ''}
+  - type: String
     attributes: {id: PIN_70_PIO_CHANNEL}
     children:
     - type: Values
@@ -2981,7 +3074,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: LED2}
+        attributes: {value: LED1}
   - type: String
     attributes: {id: PIN_73_FUNCTION_TYPE}
     children:
@@ -3010,20 +3103,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
-  - type: String
-    attributes: {id: PIN_74_FUNCTION_TYPE}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: GMAC_GTXER}
-  - type: String
-    attributes: {id: PIN_74_PERIPHERAL_FUNCTION}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: A}
   - type: String
     attributes: {id: PIN_74_PIO_CHANNEL}
     children:
@@ -3165,27 +3244,6 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
-    attributes: {id: PIN_82_FUNCTION_NAME}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: LED1}
-  - type: String
-    attributes: {id: PIN_82_FUNCTION_TYPE}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: GPIO}
-  - type: String
-    attributes: {id: PIN_82_PERIPHERAL_FUNCTION}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: GPIO}
-  - type: String
     attributes: {id: PIN_82_PIO_CHANNEL}
     children:
     - type: Values
@@ -3213,20 +3271,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
-  - type: String
-    attributes: {id: PIN_84_FUNCTION_TYPE}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: GMAC_GRXCK}
-  - type: String
-    attributes: {id: PIN_84_PERIPHERAL_FUNCTION}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: A}
   - type: String
     attributes: {id: PIN_84_PIO_CHANNEL}
     children:
@@ -3528,13 +3572,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
-  - type: Integer
-    attributes: {id: PIOA_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Hex
     attributes: {id: PIOA_OER_VALUE}
     children:
@@ -3584,13 +3621,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
-  - type: Integer
-    attributes: {id: PIOB_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Hex
     attributes: {id: PIOB_OER_VALUE}
     children:
@@ -3612,20 +3642,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '256'}
-  - type: Hex
-    attributes: {id: PIOC_ABCDSR1_VALUE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '0'}
-  - type: Hex
-    attributes: {id: PIOC_ABCDSR2_VALUE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '0'}
   - type: Boolean
     attributes: {id: PIOC_CLOCK_ENABLE}
     children:
@@ -3633,34 +3649,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
-  - type: Integer
-    attributes: {id: PIOC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Hex
-    attributes: {id: PIOC_OER_VALUE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '0'}
-  - type: Hex
-    attributes: {id: PIOC_PDR_VALUE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '0'}
-  - type: Hex
-    attributes: {id: PIOC_SODR_VALUE}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '0'}
   - type: Hex
     attributes: {id: PIOD_ABCDSR1_VALUE}
     children:
@@ -3682,20 +3670,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
-  - type: Integer
-    attributes: {id: PIOD_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Hex
     attributes: {id: PIOD_PDR_VALUE}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '148479'}
+        attributes: {id: core, value: '1023'}
   - type: Boolean
     attributes: {id: PIOE_CLOCK_ENABLE}
     children:
@@ -3703,13 +3684,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
-  - type: Integer
-    attributes: {id: PIOE_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Hex
     attributes: {id: PIO_CCFG_SYSIO_VALUE}
     children:
@@ -3793,27 +3767,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'false'}
-  - type: Integer
-    attributes: {id: PMC_USB_USBDIV}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: '16'}
-  - type: Integer
-    attributes: {id: PWM0_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: PWM1_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Boolean
     attributes: {id: PendSV_INTERRUPT_ENABLE}
     children:
@@ -3842,13 +3795,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: FreeRTOS, value: 'true'}
-  - type: Integer
-    attributes: {id: QSPI_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Boolean
     attributes: {id: RSWDT_INTERRUPT_ENABLE}
     children:
@@ -3877,41 +3823,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'false'}
-  - type: Integer
-    attributes: {id: SDRAMC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: SMC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: SPI0_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: SPI1_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: SSC_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Boolean
     attributes: {id: SVCall_INTERRUPT_ENABLE}
     children:
@@ -3940,13 +3851,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: FreeRTOS, value: 'true'}
-  - type: String
-    attributes: {id: SYSTICK_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: '150000000'}
   - type: Comment
     attributes: {id: SYSTICK_COMMENT}
     children:
@@ -3956,20 +3860,6 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
-  - type: String
-    attributes: {id: SYSTICK_PERIOD}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '0x493E0'}
-  - type: Integer
-    attributes: {id: SYSTICK_PERIOD_US}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '1000'}
   - type: Boolean
     attributes: {id: SysTick_INTERRUPT_ENABLE}
     children:
@@ -4095,7 +3985,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '150000000'}
+        attributes: {id: core, value: '32000'}
   - type: Boolean
     attributes: {id: TC0_CHANNEL0_CLOCK_ENABLE}
     children:
@@ -4131,34 +4021,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 0 KB}
-  - type: Integer
-    attributes: {id: TRNG_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: TWIHS0_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: TWIHS1_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
-  - type: Integer
-    attributes: {id: TWIHS2_CLOCK_FREQUENCY}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: '150000000'}
   - type: Boolean
     attributes: {id: USART1_CLOCK_ENABLE}
     children:
@@ -4237,7 +4099,7 @@ children:
       - type: String
         attributes: {id: value}
         children:
-        - {type: Value, value: '184960'}
+        - {type: Value, value: '224960'}
   - type: Integer
     attributes: {id: XC32_HEAP_SIZE}
     children:
@@ -4246,7 +4108,7 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '1024'}
       - type: User
-        attributes: {value: '184960'}
+        attributes: {value: '224960'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC0_CSIZE}
     children:
@@ -4289,6 +4151,27 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
+  - type: Combo
+    attributes: {id: XDMAC_CC0_PERID}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: Software Trigger}
+  - type: Boolean
+    attributes: {id: XDMAC_CC0_PERID_LOCK}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Integer
+    attributes: {id: XDMAC_CC0_PERID_VAL}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '0'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC0_SAM}
     children:
@@ -4309,7 +4192,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '0'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC0_TYPE}
     children:
@@ -5030,7 +4913,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '0'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC1_DIF}
     children:
@@ -5044,7 +4927,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '0'}
+        attributes: {id: core, value: '1'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC1_DWIDTH}
     children:
@@ -5054,6 +4937,27 @@ children:
         attributes: {id: core, value: '0'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC1_MBSIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '0'}
+  - type: Combo
+    attributes: {id: XDMAC_CC1_PERID}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: HSMCI}
+  - type: Boolean
+    attributes: {id: XDMAC_CC1_PERID_LOCK}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'true'}
+  - type: Integer
+    attributes: {id: XDMAC_CC1_PERID_VAL}
     children:
     - type: Values
       children:
@@ -5072,21 +4976,21 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '0'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC1_SWREQ}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '0'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC1_TYPE}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '0'}
+        attributes: {id: core, value: '1'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC20_CSIZE}
     children:
@@ -5927,13 +5831,57 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
-  - type: Integer
-    attributes: {id: XDMAC_CLOCK_FREQUENCY}
+  - type: Boolean
+    attributes: {id: XDMAC_CH0_ENABLE}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '150000000'}
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
+    attributes: {id: XDMAC_CH1_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'true'}
+      - type: User
+        attributes: {value: 'false'}
+  - type: Boolean
+    attributes: {id: XDMAC_CLOCK_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
+    attributes: {id: XDMAC_INTERRUPT_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
+    attributes: {id: XDMAC_INTERRUPT_ENABLE_UPDATE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'true'}
+  - type: String
+    attributes: {id: XDMAC_INTERRUPT_HANDLER}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: XDMAC_Handler}
+  - type: Boolean
+    attributes: {id: XDMAC_INTERRUPT_HANDLER_LOCK}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: systickEnable}
     children:

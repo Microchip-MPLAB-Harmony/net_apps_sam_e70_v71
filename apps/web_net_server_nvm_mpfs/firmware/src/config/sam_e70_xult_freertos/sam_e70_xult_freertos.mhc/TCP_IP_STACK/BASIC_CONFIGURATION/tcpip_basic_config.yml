@@ -26,4 +26,4 @@ children:
       - type: User
         attributes: {value: 'true'}
 - type: ElementPosition
-  attributes: {x: '23', y: '21', id: tcpip_basic_config}
+  attributes: {x: '20', y: '20', id: tcpip_basic_config}

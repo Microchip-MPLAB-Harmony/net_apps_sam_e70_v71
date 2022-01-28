@@ -1,4 +1,11 @@
 files:
+- generatedChecksum: F58DB2348A0FCE945652B285010E5F8A
+  logicalPath: FreeRTOS/Source
+  name: FreeRTOS_tasks.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F58DB2348A0FCE945652B285010E5F8A
 - generatedChecksum: 2DF7C661F71182DC8188521EF1ABAA64
   logicalPath: wolfcrypt
   name: aes.c
@@ -132,6 +139,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 345624AF3359C519F067EA8A3922DB84
+- generatedChecksum: 8ACE0DEBD82F6829438A4674565451FB
+  logicalPath: FreeRTOS/Source
+  name: croutine.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 8ACE0DEBD82F6829438A4674565451FB
 - generatedChecksum: 5ED064BCF98915FC9DFA9C3B24D926FB
   logicalPath: wolfcrypt/port
   name: crypt_aes_sam6149.c
@@ -342,27 +356,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C9052D45CC77DF04D1AD2506D73D2758
-- generatedChecksum: B790A901372F2A789E5F82CF4F4E491B
+- generatedChecksum: 44111FC9314A3DC091BD07F3C909AFB3
   logicalPath: config/sam_e70_xult/driver/gmac/src/dynamic
   name: drv_gmac.c
   physicalPath: driver/gmac/src/dynamic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B790A901372F2A789E5F82CF4F4E491B
-- generatedChecksum: C0DEDEB7BE41C65729A3B67D84F8915B
+  userChecksum: 44111FC9314A3DC091BD07F3C909AFB3
+- generatedChecksum: F2EA8CDBDC356CA5A039E2DA82252FC1
   logicalPath: config/sam_e70_xult/driver/gmac/src/dynamic
   name: drv_gmac_lib_samE7x_V7x.c
   physicalPath: driver/gmac/src/dynamic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C0DEDEB7BE41C65729A3B67D84F8915B
-- generatedChecksum: 257ACC61A57EA8DE78BA7E1F78DB85A3
+  userChecksum: F2EA8CDBDC356CA5A039E2DA82252FC1
+- generatedChecksum: 65EED2D5BD5CBA1F2AECBDA945D2195A
   logicalPath: config/sam_e70_xult/driver/memory
   name: drv_memory.c
   physicalPath: driver/memory/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 257ACC61A57EA8DE78BA7E1F78DB85A3
+  userChecksum: 65EED2D5BD5CBA1F2AECBDA945D2195A
 - generatedChecksum: 67B0993D87E41BEE42C349FDF547089B
   logicalPath: config/sam_e70_xult/driver/memory
   name: drv_memory_efc.c
@@ -370,13 +384,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 67B0993D87E41BEE42C349FDF547089B
-- generatedChecksum: AD5CAAD66A56C9B5D17EB7E756C22D0C
+- generatedChecksum: 6CC6FE1080CA265AB8DF7741E7BB79B7
   logicalPath: config/sam_e70_xult/driver/memory
   name: drv_memory_file_system.c
   physicalPath: driver/memory/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AD5CAAD66A56C9B5D17EB7E756C22D0C
+  userChecksum: 6CC6FE1080CA265AB8DF7741E7BB79B7
 - generatedChecksum: 0E1B1E293A2B25711C143C917406BA0E
   logicalPath: config/sam_e70_xult/driver/miim/src/dynamic
   name: drv_miim.c
@@ -447,6 +461,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5727C8AC72C90E7B266F8C294C41C7AD
+- generatedChecksum: B3B5445B14BD9B6A35F1C5B995C9BBF7
+  logicalPath: FreeRTOS/Source
+  name: event_groups.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B3B5445B14BD9B6A35F1C5B995C9BBF7
 - generatedChecksum: 6069C4FD56993BDA3B1FC223DD5BAA4A
   logicalPath: config/sam_e70_xult
   name: exceptions.c
@@ -489,6 +510,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 44037F48DC158F4D6DE8A1AD327579B9
+- generatedChecksum: B7DBFD6F500AAD4713403E985EB18EAE
+  logicalPath: config/sam_e70_xult
+  name: freertos_hooks.c
+  physicalPath: ''
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B7DBFD6F500AAD4713403E985EB18EAE
 - generatedChecksum: 71C659B6678D6C5D384A9AE57B433CCB
   logicalPath: wolfcrypt
   name: ge_448.c
@@ -545,6 +573,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2A4F8860F9D4657B5BFCF62A6F2E1B72
+- generatedChecksum: 1EA5B9CC1D496CDD236B90D730EF0C5A
+  logicalPath: FreeRTOS/Source/portable/MemMang
+  name: heap_3.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/MemMang
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1EA5B9CC1D496CDD236B90D730EF0C5A
 - generatedChecksum: 10E0F557204916FC4EBA9DEB6F35095F
   logicalPath: config/sam_e70_xult/library/tcpip/src/common
   name: helpers.c
@@ -601,13 +636,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E1C11C9FEFFE008A939BAEE929D54A1D
-- generatedChecksum: E97D2C107C071DA884F4A29E88351850
+- generatedChecksum: EA2E673CA861A328E545B7F78CA4B860
   logicalPath: config/sam_e70_xult
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E97D2C107C071DA884F4A29E88351850
+  userChecksum: EA2E673CA861A328E545B7F78CA4B860
 - generatedChecksum: 479A727027F5AD9CBBDC717FD86D8B5E
   logicalPath: wolfcrypt
   name: integer.c
@@ -622,13 +657,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 220A2225F19A59FAAA55DA070644B444
-- generatedChecksum: E15E8CD9DB1DAB97C8B946026A1D695E
+- generatedChecksum: C09673819244F7BEE56D90D80F66C0C9
   logicalPath: config/sam_e70_xult
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E15E8CD9DB1DAB97C8B946026A1D695E
+  userChecksum: C09673819244F7BEE56D90D80F66C0C9
 - generatedChecksum: C4562A27983E222E942F8C6A72E7B80C
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: iperf.c
@@ -671,6 +706,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6513F2461B8F476B68CA73906086047F
+- generatedChecksum: 3FEE521CEF14928AE38E7FA9BF6D75E6
+  logicalPath: FreeRTOS/Source
+  name: list.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 3FEE521CEF14928AE38E7FA9BF6D75E6
 - generatedChecksum: EC7D138490803EC5E5AB6AA691A6ADE2
   logicalPath: wolfcrypt
   name: logging.c
@@ -776,13 +818,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 98FBCDAE8D08055A4805E0C0DB104767
-- generatedChecksum: B43403709BE22A687BC66F6992E1A1E6
+- generatedChecksum: 73C0C8A07BF786EC9F9C8689CA156ED6
   logicalPath: config/sam_e70_xult/net_pres/pres
   name: net_pres_enc_glue.c
   physicalPath: net_pres/pres
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B43403709BE22A687BC66F6992E1A1E6
+  userChecksum: 73C0C8A07BF786EC9F9C8689CA156ED6
 - generatedChecksum: 38E04B82DD4C8CCB7E85D66976CE7071
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: oahash.c
@@ -797,6 +839,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6694E3C4C6D7826F9546713775119B84
+- generatedChecksum: 8FDD6248506F28B32C4F5FD9AA0D9C6F
+  logicalPath: config/sam_e70_xult/osal
+  name: osal_freertos.c
+  physicalPath: osal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 8FDD6248506F28B32C4F5FD9AA0D9C6F
 - generatedChecksum: 257FD8DA385CB8BD2ECBD68395BB7D76
   logicalPath: wolfcrypt/port
   name: pic32mz-crypt.c
@@ -839,13 +888,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0647D4345A2444D13FF9D0506FC6C201
-- generatedChecksum: 366FA269582368DCD6E4CF791083F205
+- generatedChecksum: 7CEDDD05C945F8708792561189BBC075
   logicalPath: config/sam_e70_xult/peripheral/nvic
   name: plib_nvic.c
   physicalPath: peripheral/nvic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 366FA269582368DCD6E4CF791083F205
+  userChecksum: 7CEDDD05C945F8708792561189BBC075
 - generatedChecksum: EFA5D4E8A4E7F52DF84D82C155EECEA8
   logicalPath: config/sam_e70_xult/peripheral/pio
   name: plib_pio.c
@@ -874,6 +923,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: BE4CB7367E5A5B3DDA671207F469CA45
+- generatedChecksum: A44EAFDF7F180C2C05A0AE0AEB3FB80C
+  logicalPath: FreeRTOS/Source/portable/GCC/SAM/CM7
+  name: port.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: A44EAFDF7F180C2C05A0AE0AEB3FB80C
 - generatedChecksum: 94BD9ECAE121628FFE573BE70F884DA0
   logicalPath: web_pages/protect
   name: protect\config.htm
@@ -909,6 +965,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 71175F143BDAB8C0ADEDC5994CAD5E94
+- generatedChecksum: 09041728D74A4E3A32C7D4EAA96C4EE7
+  logicalPath: FreeRTOS/Source
+  name: queue.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 09041728D74A4E3A32C7D4EAA96C4EE7
 - generatedChecksum: 9E538DAE0C453E5FD33B408C97E589F2
   logicalPath: wolfcrypt
   name: rabbit.c
@@ -1112,6 +1175,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3DB6E195EBADDBB75B68E55FE5DF5294
+- generatedChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
+  logicalPath: FreeRTOS/Source
+  name: stream_buffer.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
 - generatedChecksum: 9063CE23C03357B7F90CA6887D4BCAF9
   logicalPath: config/sam_e70_xult/system/cache
   name: sys_cache.c
@@ -1203,13 +1273,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 02C3C1B519E59992810626BB6098CF56
-- generatedChecksum: 21B531192E183E11DCAD9BC1B63C6D66
+- generatedChecksum: 6E907D9AEFDAE88D8E9B23F0668846C6
   logicalPath: config/sam_e70_xult/system
   name: sys_random_h2_adapter.c
   physicalPath: system
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 21B531192E183E11DCAD9BC1B63C6D66
+  userChecksum: 6E907D9AEFDAE88D8E9B23F0668846C6
 - generatedChecksum: 003FBAA52BB0F67321DDAFD98601DC86
   logicalPath: config/sam_e70_xult/system/reset
   name: sys_reset.c
@@ -1231,13 +1301,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F849420C740D2B32346B4B4D9F46C136
-- generatedChecksum: 0C7DCA76ED596FDE847468F459726721
+- generatedChecksum: 5FD66B1464C24D3DA01FC832074A5FE3
   logicalPath: config/sam_e70_xult
   name: tasks.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0C7DCA76ED596FDE847468F459726721
+  userChecksum: 5FD66B1464C24D3DA01FC832074A5FE3
 - generatedChecksum: B8810AC22D73CE43E5661105B6D3C8EB
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: tcp.c
@@ -1273,13 +1343,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A2369C12783F6B5742386F125111403F
-- generatedChecksum: 874F75411FA9C7408FC45C666503F518
+- generatedChecksum: 81EADD271AD3FD00D134231272F6692C
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: tcpip_helpers.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 874F75411FA9C7408FC45C666503F518
+  userChecksum: 81EADD271AD3FD00D134231272F6692C
 - generatedChecksum: 45BD0E33146096EDEDB1F9F6CA7D3BEB
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: tcpip_manager.c
@@ -1315,6 +1385,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7456AECE16D5C2AB16D083034728BDD0
+- generatedChecksum: F1B86F6E1527FD59A8713B67564F2898
+  logicalPath: FreeRTOS/Source
+  name: timers.c
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F1B86F6E1527FD59A8713B67564F2898
 - generatedChecksum: 97B96A854FF7808651F567F015658EE2
   logicalPath: wolfssl
   name: tls.c
@@ -1658,13 +1735,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 67554DF6584E26A928D033E8E0780064
-- generatedChecksum: 5FD046E7602BD94803973C66213622E8
+- generatedChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
+  logicalPath: FreeRTOS/Source/include
+  name: FreeRTOS.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
+- generatedChecksum: 85814EC29A5445EBC540EAE6D59ECBDA
+  logicalPath: config/sam_e70_xult
+  name: FreeRTOSConfig.h
+  physicalPath: ''
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 85814EC29A5445EBC540EAE6D59ECBDA
+- generatedChecksum: 508FD8861D932EC0F7EB0D973E8DDC1F
   logicalPath: config/sam_e70_xult/driver/gmac/src/dynamic
   name: _gmac_dcpt_lists.h
   physicalPath: driver/gmac/src/dynamic
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5FD046E7602BD94803973C66213622E8
+  userChecksum: 508FD8861D932EC0F7EB0D973E8DDC1F
 - generatedChecksum: F84224329F99EC1748147F73B258A857
   logicalPath: packs/ATSAME70Q21B_DFP/component
   name: acc.h
@@ -1945,13 +2036,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 15AB6693CC2E1EE7AB845EE42A6AC762
-- generatedChecksum: 934E626645E19107638D7526E379D61C
+- generatedChecksum: 44169BC2D7233DF4F9673D56A21FC70E
   logicalPath: config/sam_e70_xult
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 934E626645E19107638D7526E379D61C
+  userChecksum: 44169BC2D7233DF4F9673D56A21FC70E
 - generatedChecksum: 948CEA542F04017255B040816F368DF8
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: core_cm7.h
@@ -1973,6 +2064,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6AE4D6CA8EFC5B7E3D5715229141E18B
+- generatedChecksum: 48B661D8C967C6BC397001F10FB43D1D
+  logicalPath: FreeRTOS/Source/include
+  name: croutine.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 48B661D8C967C6BC397001F10FB43D1D
 - generatedChecksum: B0EA96907330C52D7AAF105D31330A75
   logicalPath: wolfcrypt/port
   name: crypt_aes_hw.h
@@ -2190,13 +2288,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7959E2B94CEE186632B984636D40C252
-- generatedChecksum: 1A0BB1046E8BEA1030962FC8AA1C600B
+- generatedChecksum: A2672B4FF9975BA0057555D762B9D251
   logicalPath: config/sam_e70_xult
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1A0BB1046E8BEA1030962FC8AA1C600B
+  userChecksum: A2672B4FF9975BA0057555D762B9D251
+- generatedChecksum: 1EA4EDD5EA90F43EC407DE32441159A9
+  logicalPath: FreeRTOS/Source/include
+  name: deprecated_definitions.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 1EA4EDD5EA90F43EC407DE32441159A9
 - generatedChecksum: A751C19ADEECD5B90ADA51DD19DB417D
   logicalPath: wolfcrypt
   name: des3.h
@@ -2253,13 +2358,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: AB99E6635C9C3A2E448487057AB59432
-- generatedChecksum: B200ED766A2816D815D1D250369ED7E6
+- generatedChecksum: F378C91710B432FA506FFF6F4C1E2C69
   logicalPath: config/sam_e70_xult/library/tcpip
   name: dhcp_server.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: B200ED766A2816D815D1D250369ED7E6
+  userChecksum: F378C91710B432FA506FFF6F4C1E2C69
 - generatedChecksum: 9EFF17CC1F25051E5560AF13932C16D1
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: dhcp_server_manager.h
@@ -2274,13 +2379,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BBF9514CFFAFFDF4C39E53446AB46C33
-- generatedChecksum: 7B9CA85684E5918618A9EB461FDF5BCC
+- generatedChecksum: E1D8C77E0B7F57C8A5F614C38EBA5EB1
   logicalPath: config/sam_e70_xult/library/tcpip
   name: dhcps.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7B9CA85684E5918618A9EB461FDF5BCC
+  userChecksum: E1D8C77E0B7F57C8A5F614C38EBA5EB1
 - generatedChecksum: E4B4C8DE8FA457275D1BB5F0200142E7
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: dhcps_manager.h
@@ -2288,13 +2393,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: E4B4C8DE8FA457275D1BB5F0200142E7
-- generatedChecksum: A0DD74EDA49C028D9921B5685F19D64A
+- generatedChecksum: 6F3792EACF9CEA5B0CD4A4AF9D1D02D7
   logicalPath: config/sam_e70_xult/library/tcpip/src
   name: dhcps_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: A0DD74EDA49C028D9921B5685F19D64A
+  userChecksum: 6F3792EACF9CEA5B0CD4A4AF9D1D02D7
 - generatedChecksum: 00F1A25D4FAE40690DED25BCAD3A935F
   logicalPath: config/sam_e70_xult/library/tcpip
   name: dhcpv6.h
@@ -2407,13 +2512,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 5F785A99D467362542F416F4A04A4370
-- generatedChecksum: 0011B76E7B426C6C221BD3986C6BFF91
+- generatedChecksum: B3D349CB1D5F62057274BB7A6FA47207
   logicalPath: config/sam_e70_xult/driver/gmac/src/dynamic
   name: drv_gmac_lib.h
   physicalPath: driver/gmac/src/dynamic
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0011B76E7B426C6C221BD3986C6BFF91
+  userChecksum: B3D349CB1D5F62057274BB7A6FA47207
 - generatedChecksum: 10B575674985D789D86B1D6ED3102820
   logicalPath: config/sam_e70_xult/driver/gmac/src
   name: drv_gmac_local.h
@@ -2442,13 +2547,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F295A1267BA439F070E0FBA563EB96F8
-- generatedChecksum: 2E25CEFA28CCA2CD66BA9DF6B4C66621
+- generatedChecksum: 4638FD164B17CBFDF7E8CB74E2189F60
   logicalPath: config/sam_e70_xult/driver/memory
   name: drv_memory_local.h
   physicalPath: driver/memory/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2E25CEFA28CCA2CD66BA9DF6B4C66621
+  userChecksum: 4638FD164B17CBFDF7E8CB74E2189F60
 - generatedChecksum: DE9A328A47FEC185CB88AA4AB3A875D1
   logicalPath: config/sam_e70_xult/driver/miim
   name: drv_miim.h
@@ -2526,6 +2631,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9A481B7E3822C94527EDDE5DC6247992
+- generatedChecksum: B1D1D455E111FA70C46AD40562D78CE2
+  logicalPath: FreeRTOS/Source/include
+  name: event_groups.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B1D1D455E111FA70C46AD40562D78CE2
 - generatedChecksum: 3D4AFD7F081219EE8D4455F548324CDC
   logicalPath: wolfcrypt
   name: fe_448.h
@@ -2848,13 +2960,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: D73336EBD144EC8DA7CC6FA337463BB2
-- generatedChecksum: 1F6D0B5BABD0F77FF0E81DCEE28ECBC8
+- generatedChecksum: B4DB5F95843626EC90BC9E57556CA5AE
   logicalPath: config/sam_e70_xult
   name: interrupts.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1F6D0B5BABD0F77FF0E81DCEE28ECBC8
+  userChecksum: B4DB5F95843626EC90BC9E57556CA5AE
 - generatedChecksum: DA36D91DA4951931C8023B68D22F969D
   logicalPath: config/sam_e70_xult/library/tcpip
   name: iperf.h
@@ -2932,6 +3044,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F2C9FCDD2BC6947D734604AD47740798
+- generatedChecksum: FE17D325A06479D956285C5438994B83
+  logicalPath: FreeRTOS/Source/include
+  name: list.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: FE17D325A06479D956285C5438994B83
 - generatedChecksum: D89BA50A67F1BBB1D108A4C6E527FC2F
   logicalPath: config/sam_e70_xult/library/tcpip
   name: lldp.h
@@ -3037,6 +3156,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 344941DFE4CB6FCCA3D93A729A09D156
+- generatedChecksum: DDE2C9D46642D120A0202AC851E1A777
+  logicalPath: FreeRTOS/Source/include
+  name: message_buffer.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: DDE2C9D46642D120A0202AC851E1A777
 - generatedChecksum: A2DE43F62D9FFAF4A9B0A0EDF9BDB565
   logicalPath: wolfcrypt
   name: misc.h
@@ -3079,6 +3205,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 47E760D36E42A7B436306A9CB4E72A0E
+- generatedChecksum: 2D674B8B1FCF07504AF90FA5CE2F9A23
+  logicalPath: FreeRTOS/Source/include
+  name: mpu_prototypes.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 2D674B8B1FCF07504AF90FA5CE2F9A23
+- generatedChecksum: 953D372D8F7991D4F86AD4ABD42AE4CE
+  logicalPath: FreeRTOS/Source/include
+  name: mpu_wrappers.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 953D372D8F7991D4F86AD4ABD42AE4CE
 - generatedChecksum: F74D8EB5B501CEF184B30ED0D76F7AFB
   logicalPath: config/sam_e70_xult/library/tcpip
   name: nbns.h
@@ -3191,20 +3331,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F0AD88762263B7CB89B02AB4F5876059
-- generatedChecksum: 0AC88C49E4585B606FD5AC6804F0C340
+- generatedChecksum: 167A43EFF8A31441EBF85AC77958A30B
   logicalPath: config/sam_e70_xult/osal
   name: osal_definitions.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0AC88C49E4585B606FD5AC6804F0C340
-- generatedChecksum: B040122CCA94A0636810D6F15F13B751
+  userChecksum: 167A43EFF8A31441EBF85AC77958A30B
+- generatedChecksum: 9D6F205ECFDB2028C5CF766B52B5B7B2
   logicalPath: config/sam_e70_xult/osal
-  name: osal_impl_basic.h
+  name: osal_freertos.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
-  userChecksum: B040122CCA94A0636810D6F15F13B751
+  userChecksum: 9D6F205ECFDB2028C5CF766B52B5B7B2
 - generatedChecksum: F50BC9DA4605913EE5CE1322D54A5C67
   logicalPath: wolfcrypt/port
   name: pic32mz-crypt.h
@@ -3366,6 +3506,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 5D0C040C975701D3CDA4BBA6A6BA630D
+- generatedChecksum: 5A686FF678CBFBB4A1FEB86B66DCEC98
+  logicalPath: FreeRTOS/Source/include
+  name: portable.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5A686FF678CBFBB4A1FEB86B66DCEC98
+- generatedChecksum: B16F3C9A1AF9C6C726871E79F424A3F9
+  logicalPath: FreeRTOS/Source/portable/GCC/SAM/CM7
+  name: portmacro.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B16F3C9A1AF9C6C726871E79F424A3F9
+- generatedChecksum: 696F66B2428CC530389C53B5FE617CE1
+  logicalPath: FreeRTOS/Source/include
+  name: projdefs.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 696F66B2428CC530389C53B5FE617CE1
 - generatedChecksum: 3EC14D9B16EC8F16847440F97233E8F2
   logicalPath: wolfcrypt
   name: pwdbased.h
@@ -3408,6 +3569,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 243D7429368556486CB88D3988FA13D7
+- generatedChecksum: 6CB1FF8C27E6755C63D75369D1D7A37A
+  logicalPath: FreeRTOS/Source/include
+  name: queue.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6CB1FF8C27E6755C63D75369D1D7A37A
 - generatedChecksum: 8B671DBD9F7BED6BEF8099BD66E5B761
   logicalPath: wolfcrypt
   name: rabbit.h
@@ -3534,6 +3702,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6A53E2A2CE545AEABFD2DB3600529665
+- generatedChecksum: 9F1AE7D29D09ED8CC21F3DA08049FB79
+  logicalPath: FreeRTOS/Source/include
+  name: semphr.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9F1AE7D29D09ED8CC21F3DA08049FB79
 - generatedChecksum: 000D1072E65C7F154751FA14DF5F7028
   logicalPath: wolfcrypt
   name: settings.h
@@ -3751,6 +3926,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7FC136253FF41A08E1DEDA11C868FCEE
+- generatedChecksum: D0D11C3D2D1BD585018AE271E1AC3B8F
+  logicalPath: FreeRTOS/Source/include
+  name: stack_macros.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D0D11C3D2D1BD585018AE271E1AC3B8F
+- generatedChecksum: 7C71A9D2BEF16AC21C17ED5C2452C263
+  logicalPath: FreeRTOS/Source/include
+  name: stream_buffer.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7C71A9D2BEF16AC21C17ED5C2452C263
 - generatedChecksum: 54616DA3FC4BA836A77218146C93BF57
   logicalPath: packs/ATSAME70Q21B_DFP/component
   name: supc.h
@@ -3842,13 +4031,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 00278F169FFB0CBBAB3A68B5D647F093
-- generatedChecksum: 751EE9993B5654990D2344BA43295EAB
+- generatedChecksum: 89A2BB1ACE0A3BCFDBEC1528E5F76FC0
   logicalPath: config/sam_e70_xult/system
   name: sys_random_h2_adapter.h
   physicalPath: system
   security: NON_SECURE
   type: HEADER
-  userChecksum: 751EE9993B5654990D2344BA43295EAB
+  userChecksum: 89A2BB1ACE0A3BCFDBEC1528E5F76FC0
 - generatedChecksum: 8E43BD17134E69982826F202D0AB42C5
   logicalPath: config/sam_e70_xult/system/reset
   name: sys_reset.h
@@ -3926,6 +4115,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 1C75A8A6B60598A2FD0D533F57839B72
+- generatedChecksum: 84B3224817BDD8B37961BB3B3441E134
+  logicalPath: FreeRTOS/Source/include
+  name: task.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 84B3224817BDD8B37961BB3B3441E134
 - generatedChecksum: 39B6C8FEA554983045986D04CDFA051C
   logicalPath: packs/ATSAME70Q21B_DFP/component
   name: tc.h
@@ -4059,13 +4255,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3FB4AF6DF0E1AFAAC7AB7D042672EC20
-- generatedChecksum: 86B8FA64501DF0D11AB6BB027665E69A
+- generatedChecksum: C2639B76AA3ED555DE0E35E023356ADF
   logicalPath: config/sam_e70_xult/library/tcpip
   name: tcpip_mac.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 86B8FA64501DF0D11AB6BB027665E69A
+  userChecksum: C2639B76AA3ED555DE0E35E023356ADF
 - generatedChecksum: F7969FE2EDC637424E363FD8D5F894E4
   logicalPath: config/sam_e70_xult/library/tcpip
   name: tcpip_mac_bridge.h
@@ -4227,6 +4423,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 93955E68585F91EE382E3EFCEDB120EE
+- generatedChecksum: C8BB70E2423A57902E9FDC0C9EC81F8D
+  logicalPath: FreeRTOS/Source/include
+  name: timers.h
+  physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C8BB70E2423A57902E9FDC0C9EC81F8D
 - generatedChecksum: E7B1CC92ABE4830B5244251AB8FA4FB0
   logicalPath: config/sam_e70_xult
   name: toolchain_specifics.h
@@ -4563,6 +4766,18 @@ settings:
   delimiter: ;
   key: extra-include-directories
   security: NON_SECURE
+  value: ../src/third_party/rtos/FreeRTOS/Source/include;
+- append: true
+  category: C32
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
+  value: ../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7;
+- append: true
+  category: C32
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
   value: ../src/third_party/wolfssl
 - append: true
   category: C32
@@ -4593,7 +4808,7 @@ settings:
   delimiter: ''
   key: heap-size
   security: NON_SECURE
-  value: '126960'
+  value: '156960'
 - append: false
   category: C32-LD
   delimiter: ''
@@ -4606,6 +4821,12 @@ settings:
   key: preprocessor-macros
   security: NON_SECURE
   value: ''
+- append: true
+  category: C32CPP
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
+  value: ../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7;
 - append: true
   category: C32CPP
   delimiter: ;

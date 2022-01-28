@@ -3,4 +3,4 @@ type: UniqueComponent
 attributes: {id: tcpipIcmpv6}
 children:
 - type: ElementPosition
-  attributes: {x: '580', y: '20', id: tcpipIcmpv6}
+  attributes: {x: '310', y: '140', id: tcpipIcmpv6}

@@ -230,4 +230,4 @@ children:
             children:
             - {type: Value, value: EFC_MEMORY}
 - type: ElementPosition
-  attributes: {x: '159', y: '366', id: drv_memory}
+  attributes: {x: '167', y: '275', id: drv_memory}

@@ -27,4 +27,4 @@ children:
         children:
         - {type: Value, value: GMAC_PHY_Dependency}
 - type: ElementPosition
-  attributes: {x: '158', y: '65', id: drvExtPhyLan8740}
+  attributes: {x: '193', y: '115', id: drvExtPhyLan8740}

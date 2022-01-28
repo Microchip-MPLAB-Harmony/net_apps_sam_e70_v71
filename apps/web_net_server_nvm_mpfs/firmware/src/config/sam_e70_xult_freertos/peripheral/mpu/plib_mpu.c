@@ -94,11 +94,6 @@ void MPU_Initialize(void)
 
 
 
-
-
-
-
-
     /* Enable Memory Management Fault */
     SCB->SHCSR |= (SCB_SHCSR_MEMFAULTENA_Msk);
 

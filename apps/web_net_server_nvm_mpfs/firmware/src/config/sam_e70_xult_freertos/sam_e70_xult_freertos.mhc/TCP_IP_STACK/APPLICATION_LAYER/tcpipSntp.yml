@@ -11,12 +11,5 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tcpipSntp, value: GMAC}
-  - type: String
-    attributes: {id: TCPIP_NTP_SERVER}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: pool.ntp.org}
 - type: ElementPosition
-  attributes: {x: '158', y: '211', id: tcpipSntp}
+  attributes: {x: '170', y: '180', id: tcpipSntp}

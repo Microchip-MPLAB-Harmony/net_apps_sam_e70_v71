@@ -4,8 +4,8 @@ attributes: {id: sys_fs}
 children:
 - type: Symbols
   children:
-  - type: Boolean
-    attributes: {id: SYS_FS_ALIGNED_BUFFER_ENABLE}
+  - type: Integer
+    attributes: {id: SYS_FS_ALIGNED_BUFFER_LEN}
     children:
     - type: Attributes
       children:
@@ -119,7 +119,7 @@ children:
         attributes: {id: enabled}
         children:
         - {type: Value, value: 'false'}
-  - type: Combo
+  - type: String
     attributes: {id: SYS_FS_FAT_VERSION}
     children:
     - type: Attributes

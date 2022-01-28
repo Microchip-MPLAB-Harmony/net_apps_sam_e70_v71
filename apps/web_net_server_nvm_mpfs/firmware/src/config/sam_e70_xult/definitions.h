@@ -81,6 +81,8 @@
 #include "wolfssl/wolfcrypt/port/pic32/crypt_wolfcryptcb.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
+#include "FreeRTOS.h"
+#include "task.h"
 #include "app.h"
 
 

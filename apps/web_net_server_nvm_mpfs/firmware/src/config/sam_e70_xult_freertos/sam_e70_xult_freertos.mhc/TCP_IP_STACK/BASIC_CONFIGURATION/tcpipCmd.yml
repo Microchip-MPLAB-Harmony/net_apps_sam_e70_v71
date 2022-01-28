@@ -14,4 +14,4 @@ children:
         children:
         - {type: Value, value: 'true'}
 - type: ElementPosition
-  attributes: {x: '580', y: '20', id: tcpipCmd}
+  attributes: {x: '30', y: '60', id: tcpipCmd}
