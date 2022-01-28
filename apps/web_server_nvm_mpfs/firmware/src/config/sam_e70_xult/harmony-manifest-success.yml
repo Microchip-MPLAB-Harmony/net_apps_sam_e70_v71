@@ -4,7 +4,7 @@
 
 
 project: web_server_nvm_mpfs
-creation_date: 2021-12-13T12:15:30.017+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-01-26T18:52:24.164+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: unknown
@@ -19,5 +19,5 @@ modules:
     - {name: "wolfssl", version: "v4.7.0"}
     - {name: "net", version: "unknown"}
     - {name: "bsp", version: "v3.10.0"}
-    - {name: "crypto", version: "v3.7.4"}
+    - {name: "crypto", version: "v3.7.5"}
 
