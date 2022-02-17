@@ -4083,7 +4083,7 @@ children:
       - type: String
         attributes: {id: value}
         children:
-        - {type: Value, value: '162400'}
+        - {type: Value, value: '262144'}
   - type: Integer
     attributes: {id: XC32_HEAP_SIZE}
     children:
@@ -4092,7 +4092,7 @@ children:
       - type: Dynamic
         attributes: {id: lib_wolfmqtt, value: '102400'}
       - type: User
-        attributes: {value: '162400'}
+        attributes: {value: '262144'}
   - type: KeyValueSet
     attributes: {id: XDMAC_CC0_CSIZE}
     children:
