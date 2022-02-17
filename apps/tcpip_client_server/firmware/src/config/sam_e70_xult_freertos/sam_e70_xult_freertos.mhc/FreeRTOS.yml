@@ -42,14 +42,5 @@ children:
       children:
       - type: User
         attributes: {value: '50960'}
-  - type: Setting
-    attributes: {id: FREERTOS_XC32CPP_INCLUDE_DIRS}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'true'}
 - type: ElementPosition
   attributes: {x: '566', y: '93', id: FreeRTOS}
