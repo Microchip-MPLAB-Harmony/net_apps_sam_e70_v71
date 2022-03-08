@@ -920,8 +920,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMV71_DFP" vendor="Microchip" version="4.7.98"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMV71_DFP" vendor="Microchip" version="4.7.98"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
