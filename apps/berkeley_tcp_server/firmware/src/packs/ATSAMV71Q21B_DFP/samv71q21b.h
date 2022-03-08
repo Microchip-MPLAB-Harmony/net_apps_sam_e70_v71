@@ -1,7 +1,7 @@
 /*
  * Header file for ATSAMV71Q21B
  *
- * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* File generated from device description version 2020-11-26T11:15:04Z */
+/* File generated from device description version 2021-12-23T10:12:54Z */
 #ifndef _SAMV71Q21B_H_
 #define _SAMV71Q21B_H_
 
