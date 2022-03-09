@@ -41,6 +41,8 @@ children:
     children:
     - type: Values
       children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: 'true'}
       - type: User
         attributes: {value: 'true'}
   - type: Boolean
@@ -55,6 +57,8 @@ children:
     children:
     - type: Values
       children:
+      - type: Dynamic
+        attributes: {id: drvGmac, value: 'true'}
       - type: User
         attributes: {value: 'true'}
   - type: KeyValueSet
