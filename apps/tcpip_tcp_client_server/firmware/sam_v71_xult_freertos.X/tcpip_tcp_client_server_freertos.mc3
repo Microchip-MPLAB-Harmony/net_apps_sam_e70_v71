@@ -851,14 +851,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;440&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;300&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_transport_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;FreeRTOS&quot; x=&quot;390&quot; y=&quot;68&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;HarmonyCore&quot; x=&quot;24&quot; y=&quot;76&quot;/&gt;
@@ -877,22 +870,7 @@
         &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;usart1&quot; x=&quot;35&quot; y=&quot;327&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;APPLICATION LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipDhcp&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipDns&quot; x=&quot;460&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_apps_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;NETWORK LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipArp&quot; x=&quot;440&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipIPv4&quot; x=&quot;300&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipIcmp&quot; x=&quot;580&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpip_network_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;DRIVER LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;DRIVER LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;drvExtPhyKsz8061&quot; x=&quot;120&quot; y=&quot;97&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;drvGmac&quot; x=&quot;280&quot; y=&quot;20&quot;/&gt;
@@ -900,22 +878,44 @@
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpip_driver_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;NETWORK LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipCmd&quot; x=&quot;580&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipNetConfig&quot; x=&quot;420&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipStack&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpip_basic_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipArp&quot; x=&quot;440&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipIPv4&quot; x=&quot;300&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipIcmp&quot; x=&quot;580&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpip_network_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;GraphSettings canvasHeight=&quot;156&quot; canvasWidth=&quot;611&quot; dnOrder=&quot;6&quot;/&gt;
-    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;TCP/IP STACK&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;156&quot; canvasWidth=&quot;611&quot; dnOrder=&quot;3&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;440&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;300&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_transport_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;TCP/IP STACK&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;APPLICATION LAYER&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;BASIC CONFIGURATION&quot; x=&quot;374&quot; y=&quot;120&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;DRIVER LAYER&quot; x=&quot;216&quot; y=&quot;121&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;NETWORK LAYER&quot; x=&quot;380&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;TRANSPORT LAYER&quot; x=&quot;200&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;APPLICATION LAYER&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipDhcp&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipDns&quot; x=&quot;460&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_apps_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipCmd&quot; x=&quot;580&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipNetConfig&quot; x=&quot;420&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipStack&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpip_basic_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -12514,7 +12514,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\library\tcpip\dns.h</file>
-         <hash>0a5b8a799412808cc56a78eb8aa644af8f9dda61a5d403e198af9e9697f31999</hash>
+         <hash>180ee8622056b0db299e51437f55aaa760949a9c700feefc22b91aa69cd20c84</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\FreeRTOSConfig.h</file>
@@ -12854,7 +12854,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\configuration.h</file>
-         <hash>24b2e1d737de1eceeb52f3d9a669522e26367c4432cc454e5d188776a59469be</hash>
+         <hash>d851ff17ce751254337504fb7b30b819218b9cb7dc2b64d26d0db143bf14b7f2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMV71Q21B_DFP\component\gmac.h</file>
@@ -12978,7 +12978,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\library\tcpip\src\dns.c</file>
-         <hash>8321c27e58d85cbc9d806acfdfb4c6e081644b6d6eee616e56a37e906ed37782</hash>
+         <hash>49e3596965c281bbbd7a9818b6e3e3b2b812c6627ae77529490ef18f6776ef1a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\port\pic32\crypt_sha384_sam6156.c</file>
@@ -13894,7 +13894,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\library\tcpip\src\dhcp_server_private.h</file>
-         <hash>f3f6f5ea9259d39604499021a75a5edafa1886ba0d5d1aa66aefa15e2ba2de95</hash>
+         <hash>7e85322b5eadd0a1eaca264334cbe2ce041df42bbde4fa210cd4f6c4fd4585f6</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\system\console\sys_console.h</file>
