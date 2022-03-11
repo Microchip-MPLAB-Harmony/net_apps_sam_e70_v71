@@ -17,7 +17,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: vPortFree}
+        attributes: {value: free}
   - type: Integer
     attributes: {id: TCPIP_HTTP_NET_HEAP_SIZE}
     children:
@@ -38,7 +38,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: pvPortMalloc}
+        attributes: {value: malloc}
   - type: Integer
     attributes: {id: TCPIP_HTTP_NET_SSI_VARIABLE_STRING_MAX_LENGTH}
     children:

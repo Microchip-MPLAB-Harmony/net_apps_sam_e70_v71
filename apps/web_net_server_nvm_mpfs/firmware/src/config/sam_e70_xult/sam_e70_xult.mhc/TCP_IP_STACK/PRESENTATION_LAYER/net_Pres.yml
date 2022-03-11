@@ -188,7 +188,7 @@ children:
       - type: Boolean
         attributes: {id: visible}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: NET_PRES_RTOS_STACK_SIZE}
     children:
@@ -267,7 +267,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: Boolean
     attributes: {id: NET_PRES_USE_WOLF_SSL}
     children:

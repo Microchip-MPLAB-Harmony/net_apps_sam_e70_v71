@@ -31,7 +31,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: FreeRTOS}
+        attributes: {value: Single Threaded}
   - type: Boolean
     attributes: {id: wolfcrypt_hashdrng}
     children:
@@ -71,4 +71,4 @@ children:
       - type: Dynamic
         attributes: {id: lib_wolfcrypt, value: 'true'}
 - type: ElementPosition
-  attributes: {x: '658', y: '222', id: lib_wolfcrypt}
+  attributes: {x: '658', y: '221', id: lib_wolfcrypt}

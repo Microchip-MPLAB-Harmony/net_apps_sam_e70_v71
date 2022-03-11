@@ -12,7 +12,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'false'}
+        - {type: Value, value: 'true'}
   - type: File
     attributes: {id: DRV_MEMORY_ASYNC_SOURCE}
     children:
@@ -21,7 +21,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'false'}
+        - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: DRV_MEMORY_COMMON_FS_ENABLE}
     children:
@@ -35,14 +35,14 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: drv_memory, value: Synchronous}
+        attributes: {id: drv_memory, value: Asynchronous}
   - type: Boolean
     attributes: {id: DRV_MEMORY_COMMON_SYS_TIME_ENABLE}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: drv_memory, value: 'true'}
+        attributes: {id: drv_memory, value: 'false'}
   - type: File
     attributes: {id: DRV_MEMORY_FS_SOURCE}
     children:
@@ -60,7 +60,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: File
     attributes: {id: DRV_MEMORY_SYNC_SOURCE}
     children:
@@ -69,7 +69,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
 - type: Instances
   children:
   - type: InstanceComponent
@@ -85,7 +85,7 @@ children:
           - type: Boolean
             attributes: {id: visible}
             children:
-            - {type: Value, value: 'false'}
+            - {type: Value, value: 'true'}
         - type: Values
           children:
           - type: Dynamic
@@ -119,7 +119,7 @@ children:
           - type: Boolean
             attributes: {id: visible}
             children:
-            - {type: Value, value: 'true'}
+            - {type: Value, value: 'false'}
       - type: Combo
         attributes: {id: DRV_MEMORY_DEVICE_TYPE}
         children:
