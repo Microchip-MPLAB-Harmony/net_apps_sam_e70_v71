@@ -549,7 +549,121 @@
       <itemPath>../src/app.h</itemPath>
       <itemPath>../src/http_net_print.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="HeaderFiles" displayName="HeaderFiles" projectFiles="true">
+      <logicalFolder name="config" displayName="config" projectFiles="true">
+        <logicalFolder name="sam_e70_xult"
+                       displayName="sam_e70_xult"
+                       projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="driver" displayName="driver" projectFiles="true">
+            <logicalFolder name="ethphy" displayName="ethphy" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="gmac" displayName="gmac" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="memory" displayName="memory" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="miim" displayName="miim" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="library" displayName="library" projectFiles="true">
+            <logicalFolder name="tcpip" displayName="tcpip" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="common" displayName="common" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="net_pres" displayName="net_pres" projectFiles="true">
+            <logicalFolder name="pres" displayName="pres" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="osal" displayName="osal" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="clk" displayName="clk" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="efc" displayName="efc" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="mpu" displayName="mpu" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="nvic" displayName="nvic" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="pio" displayName="pio" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="tc" displayName="tc" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="usart" displayName="usart" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="system" displayName="system" projectFiles="true">
+            <logicalFolder name="cache" displayName="cache" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="command" displayName="command" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="console" displayName="console" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="debug" displayName="debug" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="fs" displayName="fs" projectFiles="true">
+              <logicalFolder name="mpfs" displayName="mpfs" projectFiles="true">
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="int" displayName="int" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="reset" displayName="reset" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="time" displayName="time" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="packs" displayName="packs" projectFiles="true">
+        <logicalFolder name="ATSAME70Q21B_DFP"
+                       displayName="ATSAME70Q21B_DFP"
+                       projectFiles="true">
+          <logicalFolder name="component" displayName="component" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="instance" displayName="instance" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="pio" displayName="pio" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
+          <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
+            <logicalFolder name="Core" displayName="Core" projectFiles="true">
+              <logicalFolder name="Include" displayName="Include" projectFiles="true">
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="wolfcrypt" displayName="wolfcrypt" projectFiles="true">
+        <logicalFolder name="port" displayName="port" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
     <logicalFolder name="f4" displayName="Important Files" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
       <logicalFolder name="f2" displayName="sam_e70_xult.mhc" projectFiles="true">
         <logicalFolder name="f1" displayName="TCP_IP_STACK" projectFiles="true">
           <logicalFolder name="f1" displayName="APPLICATION_LAYER" projectFiles="true">
@@ -627,11 +741,22 @@
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_e70_xult/harmony-manifest-success.yml</itemPath>
+      <itemPath>snmpv3_nvm_mpfs.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="f2" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_e70_xult" projectFiles="true">
           <itemPath>../src/config/sam_e70_xult/ATSAME70Q21B.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="LinkerScript"
+                   projectFiles="true">
+      <logicalFolder name="config" displayName="config" projectFiles="true">
+        <logicalFolder name="sam_e70_xult"
+                       displayName="sam_e70_xult"
+                       projectFiles="true">
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -926,6 +1051,114 @@
       <itemPath>../src/custom_http_net_app.c</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="SourceFiles" projectFiles="true">
+      <logicalFolder name="config" displayName="config" projectFiles="true">
+        <logicalFolder name="sam_e70_xult"
+                       displayName="sam_e70_xult"
+                       projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="driver" displayName="driver" projectFiles="true">
+            <logicalFolder name="ethphy" displayName="ethphy" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="gmac" displayName="gmac" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="memory" displayName="memory" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="miim" displayName="miim" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="library" displayName="library" projectFiles="true">
+            <logicalFolder name="tcpip" displayName="tcpip" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="common" displayName="common" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="net_pres" displayName="net_pres" projectFiles="true">
+            <logicalFolder name="pres" displayName="pres" projectFiles="true">
+              <logicalFolder name="src" displayName="src" projectFiles="true">
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="clk" displayName="clk" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="efc" displayName="efc" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="mpu" displayName="mpu" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="nvic" displayName="nvic" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="pio" displayName="pio" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="tc" displayName="tc" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="usart" displayName="usart" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="system" displayName="system" projectFiles="true">
+            <logicalFolder name="cache" displayName="cache" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="command" displayName="command" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="console" displayName="console" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="debug" displayName="debug" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="fs" displayName="fs" projectFiles="true">
+              <logicalFolder name="mpfs" displayName="mpfs" projectFiles="true">
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="int" displayName="int" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="reset" displayName="reset" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="time" displayName="time" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="web_pages" displayName="web_pages" projectFiles="true">
+        <logicalFolder name="dyndns" displayName="dyndns" projectFiles="true">
+          <logicalFolder name="dyndns" displayName="dyndns" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="email" displayName="email" projectFiles="true">
+          <logicalFolder name="email" displayName="email" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="protect" displayName="protect" projectFiles="true">
+          <logicalFolder name="protect" displayName="protect" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="snmp" displayName="snmp" projectFiles="true">
+          <logicalFolder name="snmp" displayName="snmp" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="wolfcrypt" displayName="wolfcrypt" projectFiles="true">
+        <logicalFolder name="port" displayName="port" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -944,8 +1177,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
+        <pack name="SAME70_DFP" vendor="Microchip" version="4.7.106"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAME70_DFP" vendor="Microchip" version="4.6.98"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1001,6 +1234,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -1058,6 +1292,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -1097,6 +1332,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -1125,6 +1361,7 @@
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
       <C32Global>
+        <property key="appendMe" value=""/>
         <property key="common-include-directories" value=""/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
