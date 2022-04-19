@@ -1883,7 +1883,6 @@ SYS_FS_RESULT SYS_FS_DirSearch
     SYS_FS_DIR_OBJ *fileObj = (SYS_FS_DIR_OBJ *)handle;
     char *fileName = NULL;
     OSAL_RESULT osalResult = OSAL_RESULT_FALSE;
-
     if ((handle == SYS_FS_HANDLE_INVALID) || (name == NULL) || (stat == NULL))
     {
         errorValue = SYS_FS_ERROR_INVALID_PARAMETER;

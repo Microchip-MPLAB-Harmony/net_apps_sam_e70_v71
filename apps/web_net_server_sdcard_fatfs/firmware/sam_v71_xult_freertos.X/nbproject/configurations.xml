@@ -690,6 +690,7 @@
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_notify.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_packet.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/sntp.c</itemPath>
+                <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_commands.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
