@@ -1,7 +1,7 @@
 /*
  * Component description for MLB
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2021-12-23T10:12:54Z */
+/* file generated from device description version 2020-11-26T11:15:04Z */
 #ifndef _SAMV71_MLB_COMPONENT_H_
 #define _SAMV71_MLB_COMPONENT_H_
 
@@ -297,42 +297,42 @@
 
 
 /** \brief MLB register offsets definitions */
-#define MLB_MLBC0_REG_OFST             (0x00)              /* (MLB_MLBC0) MediaLB Control 0 Register Offset */
-#define MLB_MS0_REG_OFST               (0x0C)              /* (MLB_MS0) MediaLB Channel Status 0 Register Offset */
-#define MLB_MS1_REG_OFST               (0x14)              /* (MLB_MS1) MediaLB Channel Status1 Register Offset */
-#define MLB_MSS_REG_OFST               (0x20)              /* (MLB_MSS) MediaLB System Status Register Offset */
-#define MLB_MSD_REG_OFST               (0x24)              /* (MLB_MSD) MediaLB System Data Register Offset */
-#define MLB_MIEN_REG_OFST              (0x2C)              /* (MLB_MIEN) MediaLB Interrupt Enable Register Offset */
-#define MLB_MLBC1_REG_OFST             (0x3C)              /* (MLB_MLBC1) MediaLB Control 1 Register Offset */
-#define MLB_HCTL_REG_OFST              (0x80)              /* (MLB_HCTL) HBI Control Register Offset */
-#define MLB_HCMR_REG_OFST              (0x88)              /* (MLB_HCMR) HBI Channel Mask 0 Register 0 Offset */
-#define MLB_HCMR0_REG_OFST             (0x88)              /* (MLB_HCMR0) HBI Channel Mask 0 Register 0 Offset */
-#define MLB_HCMR1_REG_OFST             (0x8C)              /* (MLB_HCMR1) HBI Channel Mask 0 Register 0 Offset */
-#define MLB_HCER_REG_OFST              (0x90)              /* (MLB_HCER) HBI Channel Error 0 Register 0 Offset */
-#define MLB_HCER0_REG_OFST             (0x90)              /* (MLB_HCER0) HBI Channel Error 0 Register 0 Offset */
-#define MLB_HCER1_REG_OFST             (0x94)              /* (MLB_HCER1) HBI Channel Error 0 Register 0 Offset */
-#define MLB_HCBR_REG_OFST              (0x98)              /* (MLB_HCBR) HBI Channel Busy 0 Register 0 Offset */
-#define MLB_HCBR0_REG_OFST             (0x98)              /* (MLB_HCBR0) HBI Channel Busy 0 Register 0 Offset */
-#define MLB_HCBR1_REG_OFST             (0x9C)              /* (MLB_HCBR1) HBI Channel Busy 0 Register 0 Offset */
-#define MLB_MDAT_REG_OFST              (0xC0)              /* (MLB_MDAT) MIF Data 0 Register 0 Offset */
-#define MLB_MDAT0_REG_OFST             (0xC0)              /* (MLB_MDAT0) MIF Data 0 Register 0 Offset */
-#define MLB_MDAT1_REG_OFST             (0xC4)              /* (MLB_MDAT1) MIF Data 0 Register 0 Offset */
-#define MLB_MDAT2_REG_OFST             (0xC8)              /* (MLB_MDAT2) MIF Data 0 Register 0 Offset */
-#define MLB_MDAT3_REG_OFST             (0xCC)              /* (MLB_MDAT3) MIF Data 0 Register 0 Offset */
-#define MLB_MDWE_REG_OFST              (0xD0)              /* (MLB_MDWE) MIF Data Write Enable 0 Register 0 Offset */
-#define MLB_MDWE0_REG_OFST             (0xD0)              /* (MLB_MDWE0) MIF Data Write Enable 0 Register 0 Offset */
-#define MLB_MDWE1_REG_OFST             (0xD4)              /* (MLB_MDWE1) MIF Data Write Enable 0 Register 0 Offset */
-#define MLB_MDWE2_REG_OFST             (0xD8)              /* (MLB_MDWE2) MIF Data Write Enable 0 Register 0 Offset */
-#define MLB_MDWE3_REG_OFST             (0xDC)              /* (MLB_MDWE3) MIF Data Write Enable 0 Register 0 Offset */
-#define MLB_MCTL_REG_OFST              (0xE0)              /* (MLB_MCTL) MIF Control Register Offset */
-#define MLB_MADR_REG_OFST              (0xE4)              /* (MLB_MADR) MIF Address Register Offset */
-#define MLB_ACTL_REG_OFST              (0x3C0)             /* (MLB_ACTL) AHB Control Register Offset */
-#define MLB_ACSR_REG_OFST              (0x3D0)             /* (MLB_ACSR) AHB Channel Status 0 Register 0 Offset */
-#define MLB_ACSR0_REG_OFST             (0x3D0)             /* (MLB_ACSR0) AHB Channel Status 0 Register 0 Offset */
-#define MLB_ACSR1_REG_OFST             (0x3D4)             /* (MLB_ACSR1) AHB Channel Status 0 Register 0 Offset */
-#define MLB_ACMR_REG_OFST              (0x3D8)             /* (MLB_ACMR) AHB Channel Mask 0 Register 0 Offset */
-#define MLB_ACMR0_REG_OFST             (0x3D8)             /* (MLB_ACMR0) AHB Channel Mask 0 Register 0 Offset */
-#define MLB_ACMR1_REG_OFST             (0x3DC)             /* (MLB_ACMR1) AHB Channel Mask 0 Register 0 Offset */
+#define MLB_MLBC0_REG_OFST             (0x00)              /**< (MLB_MLBC0) MediaLB Control 0 Register Offset */
+#define MLB_MS0_REG_OFST               (0x0C)              /**< (MLB_MS0) MediaLB Channel Status 0 Register Offset */
+#define MLB_MS1_REG_OFST               (0x14)              /**< (MLB_MS1) MediaLB Channel Status1 Register Offset */
+#define MLB_MSS_REG_OFST               (0x20)              /**< (MLB_MSS) MediaLB System Status Register Offset */
+#define MLB_MSD_REG_OFST               (0x24)              /**< (MLB_MSD) MediaLB System Data Register Offset */
+#define MLB_MIEN_REG_OFST              (0x2C)              /**< (MLB_MIEN) MediaLB Interrupt Enable Register Offset */
+#define MLB_MLBC1_REG_OFST             (0x3C)              /**< (MLB_MLBC1) MediaLB Control 1 Register Offset */
+#define MLB_HCTL_REG_OFST              (0x80)              /**< (MLB_HCTL) HBI Control Register Offset */
+#define MLB_HCMR_REG_OFST              (0x88)              /**< (MLB_HCMR) HBI Channel Mask 0 Register 0 Offset */
+#define MLB_HCMR0_REG_OFST             (0x88)              /**< (MLB_HCMR0) HBI Channel Mask 0 Register 0 Offset */
+#define MLB_HCMR1_REG_OFST             (0x8C)              /**< (MLB_HCMR1) HBI Channel Mask 0 Register 0 Offset */
+#define MLB_HCER_REG_OFST              (0x90)              /**< (MLB_HCER) HBI Channel Error 0 Register 0 Offset */
+#define MLB_HCER0_REG_OFST             (0x90)              /**< (MLB_HCER0) HBI Channel Error 0 Register 0 Offset */
+#define MLB_HCER1_REG_OFST             (0x94)              /**< (MLB_HCER1) HBI Channel Error 0 Register 0 Offset */
+#define MLB_HCBR_REG_OFST              (0x98)              /**< (MLB_HCBR) HBI Channel Busy 0 Register 0 Offset */
+#define MLB_HCBR0_REG_OFST             (0x98)              /**< (MLB_HCBR0) HBI Channel Busy 0 Register 0 Offset */
+#define MLB_HCBR1_REG_OFST             (0x9C)              /**< (MLB_HCBR1) HBI Channel Busy 0 Register 0 Offset */
+#define MLB_MDAT_REG_OFST              (0xC0)              /**< (MLB_MDAT) MIF Data 0 Register 0 Offset */
+#define MLB_MDAT0_REG_OFST             (0xC0)              /**< (MLB_MDAT0) MIF Data 0 Register 0 Offset */
+#define MLB_MDAT1_REG_OFST             (0xC4)              /**< (MLB_MDAT1) MIF Data 0 Register 0 Offset */
+#define MLB_MDAT2_REG_OFST             (0xC8)              /**< (MLB_MDAT2) MIF Data 0 Register 0 Offset */
+#define MLB_MDAT3_REG_OFST             (0xCC)              /**< (MLB_MDAT3) MIF Data 0 Register 0 Offset */
+#define MLB_MDWE_REG_OFST              (0xD0)              /**< (MLB_MDWE) MIF Data Write Enable 0 Register 0 Offset */
+#define MLB_MDWE0_REG_OFST             (0xD0)              /**< (MLB_MDWE0) MIF Data Write Enable 0 Register 0 Offset */
+#define MLB_MDWE1_REG_OFST             (0xD4)              /**< (MLB_MDWE1) MIF Data Write Enable 0 Register 0 Offset */
+#define MLB_MDWE2_REG_OFST             (0xD8)              /**< (MLB_MDWE2) MIF Data Write Enable 0 Register 0 Offset */
+#define MLB_MDWE3_REG_OFST             (0xDC)              /**< (MLB_MDWE3) MIF Data Write Enable 0 Register 0 Offset */
+#define MLB_MCTL_REG_OFST              (0xE0)              /**< (MLB_MCTL) MIF Control Register Offset */
+#define MLB_MADR_REG_OFST              (0xE4)              /**< (MLB_MADR) MIF Address Register Offset */
+#define MLB_ACTL_REG_OFST              (0x3C0)             /**< (MLB_ACTL) AHB Control Register Offset */
+#define MLB_ACSR_REG_OFST              (0x3D0)             /**< (MLB_ACSR) AHB Channel Status 0 Register 0 Offset */
+#define MLB_ACSR0_REG_OFST             (0x3D0)             /**< (MLB_ACSR0) AHB Channel Status 0 Register 0 Offset */
+#define MLB_ACSR1_REG_OFST             (0x3D4)             /**< (MLB_ACSR1) AHB Channel Status 0 Register 0 Offset */
+#define MLB_ACMR_REG_OFST              (0x3D8)             /**< (MLB_ACMR) AHB Channel Mask 0 Register 0 Offset */
+#define MLB_ACMR0_REG_OFST             (0x3D8)             /**< (MLB_ACMR0) AHB Channel Mask 0 Register 0 Offset */
+#define MLB_ACMR1_REG_OFST             (0x3DC)             /**< (MLB_ACMR1) AHB Channel Mask 0 Register 0 Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 /** \brief MLB register API structure */

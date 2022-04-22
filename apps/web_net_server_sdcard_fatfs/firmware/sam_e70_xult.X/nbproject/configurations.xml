@@ -1000,7 +1000,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAME70_DFP" vendor="Microchip" version="4.7.106"/>
+        <pack name="SAME70_DFP" vendor="Microchip" version="4.8.125"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

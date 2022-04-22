@@ -760,49 +760,7 @@ children:
       - type: Dynamic
         attributes: {id: drvGmac, value: '5'}
       - type: User
-        attributes: {value: '5'}
-  - type: KeyValueSet
-    attributes: {id: MPU_Region_7_Access}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: '3'}
-  - type: Hex
-    attributes: {id: MPU_Region_7_Address}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: '541454336'}
-  - type: Boolean
-    attributes: {id: MPU_Region_7_Enable}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: 'true'}
-  - type: String
-    attributes: {id: MPU_Region_7_Length}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: core, value: 4KB}
-  - type: KeyValueSet
-    attributes: {id: MPU_Region_7_Size}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: '7'}
-  - type: KeyValueSet
-    attributes: {id: MPU_Region_7_Type}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: '5'}
+        attributes: {value: '5'}  
   - type: String
     attributes: {id: MPU_Region_Name0}
     children:
@@ -854,13 +812,6 @@ children:
         attributes: {id: drvGmac, value: GMAC Descriptor}
       - type: User
         attributes: {value: GMAC Descriptor}
-  - type: String
-    attributes: {id: MPU_Region_Name7}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: drvGmac, value: GMAC Descriptor}
   - type: File
     attributes: {id: MPU_SYSTEM_DEFINITIONS_H}
     children:
