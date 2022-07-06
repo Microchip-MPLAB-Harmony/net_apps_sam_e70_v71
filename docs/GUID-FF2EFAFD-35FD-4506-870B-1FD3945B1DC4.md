@@ -30,7 +30,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](GUID-4922A348-F1C5-4FEC-B478-9C64FF2CE644-low.png)
 
-    The configuration options for the wolfMQTT are the standard ones supported by wolfMQTT \(see wolfMQTT site\). Note that the project has already selected the 3rd party wolfMQTT and wolfSSL libraries \(for supporting encrypted connections\).
+    The configuration options for the wolfMQTT are the standard ones supported by wolfMQTT \(see wolfMQTT site\).<br />Note that the project has already selected the 3rd party wolfMQTT and wolfSSL libraries \(for supporting encrypted connections\).
 
     The NET\_PRES layer is also needed because the Harmony wolfMQTT NET glue layer uses the NET\_PRES to handle the connections to the broker.
 
@@ -76,7 +76,7 @@ The following Project Graph diagram shows the Harmony components included in the
 
     ![tcpip_same70_v71_project](GUID-48399DC2-EE8A-44B7-A8EF-411D75C8A3D2-low.png)
 
-    For **SAM V71** demonstration , **LAN8061 PHY driver** ia selcted along with GMAC **Internal ethernet driver**.
+    For **SAM V71** demonstration , **LAN8061 PHY driver** ia selcted along with GMAC<br />**Internal ethernet driver**.
 
     ![tcpip_same70_v71_project](GUID-A9A5B923-0152-4FED-83C4-B21E2268B15F-low.png)
 
@@ -151,7 +151,7 @@ This table list the name and location of the MPLAB X IDE project folder for the 
 
         -   Run **tcpip\_discoverer.jar** to discover the IPv4 and IPv6 address for the board.
 
-3.  Execution : The wolfMQTT demo is interactive, using a set of special MQTT commands that have been added to this demo.
+3.  Execution :<br />The wolfMQTT demo is interactive, using a set of special MQTT commands that have been added to this demo.
 
     Pressing "mqtt help" at the command prompt displays the list of the available commands/options:
 
