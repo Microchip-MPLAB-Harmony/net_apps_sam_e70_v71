@@ -12586,9 +12586,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_console" name="SYS_CONSOLE_PRINT_BUFFER_SIZE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_console&gt;
   &lt;sys_console dnOrder=&quot;0&quot; id=&quot;SYS_CONSOLE_PRINT_BUFFER_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;2564&quot;/&gt;
-    &lt;/Values&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/sys_console&gt;
 &lt;/sys_console&gt;
 </value>
@@ -22929,7 +22927,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_v71_xult_freertos\configuration.h</file>
-         <hash>63a6b43d5a3000c3d1c2404358c9f1b32d8c5554cd6c81cee7ad675e9986232b</hash>
+         <hash>ef454868e0bc97abfca5a15b5b1e31018b51bcc7a1a92a97ce8fc9672915352a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMV71Q21B_DFP\component\gmac.h</file>
