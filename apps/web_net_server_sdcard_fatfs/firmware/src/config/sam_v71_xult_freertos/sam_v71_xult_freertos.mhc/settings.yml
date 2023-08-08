@@ -1,7 +1,7 @@
 format_version: v1.0
 configName: sam_v71_xult_freertos
 folderName: sam_v71_xult_freertos
-frameworkPath: C:\00_Repo\H3
+frameworkPath: C:\harmony\h3
 processor: ATSAMV71Q21B
 projectName: sam_v71_xult_freertos
 settings:
@@ -11,4 +11,4 @@ settings:
   TRUSTZONE: 'false'
   CMSISPath: dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: dev_packs\Microchip\SAMV71_DFP\4.7.99\samv71b\atdf\ATSAMV71Q21B.atdf
+  DFPPath: dev_packs\Microchip\SAMV71_DFP\4.10.230\samv71b\atdf\ATSAMV71Q21B.atdf
