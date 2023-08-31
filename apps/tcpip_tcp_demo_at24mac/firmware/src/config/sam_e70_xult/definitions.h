@@ -51,8 +51,8 @@
 #include "crypto/crypto.h"
 #include "peripheral/efc/plib_efc.h"
 #include "peripheral/tc/plib_tc0.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
+#include "driver/i2c/drv_i2c.h"
 #include "bsp/bsp.h"
 #include "peripheral/twihs/master/plib_twihs0_master.h"
 #include "peripheral/usart/plib_usart1.h"
@@ -85,6 +85,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME70Q21B"
+#define DEVICE_ARCH			 "CORTEX-M7"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME70"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 300000000
@@ -207,8 +213,8 @@ typedef struct
 
 
     SYS_MODULE_OBJ  tcpip;
+   SYS_MODULE_OBJ  drvMiim_0;
 
-    SYS_MODULE_OBJ  drvMiim;
     SYS_MODULE_OBJ  sysDebug;
 
 
