@@ -810,14 +810,14 @@
         <targetDevice>ATSAME70Q21B</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>EdbgTool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
         <pack name="SAME70_DFP" vendor="Microchip" version="4.10.248"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -900,74 +900,10 @@
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
       </C32>
-      <C32-AR>
-        <property key="additional-options-chop-files" value="false"/>
-      </C32-AR>
-      <C32-AS>
-        <property key="assembler-symbols" value=""/>
-        <property key="enable-symbols" value="true"/>
-        <property key="exclude-floating-point-library" value="false"/>
-        <property key="expand-macros" value="false"/>
-        <property key="extra-include-directories-for-assembler" value=""/>
-        <property key="extra-include-directories-for-preprocessor" value=""/>
-        <property key="false-conditionals" value="false"/>
-        <property key="generate-16-bit-code" value="false"/>
-        <property key="generate-micro-compressed-code" value="false"/>
-        <property key="keep-locals" value="false"/>
-        <property key="list-assembly" value="false"/>
-        <property key="list-source" value="false"/>
-        <property key="list-symbols" value="false"/>
-        <property key="oXC32asm-list-to-file" value="false"/>
-        <property key="omit-debug-dirs" value="false"/>
-        <property key="omit-forms" value="false"/>
-        <property key="preprocessor-macros" value=""/>
-        <property key="warning-level" value=""/>
-      </C32-AS>
       <C32-CO>
         <property key="coverage-enable" value=""/>
         <property key="stack-guidance" value="false"/>
       </C32-CO>
-      <C32-LD>
-        <property key="additional-options-use-response-files" value="false"/>
-        <property key="additional-options-write-sla" value="false"/>
-        <property key="allocate-dinit" value="false"/>
-        <property key="appendMe" value=""/>
-        <property key="code-dinit" value="false"/>
-        <property key="ebase-addr" value=""/>
-        <property key="enable-check-sections" value="false"/>
-        <property key="exclude-floating-point-library" value="false"/>
-        <property key="exclude-standard-libraries" value="false"/>
-        <property key="extra-lib-directories" value=""/>
-        <property key="fill-flash-options-addr" value=""/>
-        <property key="fill-flash-options-const" value=""/>
-        <property key="fill-flash-options-how" value="0"/>
-        <property key="fill-flash-options-inc-const" value="1"/>
-        <property key="fill-flash-options-increment" value=""/>
-        <property key="fill-flash-options-seq" value=""/>
-        <property key="fill-flash-options-what" value="0"/>
-        <property key="generate-16-bit-code" value="false"/>
-        <property key="generate-cross-reference-file" value="false"/>
-        <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="64960"/>
-        <property key="input-libraries" value=""/>
-        <property key="kseg-length" value=""/>
-        <property key="kseg-origin" value=""/>
-        <property key="linker-symbols" value=""/>
-        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
-        <property key="no-device-startup-code" value="true"/>
-        <property key="no-startup-files" value="false"/>
-        <property key="oXC32ld-extra-opts" value=""/>
-        <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=""/>
-        <property key="remove-unused-sections" value="true"/>
-        <property key="report-memory-usage" value="false"/>
-        <property key="serial-length" value=""/>
-        <property key="serial-origin" value=""/>
-        <property key="stack-size" value=""/>
-        <property key="symbol-stripping" value=""/>
-        <property key="trace-symbols" value=""/>
-        <property key="warn-section-align" value="false"/>
-      </C32-LD>
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
@@ -1546,7 +1482,11 @@
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="firmware.path"
                   value="Press to browse for a specific firmware version"/>
         <property key="firmware.toolpack"
@@ -1554,6 +1494,7 @@
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -1581,6 +1522,7 @@
         <property key="programoptions.programuserotp" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
+        <property key="script.reset_by_pin" value="false"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
