@@ -1612,7 +1612,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;717&quot; canvasWidth=&quot;909&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;710&quot; canvasWidth=&quot;909&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;APPLICATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipAnnounce&quot; x=&quot;300&quot; y=&quot;199&quot;/&gt;
@@ -1621,8 +1621,8 @@
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipHttpNet&quot; x=&quot;20&quot; y=&quot;64&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;tcpipNbns&quot; x=&quot;426&quot; y=&quot;63&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpipSmtpc&quot; x=&quot;24&quot; y=&quot;207&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;tcpipSnmp&quot; x=&quot;442&quot; y=&quot;200&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;tcpipSnmpv3&quot; x=&quot;165&quot; y=&quot;204&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;tcpipSnmp&quot; x=&quot;442&quot; y=&quot;196&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;tcpipSnmpv3&quot; x=&quot;166&quot; y=&quot;207&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;tcpipSntp&quot; x=&quot;299&quot; y=&quot;68&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
@@ -17541,12 +17541,37 @@
          <value>APPLICATION LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_CUSTOM_TEMPLATE_SL"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_BIB_FILE_NAME"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
-  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_CUSTOM_TEMPLATE_SL&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipSnmp&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_BIB_FILE_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_COMMUNITY_MAX_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_COMMUNITY_MAX_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_COMMUNITY_MAX_NUM"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_COMMUNITY_MAX_NUM&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_CUSTOM_TEMPLATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_CUSTOM_TEMPLATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/tcpipSnmp&gt;
 &lt;/tcpipSnmp&gt;
 </value>
@@ -17555,9 +17580,196 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_HEAP_SIZE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
   &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipSnmp&quot; value=&quot;120&quot;/&gt;
-    &lt;/Values&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_MAX_COMMUNITY_SUPPORT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_MAX_COMMUNITY_SUPPORT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_MAX_MSG_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_MAX_MSG_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_MAX_NON_REC_ID_OID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_MAX_NON_REC_ID_OID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_MOUNT_POINT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_MOUNT_POINT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_NOTIFY_COMMUNITY_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_NOTIFY_COMMUNITY_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_OID_MAX_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_OID_MAX_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_CONFIG_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_CONFIG_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_CONFIG_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_CONFIG_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_CONFIG_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_CONFIG_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_READCOMMUNITY_NAME_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_USE_V2_TRAP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_USE_V2_TRAP&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_STACK_WRITECOMMUNITY_NAME_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_TASK_PROCESS_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_TASK_PROCESS_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_TRAP_COMMUNITY_MAX_LEN_MEM_USE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_TRAP_COMMUNITY_MAX_LEN_MEM_USE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_TRAP_TABLE_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_TRAP_TABLE_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_SNMP_USE_TRAP_SUPPORT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMP_USE_TRAP_SUPPORT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmp&gt;
+&lt;/tcpipSnmp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmp" name="TCPIP_USE_SNMP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmp&gt;
+  &lt;tcpipSnmp dnOrder=&quot;0&quot; id=&quot;TCPIP_USE_SNMP&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/tcpipSnmp&gt;
 &lt;/tcpipSnmp&gt;
 </value>
@@ -17574,12 +17786,370 @@
          <value>APPLICATION LAYER</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_AUTH_LOCALIZED_PASSWORD_KEY_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_AUTH_LOCALIZED_PASSWORD_KEY_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_HEAP_SIZE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
   &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipSnmpv3&quot; value=&quot;975&quot;/&gt;
-    &lt;/Values&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_PRIV_LOCALIZED_PASSWORD_KEY_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_PRIV_LOCALIZED_PASSWORD_KEY_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_AUTH_PASSWORD_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_AUTH_PASSWORD_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_AUTH_PASSWORD_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_AUTH_PASSWORD_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_AUTH_PASSWORD_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_AUTH_PASSWORD_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_AUTH_PROTOCOL_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_AUTH_PROTOCOL_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_AUTH_PROTOCOL_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_AUTH_PROTOCOL_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_AUTH_PROTOCOL_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_AUTH_PROTOCOL_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_CONFIG_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_CONFIG_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_CONFIG_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_CONFIG_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_CONFIG_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_CONFIG_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_PRIV_PASSWORD_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_PRIV_PASSWORD_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_PRIV_PASSWORD_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_PRIV_PASSWORD_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_PRIV_PASSWORD_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_PRIV_PASSWORD_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_PRIV_PROTOCOL_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_PRIV_PROTOCOL_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_PRIV_PROTOCOL_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_PRIV_PROTOCOL_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_PRIV_PROTOCOL_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_PRIV_PROTOCOL_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_SECURITY_LEVEL_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_SECURITY_LEVEL_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_SECURITY_LEVEL_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_SECURITY_LEVEL_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_SECURITY_LEVEL_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_SECURITY_LEVEL_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_USE_V1_V2_TRAP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_USE_V1_V2_TRAP&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_USM_NAME_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_USM_NAME_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_USM_NAME_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_USM_NAME_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_STACK_USM_NAME_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_STACK_USM_NAME_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_MESSAGE_PROTOCOL_TYPE_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_MESSAGE_PROTOCOL_TYPE_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_MESSAGE_PROTOCOL_TYPE_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_MESSAGE_PROTOCOL_TYPE_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_MESSAGE_PROTOCOL_TYPE_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_MESSAGE_PROTOCOL_TYPE_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_LEVEL_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_LEVEL_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_LEVEL_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_LEVEL_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_LEVEL_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_LEVEL_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_MODEL_TYPE_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_MODEL_TYPE_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_MODEL_TYPE_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_MODEL_TYPE_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_MODEL_TYPE_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_MODEL_TYPE_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_NAME_IDX0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_NAME_IDX0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_NAME_IDX1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_NAME_IDX1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_TARGET_ENTRY_SEC_NAME_IDX2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_TARGET_ENTRY_SEC_NAME_IDX2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_USER_SECURITY_NAME_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_USER_SECURITY_NAME_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_USE_MAX_NUM"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_USE_MAX_NUM&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_SNMPV3_USM_MAX_USER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_SNMPV3_USM_MAX_USER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipSnmpv3&gt;
+&lt;/tcpipSnmpv3&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSnmpv3" name="TCPIP_USE_SNMPv3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSnmpv3&gt;
+  &lt;tcpipSnmpv3 dnOrder=&quot;0&quot; id=&quot;TCPIP_USE_SNMPv3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/tcpipSnmpv3&gt;
 &lt;/tcpipSnmpv3&gt;
 </value>
@@ -18677,7 +19247,12 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipStack" name="TCPIP_STACK_MII_MODE_IDX0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipStack&gt;
   &lt;tcpipStack dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_MII_MODE_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipStack&quot; value=&quot;RMII&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tcpipStack&gt;
@@ -20230,7 +20805,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\definitions.h</file>
-         <hash>db8d98419543b55d5a8649f2522c005b7d59b9f7efcd5a2b4f3112872325b8c9</hash>
+         <hash>32ffa0a4344a7d0ac2d662112b28cc30e3abf0938c1fd95da87ec90137d630bd</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\hash.h</file>
@@ -20650,7 +21225,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\tcpip_commands.c</file>
-         <hash>abd88ff00bef9def69c70f5f59cbd0b1146c1a6bdc22300b1edec8fc8b2e9db9</hash>
+         <hash>11ceda1c9a86306aad26e5b9f6969e81c653f9cbf65db12af903bdfebdf0ecd2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\ripemd.h</file>

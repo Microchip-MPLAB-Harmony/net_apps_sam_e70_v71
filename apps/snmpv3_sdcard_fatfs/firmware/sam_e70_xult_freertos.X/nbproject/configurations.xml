@@ -620,8 +620,8 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/error-ssl.h</itemPath>
       </logicalFolder>
       <itemPath>../src/http_net_print.h</itemPath>
-      <itemPath>../src/mib.h</itemPath>
       <itemPath>../src/app.h</itemPath>
+      <itemPath>../src/mib.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -693,11 +693,9 @@
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_packet.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/udp.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_heap_internal.c</itemPath>
-                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/snmpv3_usm.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/icmpv6.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/dhcp.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/http_net.c</itemPath>
-                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/snmp.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/oahash.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_manager.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_heap_alloc.c</itemPath>
@@ -707,10 +705,12 @@
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/dns.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_helpers.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/sntp.c</itemPath>
-                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/snmpv3.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/icmp.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_announce.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/ipv4.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/snmpv3_usm.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/snmp.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/snmpv3.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -990,10 +990,10 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/custom_http_net_app.c</itemPath>
-      <itemPath>../src/custom_snmp_app.c</itemPath>
       <itemPath>../src/http_net_print.c</itemPath>
       <itemPath>../src/app.c</itemPath>
       <itemPath>../src/config/sam_e70_xult_freertos/pin_configurations.csv</itemPath>
+      <itemPath>../src/custom_snmp_app.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -1107,6 +1107,26 @@
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
       </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
       <C32-CO>
         <property key="coverage-enable" value=""/>
         <property key="stack-guidance" value="false"/>
