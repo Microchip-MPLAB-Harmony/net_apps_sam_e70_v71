@@ -117,6 +117,11 @@ const TCPIP_ARP_MODULE_CONFIG tcpipARPInitData =
     .gratProbeCount     = TCPIP_ARP_GRATUITOUS_PROBE_COUNT,
 };
 
+/*** Announce Discovery Initialization Data ***/
+const TCPIP_ANNOUNCE_MODULE_CONFIG tcpipAnnounceInitData =
+{ 
+    0
+};
 
 /*** UDP Sockets Initialization Data ***/
 const TCPIP_UDP_MODULE_CONFIG tcpipUDPInitData =
@@ -228,12 +233,13 @@ const TCPIP_STACK_MODULE_CONFIG TCPIP_STACK_MODULE_CONFIG_TBL [] =
     {TCPIP_MODULE_UDP,              &tcpipUDPInitData},             // TCPIP_MODULE_UDP
     {TCPIP_MODULE_TCP,              &tcpipTCPInitData},             // TCPIP_MODULE_TCP
     {TCPIP_MODULE_DHCP_CLIENT,      &tcpipDHCPInitData},            // TCPIP_MODULE_DHCP_CLIENT
+    {TCPIP_MODULE_ANNOUNCE,         &tcpipAnnounceInitData},        // TCPIP_MODULE_ANNOUNCE
     {TCPIP_MODULE_NBNS,             &tcpipNBNSInitData},            // TCPIP_MODULE_NBNS
 
     { TCPIP_MODULE_MANAGER,         &tcpipHeapConfig },             // TCPIP_MODULE_MANAGER
 
 // MAC modules
-    {TCPIP_MODULE_MAC_PIC32C,     &tcpipGMACInitData},     // TCPIP_MODULE_MAC_PIC32C
+    {TCPIP_MODULE_MAC_PIC32C,       &tcpipGMACInitData},            // TCPIP_MODULE_MAC_PIC32C
 
 };
 
@@ -538,7 +544,7 @@ void SYS_Initialize ( void* data )
 
 
    /* Initialize the MIIM Driver Instance 0*/
-   sysObj.drvMiim_0 = DRV_MIIM_Initialize(DRV_MIIM_DRIVER_INDEX_0, (const SYS_MODULE_INIT *) &drvMiimInitData_0); 
+   sysObj.drvMiim_0 = DRV_MIIM_OBJECT_BASE_Default.DRV_MIIM_Initialize(DRV_MIIM_DRIVER_INDEX_0, (const SYS_MODULE_INIT *) &drvMiimInitData_0); 
 
 
     /* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  
