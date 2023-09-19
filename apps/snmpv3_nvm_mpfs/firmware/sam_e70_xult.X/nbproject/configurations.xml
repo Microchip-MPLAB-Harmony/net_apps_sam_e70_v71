@@ -1084,17 +1084,9 @@
       </C32CPP>
       <C32Global>
         <property key="appendMe" value=""/>
-        <property key="common-include-directories" value=""/>
-        <property key="gp-relative-option" value=""/>
-        <property key="legacy-libc" value="false"/>
         <property key="mdtcm" value=""/>
         <property key="mitcm" value=""/>
         <property key="mstacktcm" value="false"/>
-        <property key="omit-pack-options" value="1"/>
-        <property key="relaxed-math" value="false"/>
-        <property key="save-temps" value="false"/>
-        <property key="stack-smashing" value=""/>
-        <property key="wpo-lto" value="false"/>
       </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
