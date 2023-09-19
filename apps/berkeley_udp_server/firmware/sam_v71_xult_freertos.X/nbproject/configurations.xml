@@ -648,7 +648,6 @@
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_manager.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/berkeley_api.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_announce.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/nbns.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/udp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/hash_fnv.c</itemPath>
@@ -658,7 +657,6 @@
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/dhcp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_helpers.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_heap_internal.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/sntp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_heap_alloc.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/dns.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/icmp.c</itemPath>
@@ -880,7 +878,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1091,8 +1089,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/harmony/h3/net_apps_sam_e70_v71/apps/berkeley_udp_server/firmware/sam_v71_xult_freertos.X/debug/sam_v71_xult_freertos/sam_v71_xult_freertos_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
