@@ -732,6 +732,7 @@ typedef struct TCPIP_STACK_INIT
 #include "tcpip/udp.h"
 #include "tcpip/icmp.h"
 #include "tcpip/sntp.h"
+#include "tcpip/tcpip_announce.h"
 #include "tcpip/lldp.h"
 #include "tcpip/tcpip_commands.h"
 #endif  // __TCPIP_H__
