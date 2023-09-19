@@ -467,7 +467,7 @@ const TCPIP_STACK_MODULE_CONFIG TCPIP_STACK_MODULE_CONFIG_TBL [] =
     { TCPIP_MODULE_MANAGER,         &tcpipHeapConfig },             // TCPIP_MODULE_MANAGER
 
 // MAC modules
-    {TCPIP_MODULE_MAC_PIC32C,     &tcpipGMACInitData},     // TCPIP_MODULE_MAC_PIC32C
+    {TCPIP_MODULE_MAC_PIC32C,       &tcpipGMACInitData},            // TCPIP_MODULE_MAC_PIC32C
 
 };
 
@@ -744,29 +744,6 @@ static const NET_PRES_INIT_DATA netPresInitData =
   
  
 
-/*** KSZ8061 PHY Driver Time-Out Initialization Data ***/
-DRV_ETHPHY_TMO drvksz8061Tmo = 
-{
-    .resetTmo = DRV_ETHPHY_KSZ8061_RESET_CLR_TMO,
-    .aNegDoneTmo = DRV_ETHPHY_KSZ8061_NEG_DONE_TMO,
-    .aNegInitTmo = DRV_ETHPHY_KSZ8061_NEG_INIT_TMO,    
-};
-
-/*** ETH PHY Initialization Data ***/
-const DRV_ETHPHY_INIT tcpipPhyInitData_KSZ8061 =
-{    
-    .ethphyId               = DRV_KSZ8061_PHY_PERIPHERAL_ID,
-    .phyAddress             = DRV_KSZ8061_PHY_ADDRESS,
-    .phyFlags               = DRV_KSZ8061_PHY_CONFIG_FLAGS,
-    .pPhyObject             = &DRV_ETHPHY_OBJECT_KSZ8061,
-    .resetFunction          = 0,
-    .ethphyTmo              = &drvksz8061Tmo,
-    .pMiimObject            = &DRV_MIIM_OBJECT_BASE_Default,
-    .pMiimInit              = &drvMiimInitData_0,
-    .miimIndex              = 0,
-};
-
-
 // <editor-fold defaultstate="collapsed" desc="File System Initialization Data">
 
 
@@ -824,6 +801,29 @@ static const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ]
     }
 };
 // </editor-fold>
+
+/*** KSZ8061 PHY Driver Time-Out Initialization Data ***/
+DRV_ETHPHY_TMO drvksz8061Tmo = 
+{
+    .resetTmo = DRV_ETHPHY_KSZ8061_RESET_CLR_TMO,
+    .aNegDoneTmo = DRV_ETHPHY_KSZ8061_NEG_DONE_TMO,
+    .aNegInitTmo = DRV_ETHPHY_KSZ8061_NEG_INIT_TMO,    
+};
+
+/*** ETH PHY Initialization Data ***/
+const DRV_ETHPHY_INIT tcpipPhyInitData_KSZ8061 =
+{    
+    .ethphyId               = DRV_KSZ8061_PHY_PERIPHERAL_ID,
+    .phyAddress             = DRV_KSZ8061_PHY_ADDRESS,
+    .phyFlags               = DRV_KSZ8061_PHY_CONFIG_FLAGS,
+    .pPhyObject             = &DRV_ETHPHY_OBJECT_KSZ8061,
+    .resetFunction          = 0,
+    .ethphyTmo              = &drvksz8061Tmo,
+    .pMiimObject            = &DRV_MIIM_OBJECT_BASE_Default,
+    .pMiimInit              = &drvMiimInitData_0,
+    .miimIndex              = 0,
+};
+
 
 
 
@@ -958,7 +958,7 @@ void SYS_Initialize ( void* data )
 
 
    /* Initialize the MIIM Driver Instance 0*/
-   sysObj.drvMiim_0 = DRV_MIIM_Initialize(DRV_MIIM_DRIVER_INDEX_0, (const SYS_MODULE_INIT *) &drvMiimInitData_0); 
+   sysObj.drvMiim_0 = DRV_MIIM_OBJECT_BASE_Default.DRV_MIIM_Initialize(DRV_MIIM_DRIVER_INDEX_0, (const SYS_MODULE_INIT *) &drvMiimInitData_0); 
 
    sysObj.drvSDMMC0 = DRV_SDMMC_Initialize(DRV_SDMMC_INDEX_0,(SYS_MODULE_INIT *)&drvSDMMC0InitData);
 
