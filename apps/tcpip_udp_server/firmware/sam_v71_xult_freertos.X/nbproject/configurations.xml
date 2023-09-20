@@ -486,7 +486,6 @@
                 <logicalFolder name="common" displayName="common" projectFiles="true">
                   <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/helpers.c</itemPath>
                 </logicalFolder>
-                <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/nbns.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_notify.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_helpers.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/ipv4.c</itemPath>
@@ -494,7 +493,6 @@
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/dns.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_packet.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/dhcp.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/sntp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/oahash.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/arp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult_freertos/library/tcpip/src/tcpip_announce.c</itemPath>
@@ -611,7 +609,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
