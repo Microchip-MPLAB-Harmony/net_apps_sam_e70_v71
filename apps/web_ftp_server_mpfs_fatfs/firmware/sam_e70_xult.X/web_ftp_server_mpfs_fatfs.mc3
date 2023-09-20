@@ -20921,7 +20921,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\configuration.h</file>
-         <hash>6e5c77cb298b7e1bdd699bc265ca163180c6ad59782b3ca394543918af078c32</hash>
+         <hash>0eee6a1307073ec4e99f5c69cae642c47ab9c10791d9129eddb66cf40fd6cc2d</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_FastCopy_pb.h</file>
@@ -21005,7 +21005,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\definitions.h</file>
-         <hash>fa98c8cf57b9d9b089563b8f929da7add2565f361e852a86bdef7f3f971749e2</hash>
+         <hash>904b948172b89277d18fe0adbb5978a17d62aa224f787b23ee8addfe3e509ece</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\library\tcpip\tcpip_manager.h</file>
@@ -21989,7 +21989,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\library\tcpip\src\tcpip_commands.c</file>
-         <hash>abd88ff00bef9def69c70f5f59cbd0b1146c1a6bdc22300b1edec8fc8b2e9db9</hash>
+         <hash>11ceda1c9a86306aad26e5b9f6969e81c653f9cbf65db12af903bdfebdf0ecd2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\signature.c</file>
