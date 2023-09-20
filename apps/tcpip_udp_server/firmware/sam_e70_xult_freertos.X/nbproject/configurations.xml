@@ -494,6 +494,7 @@
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_notify.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_manager.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_heap_internal.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult_freertos/library/tcpip/src/tcpip_announce.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -605,8 +606,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
         <pack name="SAME70_DFP" vendor="Microchip" version="4.10.248"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -847,6 +848,7 @@
         <property key="programoptions.programuserotp" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
+        <property key="script.reset_by_pin" value="false"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
@@ -1373,6 +1375,7 @@
         <property key="programoptions.programuserotp" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
+        <property key="script.reset_by_pin" value="false"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
