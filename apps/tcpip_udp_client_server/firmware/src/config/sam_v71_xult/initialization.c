@@ -133,17 +133,6 @@ const TCPIP_UDP_MODULE_CONFIG tcpipUDPInitData =
 
 
 
-/*** SNTP Client Initialization Data ***/
-const TCPIP_SNTP_MODULE_CONFIG tcpipSNTPInitData =
-{
-    .ntp_server             = TCPIP_NTP_SERVER,
-    .ntp_interface          = TCPIP_NTP_DEFAULT_IF,
-    .ntp_connection_type    = TCPIP_NTP_DEFAULT_CONNECTION_TYPE,
-    .ntp_reply_timeout      = TCPIP_NTP_REPLY_TIMEOUT,
-    .ntp_stamp_timeout      = TCPIP_NTP_TIME_STAMP_TMO,
-    .ntp_success_interval   = TCPIP_NTP_QUERY_INTERVAL,
-    .ntp_error_interval     = TCPIP_NTP_FAST_QUERY_INTERVAL,
-};
 
 
 
@@ -164,11 +153,6 @@ const TCPIP_ICMP_MODULE_CONFIG tcpipICMPInitData =
     0
 };
 
-/*** NBNS Server Initialization Data ***/
-const TCPIP_NBNS_MODULE_CONFIG tcpipNBNSInitData =
-{ 
-    0
-};
 
 
 
@@ -248,13 +232,11 @@ const TCPIP_STACK_MODULE_CONFIG TCPIP_STACK_MODULE_CONFIG_TBL [] =
     {TCPIP_MODULE_DHCP_CLIENT,      &tcpipDHCPInitData},            // TCPIP_MODULE_DHCP_CLIENT
     {TCPIP_MODULE_ANNOUNCE,         &tcpipAnnounceInitData},        // TCPIP_MODULE_ANNOUNCE
     {TCPIP_MODULE_DNS_CLIENT,       &tcpipDNSClientInitData},       // TCPIP_MODULE_DNS_CLIENT
-    {TCPIP_MODULE_NBNS,             &tcpipNBNSInitData},            // TCPIP_MODULE_NBNS
-    {TCPIP_MODULE_SNTP,             &tcpipSNTPInitData},            // TCPIP_MODULE_SNTP
 
     { TCPIP_MODULE_MANAGER,         &tcpipHeapConfig },             // TCPIP_MODULE_MANAGER
 
 // MAC modules
-    {TCPIP_MODULE_MAC_PIC32C,     &tcpipGMACInitData},     // TCPIP_MODULE_MAC_PIC32C
+    {TCPIP_MODULE_MAC_PIC32C,       &tcpipGMACInitData},            // TCPIP_MODULE_MAC_PIC32C
 
 };
 
@@ -559,7 +541,7 @@ void SYS_Initialize ( void* data )
 
 
    /* Initialize the MIIM Driver Instance 0*/
-   sysObj.drvMiim_0 = DRV_MIIM_Initialize(DRV_MIIM_DRIVER_INDEX_0, (const SYS_MODULE_INIT *) &drvMiimInitData_0); 
+   sysObj.drvMiim_0 = DRV_MIIM_OBJECT_BASE_Default.DRV_MIIM_Initialize(DRV_MIIM_DRIVER_INDEX_0, (const SYS_MODULE_INIT *) &drvMiimInitData_0); 
 
 
     /* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  
