@@ -14126,7 +14126,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\definitions.h</file>
-         <hash>79d595f3c237d000d7629b70e01e99f4780ea83b2307faa4e65ea1b165eddff1</hash>
+         <hash>bbbaeff8996d4a1a58cbf6bdf16c375a6fef0a5f3d02f2c59fe6e48118630f82</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\library\tcpip\tcpip_manager.h</file>
@@ -15102,7 +15102,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\library\tcpip\src\tcpip_commands.c</file>
-         <hash>abd88ff00bef9def69c70f5f59cbd0b1146c1a6bdc22300b1edec8fc8b2e9db9</hash>
+         <hash>11ceda1c9a86306aad26e5b9f6969e81c653f9cbf65db12af903bdfebdf0ecd2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\signature.c</file>
