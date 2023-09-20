@@ -404,6 +404,10 @@ extern "C" {
 #define TCPIP_IPV6_EXTERN_PACKET_PROCESS   false
 
 
+#define TCPIP_IPV6_G3_PLC_SUPPORT                       false
+
+
+
 /*** IPv4 Configuration ***/
 #define TCPIP_IPV4_ARP_SLOTS                        10
 #define TCPIP_IPV4_EXTERN_PACKET_PROCESS   false
