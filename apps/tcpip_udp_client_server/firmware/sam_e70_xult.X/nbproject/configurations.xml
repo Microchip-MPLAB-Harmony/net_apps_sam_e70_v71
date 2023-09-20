@@ -463,6 +463,7 @@
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/dns.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_manager.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_notify.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_announce.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
