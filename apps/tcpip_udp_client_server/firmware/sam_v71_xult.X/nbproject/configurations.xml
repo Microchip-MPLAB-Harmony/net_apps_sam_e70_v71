@@ -448,7 +448,6 @@
                 <logicalFolder name="common" displayName="common" projectFiles="true">
                   <itemPath>../src/config/sam_v71_xult/library/tcpip/src/helpers.c</itemPath>
                 </logicalFolder>
-                <itemPath>../src/config/sam_v71_xult/library/tcpip/src/sntp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_helpers.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/hash_fnv.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_heap_alloc.c</itemPath>
@@ -462,7 +461,6 @@
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_manager.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_commands.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/udp.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/tcpip/src/nbns.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_announce.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_notify.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_packet.c</itemPath>
@@ -554,12 +552,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
         <pack name="SAMV71_DFP" vendor="Microchip" version="4.10.230"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -765,8 +763,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/harmony/h3/net_apps_sam_e70_v71/apps/tcpip_udp_client_server/firmware/sam_v71_xult.X/debug/sam_v71_xult/sam_v71_xult_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
