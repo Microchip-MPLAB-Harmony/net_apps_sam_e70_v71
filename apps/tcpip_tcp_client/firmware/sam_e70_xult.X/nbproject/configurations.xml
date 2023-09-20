@@ -615,6 +615,7 @@
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/ipv4.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_helpers.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult/library/tcpip/src/icmp.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult/library/tcpip/src/tcpip_announce.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -983,6 +984,20 @@
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
+      <C32Global>
+        <property key="appendMe" value=""/>
+        <property key="common-include-directories" value=""/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="false"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="omit-pack-options" value="1"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="stack-smashing" value=""/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="arm.use_vtor" value="false"/>
@@ -1029,6 +1044,7 @@
         <property key="programoptions.programuserotp" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
+        <property key="script.reset_by_pin" value="false"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
