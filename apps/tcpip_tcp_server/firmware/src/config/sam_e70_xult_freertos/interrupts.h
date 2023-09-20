@@ -70,11 +70,6 @@ void xPortSysTickHandler (void);
 void USART1_InterruptHandler (void);
 void TC0_CH0_InterruptHandler (void);
 void GMAC_InterruptHandler (void);
-void GMAC_Q1_Handler (void);
-void GMAC_Q2_Handler (void);
-void GMAC_Q3_Handler (void);
-void GMAC_Q4_Handler (void);
-void GMAC_Q5_Handler (void);
 
 
 
