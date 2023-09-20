@@ -98,6 +98,10 @@
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
       <entry>
+         <string>tcpipAnnounce</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
          <string>tcpipArp</string>
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
@@ -856,8 +860,9 @@
     &lt;GraphSettings canvasHeight=&quot;570&quot; canvasWidth=&quot;650&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;APPLICATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipDhcp&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipDns&quot; x=&quot;460&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipAnnounce&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipDhcp&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipDns&quot; x=&quot;460&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
     &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
@@ -13641,6 +13646,53 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipAnnounce" name="!@#harmonyAttachmentState"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipAnnounce&gt;
+  &lt;tcpipAnnounce dnOrder=&quot;0&quot;/&gt;
+&lt;/tcpipAnnounce&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipAnnounce" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>APPLICATION LAYER</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipAnnounce" name="TCPIP_ANNOUNCE_MAX_PAYLOAD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipAnnounce&gt;
+  &lt;tcpipAnnounce dnOrder=&quot;0&quot; id=&quot;TCPIP_ANNOUNCE_MAX_PAYLOAD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipAnnounce&gt;
+&lt;/tcpipAnnounce&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipAnnounce" name="TCPIP_ANNOUNCE_NETWORK_DIRECTED_BCAST"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipAnnounce&gt;
+  &lt;tcpipAnnounce dnOrder=&quot;0&quot; id=&quot;TCPIP_ANNOUNCE_NETWORK_DIRECTED_BCAST&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipAnnounce&gt;
+&lt;/tcpipAnnounce&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipAnnounce" name="TCPIP_ANNOUNCE_TASK_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipAnnounce&gt;
+  &lt;tcpipAnnounce dnOrder=&quot;0&quot; id=&quot;TCPIP_ANNOUNCE_TASK_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipAnnounce&gt;
+&lt;/tcpipAnnounce&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipAnnounce" name="TCPIP_USE_ANNOUNCE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipAnnounce&gt;
+  &lt;tcpipAnnounce dnOrder=&quot;0&quot; id=&quot;TCPIP_USE_ANNOUNCE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipAnnounce&gt;
+&lt;/tcpipAnnounce&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipArp" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipArp&gt;
   &lt;tcpipArp dnOrder=&quot;0&quot;/&gt;
@@ -17548,6 +17600,10 @@
          <hash>22988c0764977890ef1afb525d266f1eaddbbb143c0a7276ec85a95db861b877</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\tcpip_announce.c</file>
+         <hash>2d9ca57a41e5a675c3834b993ff37464b5d8e548bad9299cadb744d365c27b1a</hash>
+      </entry>
+      <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\memory.c</file>
          <hash>de5cde2eac0ef568023bb5ee75b3e544c402f86c39f565638560195a420e2c14</hash>
       </entry>
@@ -17877,7 +17933,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\tcpip_commands.c</file>
-         <hash>abd88ff00bef9def69c70f5f59cbd0b1146c1a6bdc22300b1edec8fc8b2e9db9</hash>
+         <hash>11ceda1c9a86306aad26e5b9f6969e81c653f9cbf65db12af903bdfebdf0ecd2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\ripemd.h</file>
@@ -17929,7 +17985,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\tcpip_private.h</file>
-         <hash>1053c415bbedf90ac3f6e6b51f08ac94644192873bc7fe1b178704b86ee481e1</hash>
+         <hash>1b1fe04f951411c81fc0437989f268e60f755d909d0a11b72f9409023bc1cfa0</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_JumpTable_pb.h</file>
@@ -18245,7 +18301,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\tcpip.h</file>
-         <hash>134fd10d82e68fa6b034803f7156252113cee824ccd39e5e395a71db78048dec</hash>
+         <hash>29725b748ab81ac9ec4e7d2926e823eed22c51020356993302491a94a75d197f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\ipv4_manager.h</file>
@@ -18265,7 +18321,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\gmac\src\dynamic\drv_gmac_lib_samE7x_V7x.c</file>
-         <hash>36e61977acf8a6d4bc307dd4417cfad72fe2d7b3e43e17e7e3d6cf3ae0cd2914</hash>
+         <hash>51adda219967d446092b33a55ef70328481ff5be1dd3a31aee6dda00dde71146</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\interrupts.h</file>
@@ -18317,7 +18373,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\initialization.c</file>
-         <hash>0c68228883a00064118fb1b155be32b5a17fb96f1afeee8dc56da69b84250432</hash>
+         <hash>78769f6f967ffba3f3537ae4ac75fe97f018b9d294368bb0a4b2b153d7e2997c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\kdf.h</file>
@@ -18509,7 +18565,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\udp.c</file>
-         <hash>d26990a2d9142bbae1fdb0b3d4981720054441e262bcf85cdae87bdd32a2dac6</hash>
+         <hash>64b5b4fcf0d373fbdb00a769d80ffdad8db2e3f68932b7be6eab7e50cc7f0f47</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\usart.h</file>
@@ -18993,7 +19049,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\dhcpv6_private.h</file>
-         <hash>fbdb94fb86e748d7f88240208e1859a2567fe28869055a34e11304b7cf103a0e</hash>
+         <hash>9460946a8cb9d6595977edff25fe84c62eedaa46e80a35a751ce508715d5da1c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\eccsi.c</file>
@@ -19025,7 +19081,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\gmac\src\dynamic\drv_gmac.c</file>
-         <hash>6d85928d884fed7b101d04316cc752e5b08db2372f318b27d7c2801f7abdf1ed</hash>
+         <hash>3a340ebe2fae466a9890d59250ad143691de5a63b3c94cee26c987ce3dab6349</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_Headers_pb.h</file>
@@ -19205,7 +19261,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\configuration.h</file>
-         <hash>aafc9292cc0efc29b64c48c654b4f5d9e4c8e13b80a90df01b1e45a28619d021</hash>
+         <hash>631ae14db8249e917ccf1622b80d80a7d709e3fb3e689a484a5ad524287803b4</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\debug\src\sys_debug.c</file>
