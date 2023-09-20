@@ -598,7 +598,6 @@
                 <logicalFolder name="common" displayName="common" projectFiles="true">
                   <itemPath>../src/config/sam_v71_xult/library/tcpip/src/helpers.c</itemPath>
                 </logicalFolder>
-                <itemPath>../src/config/sam_v71_xult/library/tcpip/src/nbns.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_manager.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/hash_fnv.c</itemPath>
@@ -610,7 +609,6 @@
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_commands.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/oahash.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/icmp.c</itemPath>
-                <itemPath>../src/config/sam_v71_xult/library/tcpip/src/sntp.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_notify.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_helpers.c</itemPath>
                 <itemPath>../src/config/sam_v71_xult/library/tcpip/src/tcpip_announce.c</itemPath>
@@ -801,7 +799,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -838,6 +836,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -895,6 +894,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -934,6 +934,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -962,6 +963,7 @@
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
       <C32Global>
+        <property key="appendMe" value=""/>
         <property key="common-include-directories" value=""/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
