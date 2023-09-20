@@ -166,12 +166,6 @@ extern "C" {
 
 
 
-/*** NBNS Configuration ***/
-#define TCPIP_STACK_USE_NBNS
-#define TCPIP_NBNS_TASK_TICK_RATE   110
-
-
-
 /*** TCP Configuration ***/
 #define TCPIP_TCP_MAX_SEG_SIZE_TX		        	1460
 #define TCPIP_TCP_SOCKET_DEFAULT_TX_SIZE			512
@@ -422,24 +416,6 @@ extern "C" {
 #define DRV_GMAC_RMII_MODE                      0
 
 #define DRV_GMAC_DESCRIPTOR_ADDRESS                0x2045f000
-
-
-
-/*** SNTP Configuration ***/
-#define TCPIP_STACK_USE_SNTP_CLIENT
-#define TCPIP_NTP_DEFAULT_IF		        	"GMAC"
-#define TCPIP_NTP_VERSION             			4
-#define TCPIP_NTP_DEFAULT_CONNECTION_TYPE   	IP_ADDRESS_TYPE_IPV4
-#define TCPIP_NTP_EPOCH		                	2208988800ul
-#define TCPIP_NTP_REPLY_TIMEOUT		        	6
-#define TCPIP_NTP_MAX_STRATUM		        	15
-#define TCPIP_NTP_TIME_STAMP_TMO				660
-#define TCPIP_NTP_SERVER		        		"pool.ntp.org"
-#define TCPIP_NTP_SERVER_MAX_LENGTH				30
-#define TCPIP_NTP_QUERY_INTERVAL				600
-#define TCPIP_NTP_FAST_QUERY_INTERVAL	    	14
-#define TCPIP_NTP_TASK_TICK_RATE				1100
-#define TCPIP_NTP_RX_QUEUE_LIMIT				2
 
 
 
