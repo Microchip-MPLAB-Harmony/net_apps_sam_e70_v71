@@ -13701,7 +13701,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\definitions.h</file>
-         <hash>32ffa0a4344a7d0ac2d662112b28cc30e3abf0938c1fd95da87ec90137d630bd</hash>
+         <hash>db8d98419543b55d5a8649f2522c005b7d59b9f7efcd5a2b4f3112872325b8c9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\hash.h</file>
@@ -14113,7 +14113,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\library\tcpip\src\tcpip_commands.c</file>
-         <hash>abd88ff00bef9def69c70f5f59cbd0b1146c1a6bdc22300b1edec8fc8b2e9db9</hash>
+         <hash>11ceda1c9a86306aad26e5b9f6969e81c653f9cbf65db12af903bdfebdf0ecd2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\ripemd.h</file>
