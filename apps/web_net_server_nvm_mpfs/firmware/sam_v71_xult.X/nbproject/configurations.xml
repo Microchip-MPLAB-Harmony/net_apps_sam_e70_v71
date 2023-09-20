@@ -926,12 +926,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMV71_DFP" vendor="Microchip" version="4.10.230"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="SAMV71_DFP" vendor="Microchip" version="4.10.230"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1137,8 +1137,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/harmony/h3/net_apps_sam_e70_v71/apps/web_net_server_nvm_mpfs/firmware/sam_v71_xult.X/debug/sam_v71_xult/sam_v71_xult_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
