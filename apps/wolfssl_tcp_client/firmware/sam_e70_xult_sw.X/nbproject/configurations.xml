@@ -637,6 +637,7 @@
                 <itemPath>../src/config/sam_e70_xult_sw/library/tcpip/src/dns.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_sw/library/tcpip/src/dhcp.c</itemPath>
                 <itemPath>../src/config/sam_e70_xult_sw/library/tcpip/src/hash_fnv.c</itemPath>
+                <itemPath>../src/config/sam_e70_xult_sw/library/tcpip/src/tcpip_announce.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -847,8 +848,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
         <pack name="SAME70_DFP" vendor="Microchip" version="4.10.248"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
