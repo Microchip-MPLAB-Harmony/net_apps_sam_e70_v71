@@ -236,6 +236,8 @@ const TCPIP_STACK_MODULE_CONFIG TCPIP_STACK_MODULE_CONFIG_TBL [] =
     {TCPIP_MODULE_ANNOUNCE,         &tcpipAnnounceInitData},        // TCPIP_MODULE_ANNOUNCE
     {TCPIP_MODULE_NBNS,             &tcpipNBNSInitData},            // TCPIP_MODULE_NBNS
 
+    {TCPIP_MODULE_COMMAND,          0},                             // TCPIP_MODULE_COMMAND,
+    {TCPIP_MODULE_IPERF,            0},                             // TCPIP_MODULE_IPERF,
     { TCPIP_MODULE_MANAGER,         &tcpipHeapConfig },             // TCPIP_MODULE_MANAGER
 
 // MAC modules
@@ -290,14 +292,14 @@ TCPIP_MODULE_GMAC_QUEUE_CONFIG  gmac_queue_config[DRV_GMAC_NUMBER_OF_QUEUES]=
    {   /** QUEUE 0 Initialization**/
        .queueTxEnable = true,
        .queueRxEnable = true,
-       .nRxDescCnt    = 8,
-       .nTxDescCnt    = 8,
+       .nRxDescCnt    = 10,
+       .nTxDescCnt    = 10,
        .rxBufferSize  = 1536,
        .txMaxPktSize  = 1536,
-       .nRxDedicatedBuffers   = 8,
-       .nRxAddlBuffCount  = 2,
-       .nRxBuffCntThres   = 1,
-       .nRxBuffAllocCnt   = 2,   
+       .nRxDedicatedBuffers   = 10,
+       .nRxAddlBuffCount  = 4,
+       .nRxBuffCntThres   = 2,
+       .nRxBuffAllocCnt   = 3,   
        .queueIntSrc       = GMAC_IRQn,                               
    },
    {   /** QUEUE 1 Initialization**/
