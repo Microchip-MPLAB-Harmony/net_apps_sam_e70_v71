@@ -262,7 +262,7 @@
           <itemPath>../src/config/sam_e70_xult_freertos/system_config.h</itemPath>
           <itemPath>../src/config/sam_e70_xult_freertos/device_vectors.h</itemPath>
           <itemPath>../src/config/sam_e70_xult_freertos/config.h</itemPath>
-          <itemPath>../src/config/sam_e70_xult_freertos/device_cache.h</itemPath>
+          <itemPath>../src/config/sam_e70_xult_freertos/device_cache.h</itemPath>
           <itemPath>../src/config/sam_e70_xult_freertos/FreeRTOSConfig.h</itemPath>
           <itemPath>../src/config/sam_e70_xult_freertos/definitions.h</itemPath>
           <itemPath>../src/config/sam_e70_xult_freertos/configuration.h</itemPath>
