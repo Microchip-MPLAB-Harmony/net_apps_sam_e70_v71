@@ -96,7 +96,7 @@ APP_DATA appData;
 int32_t _APP_ParseUrl(char *uri, char **host, char **path, uint16_t * port);
 int8_t _APP_PumpDNS(const char * hostname, IPV4_ADDR *ipv4Addr);
 
-bool gDataReceived=false;
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -137,6 +137,7 @@ void APP_Tasks ( void )
     IPV4_ADDR           ipAddr;
     TCPIP_NET_HANDLE    netH;
     int                 i, nNets;
+    static bool         dataReceived=false;
 
     /* Check the application's current state. */
     switch ( appData.state )
@@ -306,7 +307,7 @@ void APP_Tasks ( void )
                     "Host: %s\r\n"
                     "Connection: close\r\n\r\n", appData.path ? appData.path : "null" , appData.host);
             TCPIP_TCP_ArrayPut(appData.socket, (uint8_t*)buffer, strlen(buffer));
-            appData.state = APP_TCPIP_WAIT_FOR_RESPONSE;            
+            appData.state = APP_TCPIP_WAIT_FOR_RESPONSE;
         }
         break;
 
@@ -318,12 +319,12 @@ void APP_Tasks ( void )
             {
                 TCPIP_TCP_ArrayGet(appData.socket, (uint8_t*)buffer, sizeof(buffer) - 1);
                 SYS_CONSOLE_PRINT("%s", buffer);
-                gDataReceived = true;
+                dataReceived = true;
             }
-            if(gDataReceived)
+            if(dataReceived)
             {
                 SYS_CONSOLE_PRINT("\r\nConnection established with < %s > \r\n",appData.host);
-                gDataReceived = false;
+                dataReceived = false;
             }
 
             if (!TCPIP_TCP_IsConnected(appData.socket) || TCPIP_TCP_WasDisconnected(appData.socket))
