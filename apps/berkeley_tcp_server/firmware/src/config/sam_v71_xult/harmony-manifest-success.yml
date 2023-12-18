@@ -4,7 +4,7 @@
 
 
 project: berkeley_tcp_server
-creation_date: 2023-11-04T01:40:47.927+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2023-12-16T16:27:53.994+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.3.7
@@ -16,8 +16,8 @@ compiler: XC32 (v4.35)
 modules:
     - {name: "csp", version: "v3.18.0"}
     - {name: "core", version: "v3.13.1"}
-    - {name: "dev_packs", version: "v3.18.0"}
+    - {name: "dev_packs", version: "v3.18.1"}
     - {name: "wolfssl", version: "v5.4.0"}
     - {name: "net", version: "v3.11.0"}
     - {name: "bsp", version: "v3.17.0"}
-    - {name: "crypto", version: "v3.8.0"}
+    - {name: "crypto", version: "v3.8.1"}
