@@ -299,7 +299,7 @@ TCPIP_MODULE_GMAC_QUEUE_CONFIG  gmac_queue_config[DRV_GMAC_NUMBER_OF_QUEUES]=
        .nRxDedicatedBuffers   = 10,
        .nRxAddlBuffCount  = 4,
        .nRxBuffCntThres   = 2,
-       .nRxBuffAllocCnt   = 3,   
+       .nRxBuffAllocCnt   = 5,   
        .queueIntSrc       = GMAC_IRQn,                               
    },
    {   /** QUEUE 1 Initialization**/
@@ -432,8 +432,6 @@ static const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
     .timerStop = (SYS_TIME_PLIB_STOP)TC0_CH0_TimerStop ,
     .timerFrequencyGet = (SYS_TIME_PLIB_FREQUENCY_GET)TC0_CH0_TimerFrequencyGet,
     .timerPeriodSet = (SYS_TIME_PLIB_PERIOD_SET)TC0_CH0_TimerPeriodSet,
-    .timerCompareSet = (SYS_TIME_PLIB_COMPARE_SET)TC0_CH0_TimerCompareSet,
-    .timerCounterGet = (SYS_TIME_PLIB_COUNTER_GET)TC0_CH0_TimerCounterGet,
 };
 
 static const SYS_TIME_INIT sysTimeInitData =
