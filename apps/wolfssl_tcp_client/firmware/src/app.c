@@ -405,8 +405,9 @@ void APP_Tasks(void) {
 
             // Google has stopped obeying the 'connection close' command.  So this is a cheap way to see if we got to the 
             // end of the html page.
-            SYS_CONSOLE_PRINT("Received %d bytes from the server \r\n", res );
-            appData.state = APP_TCPIP_CLOSE_CONNECTION;
+            if (strstr(networkBuffer, "</html>") != 0) {
+                appData.state = APP_TCPIP_CLOSE_CONNECTION;
+            }
 
             appData.clearBytesReceived += res;
             appData.rawBytesReceived += res;
@@ -457,9 +458,9 @@ void APP_Tasks(void) {
 
             // Google has stopped obeying the 'connection close' command.  So this is a cheap way to see if we got to the 
             // end of the html page.
-            SYS_CONSOLE_PRINT("Received %d bytes from the server \r\n", res );
-            appData.state = APP_TCPIP_CLOSE_CONNECTION;
-            
+            if (strstr(networkBuffer, "</html>") != 0) {
+                appData.state = APP_TCPIP_CLOSE_CONNECTION;
+            }
             appData.clearBytesReceived += res;
             appData.rawBytesReceived += res;
             break;
