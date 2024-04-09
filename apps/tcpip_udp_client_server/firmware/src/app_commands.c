@@ -14,7 +14,7 @@
 
 // DOM-IGNORE-BEGIN
 /*****************************************************************************
- Copyright (C) 2012-2018 Microchip Technology Inc. and its subsidiaries.
+ Copyright (C) 2012-2024 Microchip Technology Inc. and its subsidiaries.
 
 Microchip Technology Inc. and its subsidiaries.
 
@@ -43,7 +43,6 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 #include "app_commands.h"
 #include "app.h"
 #include "tcpip/tcpip.h"
-
 #if defined(TCPIP_STACK_COMMAND_ENABLE)
 
 
@@ -111,13 +110,12 @@ void _APP_Commands_SetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv
     strcpy(APP_Message_Buffer, argv[3]);
 }
 
-static char buffer1[160];
-static char buffer2[160];
-static char buffer3[160];
+char bufferArea[3][MAX_URL_SIZE + 20];
+
 void _APP_Commands_GetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
 {
     const void* cmdIoParam = pCmdIO->cmdIoParam;
-
+    
     if (argc != 1)
     {
         (*pCmdIO->pCmdApi->msg)(cmdIoParam, "Usage: getopt\r\n");
@@ -126,12 +124,12 @@ void _APP_Commands_GetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv
     }
 
      (*pCmdIO->pCmdApi->msg)(cmdIoParam, "Current UDP Options:\r\n");
-     sprintf(buffer1, "\thostname: '%s'\r\n", APP_Hostname_Buffer);
-     (*pCmdIO->pCmdApi->msg)(cmdIoParam, buffer1);
-     sprintf(buffer2, "\tport: '%s'\r\n", APP_Port_Buffer);
-     (*pCmdIO->pCmdApi->msg)(cmdIoParam, buffer2);
-     sprintf(buffer3, "\tmessage: '%s'\r\n", APP_Message_Buffer);
-     (*pCmdIO->pCmdApi->msg)(cmdIoParam, buffer3);
+     snprintf(bufferArea[0], sizeof(bufferArea[0]), "\thostname: '%s'\r\n", APP_Hostname_Buffer);
+     (*pCmdIO->pCmdApi->msg)(cmdIoParam, bufferArea[0]);
+     snprintf(bufferArea[1], sizeof(bufferArea[1]), "\tport: '%s'\r\n", APP_Port_Buffer);
+     (*pCmdIO->pCmdApi->msg)(cmdIoParam, bufferArea[1]);
+     snprintf(bufferArea[2], sizeof(bufferArea[2]), "\tmessage: '%s'\r\n", APP_Message_Buffer);
+     (*pCmdIO->pCmdApi->msg)(cmdIoParam, bufferArea[2]);
 
 }
 
