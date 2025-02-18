@@ -14,7 +14,7 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 This repository contains the MPLAB® Harmony 3 Net library application examples for SAM E70/V71 family
 
 - [Release Notes](./release_notes.md)
-- [MPLAB® Harmony License](mplab_harmony_license.md)
+- [MPLAB® Harmony License](Microchip_SLA001.md)
 
 To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/) and then click **Clone**<br /> button to clone this repository or download as zip file. This content can also be downloaded using <br /> MCC content manager available as part of the MPLAB® X IDE.
 
@@ -35,7 +35,7 @@ To view the documentation offline, follow these steps:
 
 ____
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/blob/master/mplab_harmony_license.md)
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/blob/master/Microchip_SLA001.md)
 [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/releases/latest)
 [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_e70_v71/graphs/commit-activity)
