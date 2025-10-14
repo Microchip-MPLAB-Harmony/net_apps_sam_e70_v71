@@ -3,6 +3,27 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Network Application Examples for SAME70 and SAMV71 Family, v3.9.2
+
+### New Features
+- None
+
+### Improvements and Bug Fixes
+- This release removed -Wall and -Werror option from all MPLABX applications.
+
+### Known Issues
+- Same as previous release (v3.9.1)
+
+### Development Tools
+- Same as previous release (v3.9.1)
+
+### Development Kit Support
+- Same as previous release (v3.9.1)
+
+## Net Release Notes
+- Same as previous release (v3.9.1)
+
+---
 ## Network Application Examples for SAME70 and SAMV71 Family, v3.9.1
 
 ### New Features
